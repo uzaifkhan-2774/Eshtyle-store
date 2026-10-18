@@ -1,0 +1,18 @@
+// Test environment: mocked providers are used ONLY here. Requires a MongoDB-compatible server at MONGODB_URI_TEST.
+process.env.NODE_ENV = 'test';
+process.env.MONGODB_URI = process.env.MONGODB_URI_TEST || 'mongodb://127.0.0.1:27017/eshtyle_test';
+process.env.JWT_ACCESS_SECRET = 'test-access-secret-0123456789-abcdefghijklmnop';
+process.env.REFRESH_TOKEN_PEPPER = 'test-refresh-pepper-0123456789-abcdefghijklmn';
+process.env.OTP_PEPPER = 'test-otp-pepper-0123456789-abcdefghijklmnopqrstu';
+process.env.EMAIL_PROVIDER = 'console';
+process.env.SMS_PROVIDER = 'console';
+process.env.ENABLE_JOBS = 'false';
+process.env.PAYMENT_PROVIDER = 'razorpay';
+process.env.RAZORPAY_KEY_ID = 'rzp_test_key';
+process.env.RAZORPAY_KEY_SECRET = 'rzp_test_secret';
+process.env.RAZORPAY_WEBHOOK_SECRET = 'rzp_webhook_secret';
+process.env.SHIPROCKET_EMAIL = 'ops@example.com';
+process.env.SHIPROCKET_PASSWORD = 'x';
+process.env.SHIPROCKET_PICKUP_LOCATION = 'Primary';
+process.env.SHIPROCKET_PICKUP_PINCODE = '110001';
+process.env.SHIPROCKET_WEBHOOK_TOKEN = 'sr-hook-token';

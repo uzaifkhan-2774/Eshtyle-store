@@ -1,0 +1,28 @@
+{
+  "name": "eshtyle",
+  "private": true,
+  "description": "E-SHTYLE jewellery store. Local: `npm i` then `npm run dev`. Live server: fill backend/.env, then `npm i` and `npm start`.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "postinstall": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "node scripts/dev.mjs",
+    "seed": "node scripts/dev.mjs --seed-only",
+    "test": "npm --prefix backend test",
+    "build": "npm --prefix frontend run build",
+    "start": "npm run build && npm --prefix backend start",
+    "seed:live": "npm --prefix backend run seed",
+    "create-owner": "npm --prefix backend run create-owner --",
+    "doctor": "node backend/scripts/doctor.js",
+    "test-email": "node backend/scripts/test-email.js"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "11.2.0"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "7.0.14"
+    }
+  }
+}

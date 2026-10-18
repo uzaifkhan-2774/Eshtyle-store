@@ -1,0 +1,19 @@
+{
+  "_note": "Store owner details. These go into Admin → Settings only where a field is still empty, so edits made in the admin panel are never overwritten. Fields marked PLACEHOLDER must be corrected before launch.",
+  "name": "E-SHTYLE",
+  "legalName": "E-SHTYLE (Proprietor: Afroaz Kha Saheb Kha)",
+  "ownerName": "Afroaz Kha Saheb Kha",
+  "gstin": "",
+  "_gstin_note": "Left blank on purpose: a made-up GSTIN must never appear on a tax invoice. Add the real one in Admin → Settings once registered.",
+  "email": "care@eshtyle.in",
+  "_email_note": "PLACEHOLDER — replace with the real support email (one you can receive mail on).",
+  "phone": "+91 9370419427",
+  "whatsapp": "+91 9370419427",
+  "address": {
+    "line1": "House No. 227, Islam Nagar",
+    "line2": "Near Jaituniya Masjid, Dist. Amravati",
+    "city": "Warud",
+    "state": "Maharashtra",
+    "pincode": "444906"
+  }
+}

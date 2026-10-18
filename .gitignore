@@ -1,0 +1,11 @@
+node_modules
+.env
+dist
+*.log
+backend/uploads
+backend/uploads/products
+backend/uploads/banners
+backend/uploads/reels
+backend/private-uploads
+backend/.local-db
+backend/ADMIN-LOGIN-LOCAL.txt

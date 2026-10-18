@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #C6A15B;
+  --color-gold-deep: #9C7A3C;
+  --color-ivory: #FFF8EE;
+  --color-beige: #E9DCCB;
+  --color-sand: #F4EADD;
+  --color-espresso: #442B22;
+  --color-ink: #241D19;
+  --color-muted: #6F6158;
+  --color-danger: #A1361F;
+  --color-success: #3F6B3A;
+  --font-display: "Cormorant Garamond Variable", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Jost Variable", "Jost", "Helvetica Neue", Arial, sans-serif;
+  --radius-arch: 999px 999px 0 0;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-ivory text-ink font-sans antialiased; font-size: 16px; line-height: 1.6; }
+  h1, h2, h3 { @apply font-display text-espresso; font-weight: 500; letter-spacing: -0.005em; line-height: 1.1; text-wrap: balance; }
+  ::selection { background: #E9DCCB; }
+  :focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
+  img { max-width: 100%; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+}
+
+@utility container-x { margin-inline: auto; width: 100%; max-width: 1320px; padding-inline: 1rem; @media (width >= 40rem) { padding-inline: 1.5rem; } @media (width >= 64rem) { padding-inline: 2.5rem; } }
+@utility btn { @apply inline-flex items-center justify-center gap-2 px-6 h-12 text-[15px] tracking-[0.04em] transition-colors disabled:opacity-50 disabled:cursor-not-allowed select-none; }
+@utility btn-primary { @apply btn bg-espresso text-ivory hover:bg-ink; }
+@utility btn-gold { @apply btn bg-gold text-ink hover:bg-[#d4b273]; }
+@utility btn-outline { @apply btn border border-espresso text-espresso hover:bg-espresso hover:text-ivory; }
+@utility btn-ghost { @apply btn h-10 px-3 text-espresso hover:bg-sand; }
+@utility link { @apply underline decoration-gold decoration-1 underline-offset-4 hover:text-espresso; }
+@utility field { @apply block w-full h-12 border border-beige bg-white px-3.5 text-[15px] text-ink placeholder:text-muted/70 focus:border-espresso focus:outline-none; }
+@utility label { @apply block text-sm text-muted mb-1.5; }
+@utility arch { border-radius: var(--radius-arch); }
+@utility no-scrollbar { scrollbar-width: none; &::-webkit-scrollbar { display: none; } }
+@utility prose-esh {
+  & p { margin-bottom: 1rem; max-width: 68ch; font-size: 16px; line-height: 1.75; }
+  & h2 { font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: .75rem; }
+  & h3 { font-family: var(--font-sans); font-weight: 500; color: var(--color-ink); font-size: 1.125rem; margin-top: 1.5rem; margin-bottom: .5rem; }
+  & ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; max-width: 68ch; }
+  & li { margin-bottom: .25rem; }
+}
+
+@keyframes hero-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.hero-in { animation: hero-in .9s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+.fade-in { animation: fade-in .35s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .fade-in { animation: none; } }
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+.skeleton { background: linear-gradient(90deg, #F4EADD 0, #FBF3E8 50%, #F4EADD 100%); background-size: 800px 100%; animation: shimmer 1.4s infinite linear; }
+
+/* Homepage motion — one slow, continuous treatment; everything stops for reduced-motion users. */
+@keyframes kenburns { from { transform: scale(1.06); } to { transform: scale(1); } }
+.kenburns { animation: kenburns 7.5s ease-out both; }
+@keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.progress-fill { transform-origin: left; animation: progress 6.5s linear both; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee { animation: marquee 38s linear infinite; }
+.marquee-wrap:hover .marquee { animation-play-state: paused; }
+@keyframes ping-soft { 0% { transform: scale(1); opacity: .7; } 80%, 100% { transform: scale(2.2); opacity: 0; } }
+.hotspot-ring { animation: ping-soft 2.2s cubic-bezier(0,0,.2,1) infinite; }
+@media (prefers-reduced-motion: reduce) { .kenburns, .progress-fill, .marquee, .hotspot-ring { animation: none !important; } .progress-fill { transform: scaleX(1); } }
