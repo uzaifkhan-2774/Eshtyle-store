@@ -7,7 +7,7 @@ import { setupDb, teardownDb, client, seedProduct, makeUser, login, address, isR
 
 const REAL_MONGO = await isRealMongo();
 if (!REAL_MONGO) console.warn('⚠ Running on a non-MongoDB server (FerretDB): concurrency tests are SKIPPED. Run against MongoDB 7+ for full coverage.');
-import { Order, ProductVariant, Payment, Coupon, Shipment, WebhookEvent, Refund, ReturnRequest } from '../src/models/index.js';
+import { Order, ProductVariant, Payment, Coupon, Shipment, WebhookEvent, Refund, ReturnRequest, User } from '../src/models/index.js';
 import { expireStaleOrders } from '../src/services/orderService.js';
 
 beforeAll(() => setupDb('esh_test_commerce'));
@@ -252,8 +252,17 @@ describe('shipping (Shiprocket, mocked HTTP) & admin permissions', () => {
   });
 
   it('enforces the return policy: damaged/wrong only, tag + unboxing video, 7 days, staff approval after watching', async () => {
-    const o = await Order.findOne({ status: 'delivered' });
-    const c = client(); await login(c, 'ship@example.com');
+    // Self-contained: its own customer, product, delivered order and owner (works when run on its own too).
+    await seedProduct({ stock: 3, price: 45000, sku: 'RET-1', name: 'Return Ring' });
+    const c = await buyer('returns@example.com');
+    const variantId = String((await ProductVariant.findOne({ sku: 'RET-1-V' }))._id);
+    expect([200, 201]).toContain((await c.post('/api/v1/cart/items', { variantId, quantity: 1 })).status);
+    const placed = await c.post('/api/v1/checkout/orders', { address, paymentMethod: 'cod', idempotencyKey: key(), acceptTerms: true });
+    expect(placed.status).toBe(201);
+    const o = await Order.findOne({ orderNumber: placed.body.order.orderNumber });
+    o.status = 'delivered'; o.paymentStatus = 'cod_collected'; o.statusHistory.push({ status: 'delivered', at: new Date() }); await o.save();
+    await Shipment.create({ order: o._id, kind: 'forward', awb: 'RET-AWB', status: 'delivered', deliveredAt: new Date() });
+    if (!(await User.exists({ email: 'owner@example.com' }))) await makeUser({ email: 'owner@example.com', role: 'owner' });
     const csrf = (await c.agent.get('/api/v1/auth/csrf')).body.csrfToken;
     const items = [{ orderItem: String(o.items[0]._id), quantity: 1 }];
     const confirmations = { tagIntact: true, unused: true, originalPackaging: true, unboxingVideo: true };
