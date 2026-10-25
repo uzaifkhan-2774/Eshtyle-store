@@ -21,10 +21,9 @@ const schema = z.object({
   LOG_LEVEL: z.string().default('info'),
 
   // Storage
-  STORAGE_DRIVER: z.enum(['local', 'cloudinary']).default('local'),
-  CLOUDINARY_CLOUD_NAME: z.string().optional(),
-  CLOUDINARY_API_KEY: z.string().optional(),
-  CLOUDINARY_API_SECRET: z.string().optional(),
+  STORAGE_DRIVER: z.enum(['local', 'cloudinary', 's3']).default('local'),
+S3_BUCKET: z.string().optional(),
+S3_REGION: z.string().default('ap-southeast-2'),
 
   // Email
   EMAIL_PROVIDER: z.enum(['console', 'smtp', 'resend']).default('console'),

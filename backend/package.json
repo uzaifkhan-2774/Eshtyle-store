@@ -17,6 +17,7 @@
     "test-shiprocket": "node scripts/test-shiprocket.js"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1156.0",
     "argon2": "^0.45.1",
     "compression": "^1.8.2",
     "cookie-parser": "^1.4.7",

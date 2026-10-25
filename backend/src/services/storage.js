@@ -1,3 +1,4 @@
+import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -13,6 +14,10 @@ const run = promisify(execFile);
 import { BACKEND_ROOT } from '../config/paths.js';
 export const UPLOAD_DIR = path.join(BACKEND_ROOT, 'uploads');
 const ALLOWED = new Set(['jpeg', 'png', 'webp', 'avif', 'heif']);
+const s3 = env.STORAGE_DRIVER === 's3' ? new S3Client({ region: env.S3_REGION }) : null;
+async function putS3(key, body, contentType) {
+  await s3.send(new PutObjectCommand({ Bucket: env.S3_BUCKET, Key: key, Body: body, ContentType: contentType, CacheControl: 'public, max-age=31536000, immutable' }));
+}
 
 /** Validates real image content (not just the extension), strips metadata, produces large + thumb WebP. */
 export async function storeImage(buffer, folder = 'products') {
@@ -38,6 +43,12 @@ export async function storeImage(buffer, folder = 'products') {
     };
     const a = await up(big.data, ''); const b = await up(small, '-sm');
     return { url: a.secure_url, thumb: b.secure_url, width: big.info.width, height: big.info.height, publicId: a.public_id };
+  }
+
+    if (env.STORAGE_DRIVER === 's3') {
+    await putS3(`uploads/${folder}/${id}.webp`, big.data, 'image/webp');
+    await putS3(`uploads/${folder}/${id}-sm.webp`, small, 'image/webp');
+    return { url: `/uploads/${folder}/${id}.webp`, thumb: `/uploads/${folder}/${id}-sm.webp`, width: big.info.width, height: big.info.height };
   }
   const dir = path.join(UPLOAD_DIR, folder);
   await fs.mkdir(dir, { recursive: true });
@@ -94,6 +105,11 @@ export async function storeVideo(buffer, opts = {}) {
         return r.body.secure_url;
       };
       return { url: await up(data, 'video', `video/${outExt}`, ''), poster: posterFile ? await up(posterFile, 'image', 'image/webp', '-poster') : undefined, ...meta };
+    }
+        if (env.STORAGE_DRIVER === 's3') {
+      await putS3(`uploads/reels/${id}.${outExt}`, data, `video/${outExt}`);
+      if (posterFile) await putS3(`uploads/reels/${id}-poster.webp`, posterFile, 'image/webp');
+      return { url: `/uploads/reels/${id}.${outExt}`, poster: posterFile ? `/uploads/reels/${id}-poster.webp` : undefined, ...meta };
     }
     const dir = path.join(UPLOAD_DIR, 'reels');
     await fs.mkdir(dir, { recursive: true });
