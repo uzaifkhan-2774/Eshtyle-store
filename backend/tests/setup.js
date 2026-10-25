@@ -16,3 +16,4 @@ process.env.SHIPROCKET_PASSWORD = 'x';
 process.env.SHIPROCKET_PICKUP_LOCATION = 'Primary';
 process.env.SHIPROCKET_PICKUP_PINCODE = '110001';
 process.env.SHIPROCKET_WEBHOOK_TOKEN = 'sr-hook-token';
+process.env.ADMIN_ALERT_EMAIL = 'alerts@example.com';

@@ -29,6 +29,7 @@ const schema = z.object({
   // Email
   EMAIL_PROVIDER: z.enum(['console', 'smtp', 'resend']).default('console'),
   EMAIL_FROM: z.string().default('E-SHTYLE <no-reply@example.com>'),
+  EMAIL_REPLY_TO: z.string().optional(), // where customer replies go, e.g. care@e-shtyle.in
   SMTP_HOST: z.string().optional(),
   SMTP_PORT: z.coerce.number().optional(),
   SMTP_USER: z.string().optional(),
@@ -37,7 +38,12 @@ const schema = z.object({
   ADMIN_ALERT_EMAIL: z.string().optional(),
 
   // SMS (India — DLT registration required)
-  SMS_PROVIDER: z.enum(['none', 'console', 'msg91']).default('console'),
+  SMS_PROVIDER: z.enum(['none', 'console', 'msg91', 'whatsapp']).default('console'),
+  // WhatsApp OTP (Meta WhatsApp Cloud API) — no DLT needed. Uses an approved "Authentication" template.
+  WHATSAPP_TOKEN: z.string().optional(),
+  WHATSAPP_PHONE_NUMBER_ID: z.string().optional(),
+  WHATSAPP_OTP_TEMPLATE: z.string().default('login_otp'),
+  WHATSAPP_TEMPLATE_LANG: z.string().default('en'),
   MSG91_AUTH_KEY: z.string().optional(),
   MSG91_OTP_TEMPLATE_ID: z.string().optional(),
   MSG91_FLOW_TEMPLATE_ID: z.string().optional(),
@@ -78,7 +84,8 @@ const env = parsed.data;
 if (env.NODE_ENV === 'production') {
   const problems = [];
   if (env.EMAIL_PROVIDER === 'console') problems.push('EMAIL_PROVIDER must be a real provider in production');
-  if (env.SMS_PROVIDER === 'console') problems.push('SMS_PROVIDER must be msg91, or none to launch with email login only');
+  if (env.SMS_PROVIDER === 'console') problems.push('SMS_PROVIDER must be msg91 or whatsapp, or none to launch with email login only');
+  if (env.SMS_PROVIDER === 'whatsapp' && !(env.WHATSAPP_TOKEN && env.WHATSAPP_PHONE_NUMBER_ID)) problems.push('SMS_PROVIDER=whatsapp needs WHATSAPP_TOKEN and WHATSAPP_PHONE_NUMBER_ID');
   if (env.SMS_PROVIDER === 'msg91' && !(env.MSG91_AUTH_KEY && env.MSG91_OTP_TEMPLATE_ID)) problems.push('SMS_PROVIDER=msg91 needs MSG91_AUTH_KEY and MSG91_OTP_TEMPLATE_ID');
   if (env.EMAIL_PROVIDER === 'resend' && !env.RESEND_API_KEY) problems.push('EMAIL_PROVIDER=resend needs RESEND_API_KEY');
   if (env.EMAIL_PROVIDER === 'smtp' && !(env.SMTP_HOST && env.SMTP_USER && env.SMTP_PASS)) problems.push('EMAIL_PROVIDER=smtp needs SMTP_HOST, SMTP_USER and SMTP_PASS');
@@ -99,6 +106,7 @@ export const integrations = {
   email: env.EMAIL_PROVIDER !== 'console',
   sms: env.SMS_PROVIDER === 'msg91',
   phoneLogin: env.SMS_PROVIDER !== 'none',
+  otpChannel: env.SMS_PROVIDER === 'whatsapp' ? 'whatsapp' : 'sms',
   metaCapi: Boolean(env.META_CAPI_TOKEN),
   cloudinary: env.STORAGE_DRIVER === 'cloudinary' && Boolean(env.CLOUDINARY_CLOUD_NAME && env.CLOUDINARY_API_KEY && env.CLOUDINARY_API_SECRET),
 };

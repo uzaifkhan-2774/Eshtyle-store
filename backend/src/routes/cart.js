@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import { ProductVariant, Product, getSettings } from '../models/index.js';
 import { ah, badRequest, notFound } from '../lib/errors.js';
 import { validate } from '../middleware/validate.js';
-import { getCart, loadLines, serializeLine } from '../services/cartService.js';
+import { getCart, loadLines, serializeLine, sameLine } from '../services/cartService.js';
 import { priceLines } from '../services/pricing.js';
 
 const r = Router();
@@ -28,16 +28,24 @@ r.get('/', ah(async (req, res) => {
   res.json(await cartView(req, res, cart));
 }));
 
-r.post('/items', validate(z.object({ variantId: oid, quantity: z.number().int().min(1).max(10).default(1) })), ah(async (req, res) => {
+r.post('/items', validate(z.object({ variantId: oid, quantity: z.number().int().min(1).max(10).default(1), designs: z.array(z.number().int().min(0).max(29)).max(6).optional() })), ah(async (req, res) => {
   const v = await ProductVariant.findOne({ _id: req.body.variantId, isActive: true }).lean();
   const p = v && (await Product.findOne({ _id: v.product, status: 'published' }).lean());
   if (!v || !p) throw notFound('This item is not available.');
   if (v.stock <= 0) throw badRequest('Sorry, this item is out of stock.');
+  const need = p.designPick?.count || 0;
+  let designs;
+  if (need > 0) {
+    designs = [...new Set(req.body.designs || [])].sort((a, b) => a - b);
+    const available = p.images?.length || 0;
+    if (designs.some((d) => d >= available)) throw badRequest('Please choose from the designs shown.');
+    if (designs.length !== Math.min(need, available)) throw badRequest(`Please choose ${need} designs.`);
+  }
   const cart = await getCart(req, res, { create: true });
-  const existing = cart.items.find((i) => String(i.variant) === String(v._id));
+  const existing = cart.items.find((i) => sameLine(i, v._id, designs));
   const desired = (existing?.quantity || 0) + req.body.quantity;
   const qty = Math.min(desired, v.stock, 10);
-  if (existing) existing.quantity = qty; else cart.items.push({ product: p._id, variant: v._id, quantity: qty });
+  if (existing) existing.quantity = qty; else cart.items.push({ product: p._id, variant: v._id, quantity: qty, designs });
   await cart.save();
   const view = await cartView(req, res, cart);
   res.status(201).json({ ...view, notice: qty < desired ? `Only ${qty} available — we've added the maximum.` : null });

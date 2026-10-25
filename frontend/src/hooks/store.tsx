@@ -43,7 +43,7 @@ export function useCart() {
   const onOk = (c: Cart & { notice?: string }) => { qc.setQueryData(['cart'], c); if (c.notice) toast(c.notice); };
   const onErr = (e: Error) => toast(e.message, 'error');
   const add = useMutation({
-    mutationFn: (v: { variantId: string; quantity: number; name?: string; price?: number; sku?: string }) => api<Cart>('/cart/items', { body: { variantId: v.variantId, quantity: v.quantity } }),
+    mutationFn: (v: { variantId: string; quantity: number; name?: string; price?: number; sku?: string; designs?: number[] }) => api<Cart>('/cart/items', { body: { variantId: v.variantId, quantity: v.quantity, designs: v.designs } }),
     onSuccess: (c, v) => { onOk(c); setCartOpen(true); track('add_to_cart', { value: ((v.price || 0) * v.quantity) / 100, items: [{ id: v.sku || v.variantId, name: v.name, price: (v.price || 0) / 100, quantity: v.quantity }] }); }, onError: onErr,
   });
   const update = useMutation({ mutationFn: (v: { id: string; quantity: number }) => api<Cart>(`/cart/items/${v.id}`, { method: 'PATCH', body: { quantity: v.quantity } }), onSuccess: onOk, onError: onErr });

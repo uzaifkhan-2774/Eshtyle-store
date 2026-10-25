@@ -47,6 +47,10 @@ const schema = new mongoose.Schema({
   seo: { title: String, description: String },
   related: [{ type: mongoose.Types.ObjectId, ref: 'Product' }],
   isSampleData: { type: Boolean, default: false },
+  // false = not shown in shop, search, home, sitemap or feeds; still reachable by its direct link (e.g. a ₹1 payment-test product).
+  isListed: { type: Boolean, default: true },
+  // Combo where the customer chooses which designs they get: each product photo is one design (Design 1, 2, …).
+  designPick: { count: { type: Number, default: 0, min: 0, max: 6 } },
   priceReviewRequired: { type: Boolean, default: false },
 }, { timestamps: true });
 

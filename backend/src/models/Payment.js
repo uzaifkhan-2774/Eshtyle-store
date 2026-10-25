@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const schema = new mongoose.Schema({
   order: { type: mongoose.Types.ObjectId, ref: 'Order', required: true, index: true },
-  provider: { type: String, enum: ['razorpay', 'cashfree', 'cod'], required: true },
+  provider: { type: String, enum: ['razorpay', 'cashfree', 'cod', 'manual'], required: true },
   providerOrderId: { type: String, index: true },
   providerPaymentId: { type: String, index: true },
   amount: { type: Number, required: true },

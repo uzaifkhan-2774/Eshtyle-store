@@ -24,3 +24,4 @@ export { default as WebhookEvent } from './WebhookEvent.js';
 export { default as StoreSettings, getSettings } from './StoreSettings.js';
 export { default as SupportTicket } from './SupportTicket.js';
 export { default as Reel } from './Reel.js';
+export { default as Testimonial } from './Testimonial.js';

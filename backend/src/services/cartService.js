@@ -29,12 +29,18 @@ export async function getCart(req, res, { create = false } = {}) {
   }
   return cart;
 }
+export const designKey = (d) => (d?.length ? d.join(',') : '');
+export const sameLine = (i, variant, designs) => String(i.variant) === String(variant) && designKey(i.designs) === designKey(designs);
 export function mergeItems(cart, incoming) {
   for (const it of incoming) {
-    const existing = cart.items.find((i) => String(i.variant) === String(it.variant));
+    const existing = cart.items.find((i) => sameLine(i, it.variant, it.designs));
     if (existing) existing.quantity = Math.min(10, existing.quantity + it.quantity);
-    else cart.items.push({ product: it.product, variant: it.variant, quantity: it.quantity });
+    else cart.items.push({ product: it.product, variant: it.variant, quantity: it.quantity, designs: it.designs?.length ? it.designs : undefined });
   }
+}
+/** Chosen designs as shown to people: [{ index, label: 'Design 3', image }]. */
+export function designList(product, designs) {
+  return (designs || []).map((i) => { const im = product.images?.[i]; return { index: i, label: `Design ${i + 1}`, image: im?.thumb || im?.url || '' }; });
 }
 /** Loads cart lines with fresh product/variant data, dropping anything no longer purchasable. */
 export async function loadLines(cart) {
@@ -47,10 +53,10 @@ export async function loadLines(cart) {
   for (const it of cart.items) {
     const v = vm.get(String(it.variant)); const p = v && pm.get(String(v.product));
     if (!v || !p || p.status !== 'published' || !v.isActive) { issues.push({ itemId: it._id, type: 'unavailable', message: 'An item in your bag is no longer available and was removed.' }); continue; }
-    if (v.stock <= 0) { issues.push({ itemId: it._id, type: 'out_of_stock', message: `${p.name} is out of stock.`, name: p.name }); lines.push({ itemId: it._id, product: p, variant: v, quantity: it.quantity, outOfStock: true }); continue; }
+    if (v.stock <= 0) { issues.push({ itemId: it._id, type: 'out_of_stock', message: `${p.name} is out of stock.`, name: p.name }); lines.push({ itemId: it._id, product: p, variant: v, quantity: it.quantity, designs: it.designs?.length ? [...it.designs] : undefined, outOfStock: true }); continue; }
     let q = it.quantity;
     if (q > v.stock) { q = v.stock; issues.push({ itemId: it._id, type: 'qty_reduced', message: `Only ${v.stock} left of ${p.name}. Quantity updated.` }); }
-    lines.push({ itemId: it._id, product: p, variant: v, quantity: q });
+    lines.push({ itemId: it._id, product: p, variant: v, quantity: q, designs: it.designs?.length ? [...it.designs] : undefined });
   }
   return { lines, issues };
 }
@@ -59,6 +65,6 @@ export function serializeLine(l) {
   return {
     id: l.itemId, productId: l.product._id, variantId: l.variant._id, name: l.product.name, slug: l.product.slug, sku: l.variant.sku,
     variantTitle: l.variant.title, image: img?.thumb || img?.url, unitPrice: l.unitPrice ?? l.variant.price, compareAtPrice: l.variant.compareAtPrice,
-    quantity: l.quantity, maxQuantity: Math.min(10, l.variant.stock), lineTotal: l.lineTotal ?? l.variant.price * l.quantity, lineDiscount: l.lineDiscount || 0, outOfStock: Boolean(l.outOfStock),
+    quantity: l.quantity, maxQuantity: Math.min(10, l.variant.stock), lineTotal: l.lineTotal ?? l.variant.price * l.quantity, lineDiscount: l.lineDiscount || 0, outOfStock: Boolean(l.outOfStock), designs: l.designs?.length ? designList(l.product, l.designs) : undefined,
   };
 }

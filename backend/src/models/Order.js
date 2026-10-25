@@ -13,6 +13,7 @@ const orderItem = new mongoose.Schema({
   unitPrice: Number, compareAtPrice: Number, quantity: Number,
   lineSubtotal: Number, lineDiscount: Number, lineTotal: Number, taxRate: Number, taxAmount: Number,
   returnable: Boolean, returnWindowDays: Number,
+  designs: { type: [{ index: Number, label: String, image: String, _id: false }], default: undefined },
 }, { _id: true });
 
 const statusEvent = new mongoose.Schema({ status: String, note: String, by: { type: mongoose.Types.ObjectId, ref: 'User' }, at: { type: Date, default: Date.now } }, { _id: false });
@@ -43,6 +44,10 @@ const schema = new mongoose.Schema({
   // Ad-measurement data, stored only when the shopper accepted marketing cookies.
   adTracking: { consent: Boolean, fbp: String, fbc: String, ip: String, userAgent: String, sourceUrl: String, capiSentAt: Date, capiError: String },
   notes: String,
+  thankYouCoupon: String, // personal next-order code issued when this order was delivered
+  // Where the order came from. 'website' for normal checkout; others are entered by staff from Admin → New order.
+  channel: { type: String, enum: ['website', 'whatsapp', 'instagram', 'phone', 'store', 'other'], default: 'website', index: true },
+  createdBy: { type: mongoose.Types.ObjectId, ref: 'User' },
   invoiceNumber: String,
   shipLockUntil: Date, // short-lived mutex so concurrent "Ship" clicks cannot create two shipments
   cancelReason: String,

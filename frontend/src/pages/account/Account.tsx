@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { api } from '../../lib/api';
 import type { Address, Order, ProductCard as PC } from '../../lib/types';
 import { useAuth, useSettings, useUI } from '../../hooks/store';
-import { Empty, Img, Input, Notice, Select, Textarea } from '../../components/ui';
+import { DesignChips, Empty, Img, Input, Notice, Select, Textarea } from '../../components/ui';
 import { ProductGrid } from '../../components/ProductCard';
 import { AddressFields, addressSchema, openPayment, type AddressForm } from '../Checkout';
 import { Summary } from '../Cart';
@@ -135,7 +135,7 @@ export function Orders() {
         {data.items.map((o) => (
           <li key={o.id}><Link to={`/account/orders/${o.orderNumber}`} className="block border border-beige bg-white p-5 hover:border-espresso">
             <div className="flex flex-wrap justify-between gap-2"><span className="font-medium">{o.orderNumber}</span><StatusPill s={o.status} /></div>
-            <p className="text-sm text-muted mt-1">Placed {date(o.placedAt)} · {o.items.reduce((s, i) => s + i.quantity, 0)} items · {inr(o.totals.total)}</p>
+            <p className="text-sm text-muted mt-1">Placed {date(o.placedAt)} · {(o.items || []).reduce((s, i) => s + i.quantity, 0)} items · {inr(o.totals?.total)}</p>
             <div className="flex gap-2 mt-3">{o.items.slice(0, 5).map((i) => <Img key={i._id} src={i.image} alt={i.name} className="w-12 h-14 object-cover bg-sand" />)}</div>
           </Link></li>
         ))}
@@ -199,10 +199,10 @@ export function OrderDetail() {
       <section>
         <h3 className="font-sans font-medium mb-3">Items</h3>
         <ul className="divide-y divide-beige border-y border-beige">
-          {o.items.map((i) => (
+          {(o.items || []).map((i) => (
             <li key={i._id} className="py-4 flex gap-4">
               <Img src={i.image} alt={i.name} className="w-16 h-20 object-cover bg-sand" />
-              <div className="flex-1"><Link to={`/product/${i.slug}`} className="hover:text-gold-deep">{i.name}</Link>{i.variantTitle !== 'Default' && <p className="text-sm text-muted">{i.variantTitle}</p>}<p className="text-sm text-muted">Qty {i.quantity} · {inr(i.unitPrice)}</p>{o.status === 'delivered' && <ReviewForm productId={i.product} name={i.name} />}</div>
+              <div className="flex-1"><Link to={`/product/${i.slug}`} className="hover:text-gold-deep">{i.name}</Link>{i.variantTitle !== 'Default' && <p className="text-sm text-muted">{i.variantTitle}</p>}<DesignChips designs={i.designs} small /><p className="text-sm text-muted">Qty {i.quantity} · {inr(i.unitPrice)}</p>{o.status === 'delivered' && <ReviewForm productId={i.product} name={i.name} />}</div>
               <p className="tabular-nums">{inr(i.lineTotal)}</p>
             </li>
           ))}
@@ -210,11 +210,12 @@ export function OrderDetail() {
         <div className="max-w-sm ml-auto mt-5"><Summary totals={o.totals} showShippingNote={false} /></div>
       </section>
 
+      {o.thankYouCoupon && <Notice tone="ok">Thank you for shopping with us! Your personal code for your next order: <strong className="font-medium tracking-wider">{o.thankYouCoupon}</strong> — apply it in your bag. (Valid once, for this account.)</Notice>}
       {data.returns.map((r) => <Notice key={r._id}>{r.status === 'requested' ? 'Under review' : 'Return request'} ({r.reason}) — <strong className="font-medium">{r.status.replace(/_/g, ' ')}</strong>{r.adminNote ? `: ${r.adminNote}` : ''}</Notice>)}
 
       <div className="flex flex-wrap gap-3">
         {data.canCancel && !showCancel && <button className="btn-outline" onClick={() => setShowCancel(true)}>Cancel order</button>}
-        {data.canReturn && !ret && <button className="btn-outline" onClick={() => setRet({ items: Object.fromEntries(o.items.filter((i) => i.returnable !== false).map((i) => [i._id, 0])), reason: data.returnReasons[0], comments: '', video: null, c: {} })}>Report damaged / wrong item</button>}
+        {data.canReturn && !ret && <button className="btn-outline" onClick={() => setRet({ items: Object.fromEntries((o.items || []).filter((i) => i.returnable !== false).map((i) => [i._id, 0])), reason: data.returnReasons[0], comments: '', video: null, c: {} })}>Report damaged / wrong item</button>}
       </div>
       {showCancel && (
         <form className="bg-white border border-beige p-5 space-y-3 max-w-lg" onSubmit={async (e) => { e.preventDefault(); try { await api(`/account/orders/${o.orderNumber}/cancel`, { body: { reason: cancelReason } }); toast('Order cancelled'); setShowCancel(false); refresh(); } catch (x) { toast((x as Error).message, 'error'); } }}>
@@ -241,7 +242,7 @@ export function OrderDetail() {
             <p>Returns are accepted only if the piece arrived <strong className="font-medium text-ink">damaged, defective, wrong or missing</strong>, reported within {data.returnWindowDays ?? 7} days of delivery (by {date(data.returnDeadline)}). We can’t accept returns for change of mind, size or colour preference.</p>
             <p>Your request is approved only after our team has watched your unboxing video. <Link to="/returns-policy" className="link">Read the full policy</Link></p>
           </div>
-          {o.items.filter((i) => i.returnable !== false).map((i) => <label key={i._id} className="flex items-center justify-between gap-3 text-[15px]"><span>{i.name}{i.variantTitle !== 'Default' ? ` — ${i.variantTitle}` : ''}</span><select className="field h-10 w-20" value={ret.items[i._id]} onChange={(e) => setRet({ ...ret, items: { ...ret.items, [i._id]: Number(e.target.value) } })} aria-label={`Quantity of ${i.name}`}>{Array.from({ length: i.quantity + 1 }, (_, n) => <option key={n} value={n}>{n}</option>)}</select></label>)}
+          {(o.items || []).filter((i) => i.returnable !== false).map((i) => <label key={i._id} className="flex items-center justify-between gap-3 text-[15px]"><span>{i.name}{i.variantTitle !== 'Default' ? ` — ${i.variantTitle}` : ''}</span><select className="field h-10 w-20" value={ret.items[i._id]} onChange={(e) => setRet({ ...ret, items: { ...ret.items, [i._id]: Number(e.target.value) } })} aria-label={`Quantity of ${i.name}`}>{Array.from({ length: i.quantity + 1 }, (_, n) => <option key={n} value={n}>{n}</option>)}</select></label>)}
           <Select label="What went wrong?" value={ret.reason} onChange={(e) => setRet({ ...ret, reason: e.target.value })}>{data.returnReasons.map((r) => <option key={r}>{r}</option>)}</Select>
           <Textarea label="Describe the problem" value={ret.comments} onChange={(e) => setRet({ ...ret, comments: e.target.value })} required minLength={10} placeholder="e.g. One stone was missing from the left earring when I opened the box." />
           <div>

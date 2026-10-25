@@ -12,6 +12,11 @@ export async function evaluateCoupon(code, lines, user) {
   if (coupon.startsAt && coupon.startsAt > now) throw badRequest('This coupon is not active yet.');
   if (coupon.endsAt && coupon.endsAt < now) throw badRequest('This coupon has expired.');
   if (coupon.usageLimit != null && coupon.usedCount >= coupon.usageLimit) throw badRequest('This coupon has reached its usage limit.');
+  if (coupon.assignedTo?.user || coupon.assignedTo?.email) {
+    if (!user) throw badRequest('Please sign in to use your personal coupon.');
+    const mine = (coupon.assignedTo.user && String(coupon.assignedTo.user) === String(user._id)) || (coupon.assignedTo.email && user.email && coupon.assignedTo.email === String(user.email).toLowerCase());
+    if (!mine) throw badRequest('This coupon belongs to another account.');
+  }
   const eligible = coupon.categories?.length
     ? lines.filter((l) => coupon.categories.some((c) => String(c) === String(l.product.category) || String(c) === String(l.product.subcategory)))
     : lines;

@@ -1,6 +1,7 @@
 import { Suspense, lazy, useState } from 'react';
+import { Component, type ReactNode } from 'react';
 import { Link, NavLink, Navigate, Route, Routes, useLocation } from 'react-router';
-import { LayoutDashboard, Package, ShoppingCart, Users, Tags, Megaphone, Star, Settings, LifeBuoy, RotateCcw, ScrollText, UserCog, Menu, X, ExternalLink } from 'lucide-react';
+import { LayoutDashboard, Package, ShoppingCart, Users, Tags, Megaphone, Star, Settings, LifeBuoy, RotateCcw, ScrollText, UserCog, Menu, X, ExternalLink, FileBarChart } from 'lucide-react';
 import { useAuth } from '../hooks/store';
 import { Logo } from '../components/ui';
 import { Toasts } from '../components/Layout';
@@ -11,13 +12,15 @@ const P = (f: () => Promise<Record<string, unknown>>, n: string) => lazy(async (
 const pages = () => import('./pages/pages');
 const Dashboard = P(pages, 'Dashboard'), Products = P(pages, 'Products'), ProductEdit = P(() => import('./pages/ProductEdit'), 'ProductEdit'), Orders = P(pages, 'Orders'), OrderView = P(() => import('./pages/OrderView'), 'OrderView');
 const m = () => import('./pages/manage');
+const NewOrder = lazy(() => import('./pages/NewOrder'));
+const Reports = lazy(() => import('./pages/Reports'));
 const SettingsPage = lazy(async () => ({ default: (await m()).SettingsPage }));
 const Customers = P(m, 'Customers'), CustomerView = P(m, 'CustomerView'), Categories = P(m, 'Categories'), Marketing = P(m, 'Marketing'), Reviews = P(m, 'Reviews'), Returns = P(m, 'Returns'), Tickets = P(m, 'Tickets'), Staff = P(m, 'Staff'), Audit = P(m, 'Audit');
 
 const NAV: [string, string, React.ComponentType<{ size?: number }>, string?][] = [
   ['/admin', 'Overview', LayoutDashboard, 'dashboard'], ['/admin/orders', 'Orders', ShoppingCart, 'orders:read'], ['/admin/returns', 'Returns', RotateCcw, 'returns:write'], ['/admin/products', 'Products', Package, 'products:read'],
   ['/admin/categories', 'Categories', Tags, 'categories:write'], ['/admin/customers', 'Customers', Users, 'customers:read'], ['/admin/support', 'Support', LifeBuoy, 'customers:read'], ['/admin/marketing', 'Marketing', Megaphone, 'marketing:write'],
-  ['/admin/reviews', 'Reviews', Star, 'reviews:write'], ['/admin/settings', 'Settings', Settings, 'settings:read'], ['/admin/staff', 'Staff', UserCog, 'staff:manage'], ['/admin/audit', 'Audit log', ScrollText, 'audit:read'],
+  ['/admin/reviews', 'Reviews', Star, 'reviews:write'], ['/admin/reports', 'Sales & GST', FileBarChart, 'reports:read'], ['/admin/settings', 'Settings', Settings, 'settings:read'], ['/admin/staff', 'Staff', UserCog, 'staff:manage'], ['/admin/audit', 'Audit log', ScrollText, 'audit:read'],
 ];
 
 export default function AdminApp() {
@@ -47,18 +50,37 @@ export default function AdminApp() {
       {open && <div className="fixed inset-0 z-40 lg:hidden"><div className="absolute inset-0 bg-ink/40" onClick={() => setOpen(false)} /><div className="absolute inset-y-0 left-0 w-72 bg-ivory p-4 overflow-y-auto"><button className="mb-4" aria-label="Close" onClick={() => setOpen(false)}><X /></button>{nav}</div></div>}
       <main className="p-4 sm:p-6 lg:p-8 min-w-0">
         <Suspense fallback={<div className="h-64 skeleton" />}>
+          <PageBoundary key={loc.pathname}>
           <Routes>
             <Route index element={<Dashboard />} />
             <Route path="products" element={<Products />} /><Route path="products/new" element={<ProductEdit />} /><Route path="products/:id" element={<ProductEdit />} />
-            <Route path="orders" element={<Orders />} /><Route path="orders/:id" element={<OrderView />} />
+            <Route path="orders" element={<Orders />} /><Route path="orders/new" element={<NewOrder />} /><Route path="orders/:id" element={<OrderView />} /><Route path="reports" element={<Reports />} />
             <Route path="returns" element={<Returns />} /><Route path="customers" element={<Customers />} /><Route path="customers/:id" element={<CustomerView />} />
             <Route path="categories" element={<Categories />} /><Route path="marketing" element={<Marketing />} /><Route path="reviews" element={<Reviews />} /><Route path="support" element={<Tickets />} />
             <Route path="settings" element={<SettingsPage canEdit={can('settings:write')} />} /><Route path="staff" element={<Staff />} /><Route path="audit" element={<Audit />} />
             <Route path="*" element={<p>Page not found. <Link to="/admin" className="link">Back to overview</Link></p>} />
           </Routes>
+          </PageBoundary>
         </Suspense>
       </main>
       <Toasts />
     </div>
   );
+}
+
+/** Keeps the admin menu usable if one page hits an unexpected record; shows the error instead of a blank screen. */
+class PageBoundary extends Component<{ children: ReactNode }, { err?: Error }> {
+  state: { err?: Error } = {};
+  static getDerivedStateFromError(err: Error) { return { err }; }
+  render() {
+    if (!this.state.err) return this.props.children;
+    return (
+      <div className="bg-white border border-beige p-6 max-w-xl">
+        <h1 className="text-2xl">This page couldn’t be shown</h1>
+        <p className="text-muted text-sm mt-2">Usually caused by a record that isn’t from this store (for example a shared database). Run <code>npm run doctor</code> to check. Other admin pages still work.</p>
+        <pre className="mt-3 text-xs bg-ivory p-3 whitespace-pre-wrap break-words">{this.state.err.message}</pre>
+        <button className="btn-outline h-10 mt-4" onClick={() => location.reload()}>Reload</button>
+      </div>
+    );
+  }
 }

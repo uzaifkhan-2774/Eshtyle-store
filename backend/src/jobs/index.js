@@ -1,5 +1,6 @@
 import { expireStaleOrders } from '../services/orderService.js';
 import { pollActiveShipments } from '../services/shipmentService.js';
+import { sendAbandonedCartReminders, sendLowStockDigest } from '../services/reminders.js';
 import logger from '../lib/logger.js';
 
 const timers = [];
@@ -15,6 +16,8 @@ function every(name, ms, fn) {
 export function startJobs() {
   every('expire-stale-orders', 5 * 60 * 1000, expireStaleOrders);
   every('poll-shipments', 60 * 60 * 1000, pollActiveShipments);
+  every('abandoned-bag-reminders', 30 * 60 * 1000, () => sendAbandonedCartReminders());
+  every('low-stock-digest', 60 * 60 * 1000, () => sendLowStockDigest());
   logger.info('Background jobs started');
 }
 export function stopJobs() { timers.forEach(clearInterval); }

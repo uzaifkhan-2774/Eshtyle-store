@@ -22,6 +22,7 @@ const orders = () => import('./pages/Orders');
 const info = () => import('./pages/info/Info');
 const L = <T extends Record<string, unknown>>(loader: () => Promise<T>, name: keyof T) => lazy(async () => ({ default: (await loader())[name] as React.ComponentType }));
 const Admin = lazy(() => import('./admin/AdminApp'));
+import ErrorPage from './components/ErrorPage';
 
 captureUtm();
 const qc = new QueryClient({ defaultOptions: { queries: { retry: (n, e: unknown) => n < 1 && (e as { status?: number })?.status !== 404, refetchOnWindowFocus: false } } });
@@ -34,9 +35,10 @@ const OrderConfirmed = L(orders, 'OrderConfirmed'), CheckoutReturn = L(orders, '
 const About = L(info, 'About'), Contact = L(info, 'Contact'), Faqs = L(info, 'Faqs'), Care = L(info, 'CareGuide'), Ship = L(info, 'ShippingPolicy'), Returns = L(info, 'ReturnsPolicy'), Privacy = L(info, 'PrivacyPolicy'), Terms = L(info, 'Terms'), Offer = L(info, 'Offer');
 
 const router = createBrowserRouter([
-  { path: '/admin/*', element: S(<Admin />) },
+  { path: '/admin/*', element: S(<Admin />), errorElement: <ErrorPage /> },
   {
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
       { path: 'shop', element: S(<Shop mode="all" />) },

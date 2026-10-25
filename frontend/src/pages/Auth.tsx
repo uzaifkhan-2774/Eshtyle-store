@@ -42,7 +42,9 @@ export function Login() {
   const [err, setErr] = useState<string>();
   const [busy, setBusy] = useState(false);
   const [email, setEmail] = useState(''); const [password, setPassword] = useState('');
-  const phoneLogin = useSettings()?.auth?.phoneLogin !== false;
+  const st = useSettings();
+  const phoneLogin = st?.auth?.phoneLogin !== false;
+  const wa = st?.auth?.otpChannel === 'whatsapp';
   const [phone, setPhone] = useState(''); const [code, setCode] = useState(''); const [sent, setSent] = useState(false);
   const [left, setLeft] = useCooldown();
   const done = (u: User) => { setUser(u); nav(next, { replace: true }); };
@@ -65,9 +67,9 @@ export function Login() {
           if (!sent) { await api('/auth/otp/request', { body: { channel: 'sms', target: phone, purpose: 'login' } }); setSent(true); setLeft(60); return; }
           done((await api<{ user: User }>('/auth/otp/verify', { body: { channel: 'sms', target: phone, code } })).user);
         }); }}>
-          <Input label="Mobile number" inputMode="numeric" autoComplete="tel-national" maxLength={10} required value={phone} disabled={sent} onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))} hint="We’ll text you a one-time code. Standard SMS rates may apply." />
+          <Input label="Mobile number" inputMode="numeric" autoComplete="tel-national" maxLength={10} required value={phone} disabled={sent} onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))} hint={wa ? "We’ll send a 6-digit code to this number on WhatsApp." : "We’ll text you a one-time code. Standard SMS rates may apply."} />
           {sent && <><OtpInput value={code} onChange={setCode} /><div className="flex justify-between text-sm"><button type="button" className="link" onClick={() => { setSent(false); setCode(''); }}>Change number</button><button type="button" className="link disabled:no-underline disabled:text-muted" disabled={left > 0} onClick={() => run(async () => { await api('/auth/otp/request', { body: { channel: 'sms', target: phone, purpose: 'login' } }); setLeft(60); })}>{left ? `Resend in ${left}s` : 'Resend code'}</button></div></>}
-          <button className="btn-primary w-full" disabled={busy || (sent && code.length !== 6)}>{busy ? <Spinner /> : sent ? 'Verify & sign in' : 'Send code'}</button>
+          <button className="btn-primary w-full" disabled={busy || (sent && code.length !== 6)}>{busy ? <Spinner /> : sent ? 'Verify & sign in' : wa ? 'Send code on WhatsApp' : 'Send code'}</button>
         </form>
       )}
     </Shell>

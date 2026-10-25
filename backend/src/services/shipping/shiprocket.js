@@ -6,19 +6,38 @@ import { unavailable } from '../../lib/errors.js';
 import logger from '../../lib/logger.js';
 
 let tokenCache = { token: null, exp: 0 };
+// After a failed login, don't try again for 15 minutes: Shiprocket blocks the account after repeated failed logins,
+// and every pincode check / checkout would otherwise attempt a new login.
+let authFail = { until: 0, message: '' };
 export const isConfigured = () => integrations.shiprocket;
 
-async function token() {
+export async function token() {
   if (!isConfigured()) throw unavailable('Shiprocket is not configured. Add SHIPROCKET_* variables on the server.');
   if (tokenCache.token && Date.now() < tokenCache.exp) return tokenCache.token;
-  const r = await fetchJson(`${env.SHIPROCKET_BASE_URL}/auth/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: env.SHIPROCKET_EMAIL, password: env.SHIPROCKET_PASSWORD }) }, { retries: 1 });
-  if (!r.ok || !r.body.token) throw new Error(`Shiprocket auth failed (${r.status})`);
+  if (Date.now() < authFail.until) throw new Error(`${authFail.message} (not retrying until ${new Date(authFail.until).toLocaleTimeString('en-IN')} to avoid locking the Shiprocket account; restart the server after fixing backend/.env)`);
+  let r;
+  try { r = await fetchJson(`${env.SHIPROCKET_BASE_URL}/auth/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: env.SHIPROCKET_EMAIL, password: env.SHIPROCKET_PASSWORD }) }, { retries: 0, timeoutMs: 30000 }); }
+  catch (e) { throw new Error(/aborted/i.test(e.message) || e.name === 'AbortError' ? 'Shiprocket login did not answer in time. Check the internet connection and press Retry.' : `Could not reach Shiprocket (${e.message}).`); }
+  if (!r.ok || !r.body?.token) {
+    const why = r.body?.message ? `: ${r.body.message}` : '';
+    const hint = r.status === 403 || r.status === 401 || r.status === 400 ? ' — check SHIPROCKET_EMAIL / SHIPROCKET_PASSWORD in backend/.env (must be the API user from Shiprocket → Settings → API, not your normal login). Run "npm run test-shiprocket" to check.' : '';
+    const message = `Shiprocket auth failed (${r.status})${why}${hint}`;
+    if ([400, 401, 403].includes(r.status)) authFail = { until: Date.now() + 15 * 60 * 1000, message: `Shiprocket auth failed (${r.status})${why}` };
+    throw new Error(message);
+  }
+  authFail = { until: 0, message: '' };
   tokenCache = { token: r.body.token, exp: Date.now() + 9 * 24 * 3600 * 1000 }; // tokens are valid 10 days
   return tokenCache.token;
 }
-async function call(path, { method = 'GET', body, retries } = {}) {
+export async function call(path, { method = 'GET', body, retries } = {}) {
   const t = await token();
-  const r = await fetchJson(`${env.SHIPROCKET_BASE_URL}${path}`, { method, headers: { Authorization: `Bearer ${t}`, 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined }, { retries: retries ?? (method === 'GET' ? 2 : 0) });
+  let r;
+  // Shiprocket can take 20–40 s to assign a courier or schedule a pickup, so allow up to 60 s per call.
+  try { r = await fetchJson(`${env.SHIPROCKET_BASE_URL}${path}`, { method, headers: { Authorization: `Bearer ${t}`, 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined }, { retries: retries ?? (method === 'GET' ? 2 : 0), timeoutMs: 60000 }); }
+  catch (e) {
+    if (e.name === 'AbortError' || /aborted/i.test(e.message)) throw new Error(`Shiprocket did not answer in time (${path.split('?')[0]}). Check the order in your Shiprocket panel, then press Retry.`);
+    throw new Error(`Could not reach Shiprocket (${e.message}). Check the internet connection and press Retry.`);
+  }
   if (r.status === 401) { tokenCache = { token: null, exp: 0 }; }
   if (!r.ok) {
     const msg = r.body?.message || JSON.stringify(r.body?.errors || {}).slice(0, 200) || r.status;

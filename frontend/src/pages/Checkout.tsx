@@ -14,7 +14,8 @@ import { inr, newKey } from '../lib/format';
 import { useSeo } from '../lib/seo';
 import { getUtm, track, hasMarketingConsent } from '../lib/analytics';
 
-export const STATES = ['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli and Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'];
+import { STATES } from '../lib/states';
+export { STATES };
 export const addressSchema = z.object({
   fullName: z.string().trim().min(2, 'Enter the recipient’s full name').max(80), phone: z.string().trim().regex(/^[6-9]\d{9}$/, 'Enter a 10-digit Indian mobile number'),
   line1: z.string().trim().min(3, 'Enter house / flat and street').max(160), line2: z.string().trim().max(160).optional(), landmark: z.string().trim().max(100).optional(),
@@ -162,7 +163,7 @@ export default function Checkout() {
         <aside className="bg-white border border-beige p-6 self-start space-y-5 lg:sticky lg:top-28">
           <h2 className="text-2xl">Your order</h2>
           <ul className="space-y-3 max-h-64 overflow-y-auto">
-            {cart.items.filter((i) => !i.outOfStock).map((l) => <li key={l.id} className="flex gap-3 text-sm"><span className="relative"><Img src={l.image} alt="" className="w-14 h-16 object-cover bg-sand" /><span className="absolute -top-1.5 -right-1.5 bg-espresso text-ivory rounded-full w-5 h-5 grid place-items-center text-[11px]">{l.quantity}</span></span><span className="flex-1">{l.name}{l.variantTitle !== 'Default' && <span className="block text-muted">{l.variantTitle}</span>}</span><span className="tabular-nums">{inr(l.lineTotal)}</span></li>)}
+            {cart.items.filter((i) => !i.outOfStock).map((l) => <li key={l.id} className="flex gap-3 text-sm"><span className="relative"><Img src={l.image} alt="" className="w-14 h-16 object-cover bg-sand" /><span className="absolute -top-1.5 -right-1.5 bg-espresso text-ivory rounded-full w-5 h-5 grid place-items-center text-[11px]">{l.quantity}</span></span><span className="flex-1">{l.name}{l.variantTitle !== 'Default' && <span className="block text-muted">{l.variantTitle}</span>}{l.designs?.length ? <span className="block text-muted">{l.designs.map((d) => d.label).join(', ')}</span> : null}</span><span className="tabular-nums">{inr(l.lineTotal)}</span></li>)}
           </ul>
           <CouponBox />
           {q?.couponError && <Notice tone="error">{q.couponError}</Notice>}

@@ -27,6 +27,7 @@
 }
 
 @utility container-x { margin-inline: auto; width: 100%; max-width: 1320px; padding-inline: 1rem; @media (width >= 40rem) { padding-inline: 1.5rem; } @media (width >= 64rem) { padding-inline: 2.5rem; } }
+@utility eyebrow { @apply text-[12px] uppercase tracking-[0.28em] text-gold-deep font-medium; }
 @utility btn { @apply inline-flex items-center justify-center gap-2 px-6 h-12 text-[15px] tracking-[0.04em] transition-colors disabled:opacity-50 disabled:cursor-not-allowed select-none; }
 @utility btn-primary { @apply btn bg-espresso text-ivory hover:bg-ink; }
 @utility btn-gold { @apply btn bg-gold text-ink hover:bg-[#d4b273]; }

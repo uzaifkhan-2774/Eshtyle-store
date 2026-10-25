@@ -1,3 +1,5 @@
+import { Carousel } from '../components/Carousel';
+import { Coverflow } from '../components/Coverflow';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { useQuery } from '@tanstack/react-query';
@@ -5,15 +7,16 @@ import { ChevronLeft, ChevronRight, Truck, RotateCcw, ShieldCheck, Sparkles } fr
 import { api, assetUrl } from '../lib/api';
 import type { ProductCard as P, Reel } from '../lib/types';
 import { BrandFilm, ReelsRail } from '../components/Reels';
-import { ProductGrid } from '../components/ProductCard';
+import { ProductCard, ProductGrid } from '../components/ProductCard';
 import { Img, Stars } from '../components/ui';
 import { useSeo } from '../lib/seo';
 import { useSettings } from '../hooks/store';
-import { inr } from '../lib/format';
+import { inr, shipsFree } from '../lib/format';
 
 type Banner = { _id: string; title?: string; subtitle?: string; ctaLabel?: string; ctaUrl?: string; image?: { url: string; alt?: string }; mobileImage?: { url: string; alt?: string }; theme?: string; hotspots?: { x: number; y: number; label?: string; productSlug: string; product: P }[] };
 type Section = { name: string; slug: string; description?: string; items: P[] };
-type HomeData = { banners: { hero: Banner[]; promo: Banner[]; editorial: Banner[]; look: Banner[] }; categories: { name: string; slug: string; image: { url: string; thumb?: string; alt?: string } }[]; sections: Record<string, Section>; reels?: Reel[]; reviews: { rating: number; title?: string; body?: string; authorName?: string; product?: { name: string; slug: string } }[] };
+type Testimonial = { id: string; name: string; city?: string; quote: string; rating?: number; source: string; productSlug?: string };
+type HomeData = { pick?: P[]; testimonials?: Testimonial[]; banners: { hero: Banner[]; promo: Banner[]; editorial: Banner[]; look: Banner[] }; categories: { name: string; slug: string; image: { url: string; thumb?: string; alt?: string } }[]; sections: Record<string, Section>; reels?: Reel[]; reviews: { rating: number; title?: string; body?: string; authorName?: string; product?: { name: string; slug: string } }[] };
 
 function Hero({ banners }: { banners: Banner[] }) {
   const [i, setI] = useState(0);
@@ -90,10 +93,10 @@ function Diamond() {
 function ValueTicker() {
   const s = useSettings();
   const items = [
-    s ? `Free shipping above ${inr(s.shipping.freeAbove)}` : 'Free shipping on eligible orders',
+    s ? (shipsFree(s.shipping) ? 'Free shipping on every order' : `Free shipping above ${inr(s.shipping.freeAbove)}`) : 'Free shipping across India',
     s?.cod.enabled ? 'Cash on Delivery available' : 'Secure online payment',
     'Gift-ready packaging',
-    'Anti-tarnish styles',
+    'Earring combos of 2, 3 & 4 pairs',
     'Packed by hand',
     s ? `${s.returns.windowDays}-day return on damaged items` : 'Return on damaged items',
   ];
@@ -106,7 +109,7 @@ function ValueTicker() {
 }
 
 function ShopByPrice() {
-  const tiers: [string, string, string][] = [['Under ₹199', '/shop?maxPrice=199&sort=price_asc', 'Studs, combos and everyday picks'], ['Under ₹299', '/shop?maxPrice=299&sort=price_asc', 'Rings, chains and drops'], ['Under ₹499', '/shop?maxPrice=499', 'Cuffs, clover necklaces, AD rings'], ['Gifts ₹500+', '/shop?minPrice=500&sort=price_asc', 'Sets and gift boxes, ready to give']];
+  const tiers: [string, string, string][] = [['Up to ₹249', '/shop?maxPrice=249&sort=price_asc', 'Rings, heart pendants and anklets'], ['Up to ₹299', '/shop?maxPrice=299&sort=price_asc', 'Earring combos, chains and bangles'], ['Up to ₹399', '/shop?maxPrice=399&sort=price_asc', 'Tulip bracelets, cuffs and combos'], ['Sets ₹499+', '/shop?minPrice=499&sort=price_asc', 'Jewellery sets and gift boxes']];
   return (
     <section className="container-x pt-20" aria-labelledby="price-h">
       <h2 id="price-h" className="text-3xl md:text-4xl mb-8">Shop by budget</h2>
@@ -151,7 +154,7 @@ function ShopTheLook({ look }: { look?: Banner }) {
   return (
     <section className="container-x pt-24" aria-labelledby="look-h">
       <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-16 items-center">
-        <div className="relative aspect-square overflow-hidden bg-sand">
+        <div className="relative aspect-[4/5] overflow-hidden bg-sand">
           <img src={assetUrl(look.image.url)} alt={look.image.alt || ''} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
           {look.hotspots.map((h, k) => (
             <div key={k} className="absolute" style={{ left: `${h.x}%`, top: `${h.y}%` }}>
@@ -208,15 +211,19 @@ function CategoryArches({ cats }: { cats: HomeData['categories'] }) {
   );
 }
 
-function SectionGrid({ s, title, intro }: { s?: Section; title?: string; intro?: string }) {
+function SectionGrid({ s, title, intro, carousel, coverflow }: { s?: Section; title?: string; intro?: string; carousel?: boolean; coverflow?: boolean }) {
   if (!s?.items.length) return null;
   return (
     <section className="container-x pt-24" aria-labelledby={`s-${s.slug}`}>
       <div className="flex items-end justify-between gap-6 mb-8">
-        <div><h2 id={`s-${s.slug}`} className="text-3xl md:text-4xl">{title || s.name}</h2>{(intro || s.description) && <p className="text-muted mt-2 max-w-xl">{intro || s.description}</p>}</div>
+        <div><p className="eyebrow mb-2">{EYEBROW[s.slug] || 'E-SHTYLE'}</p><h2 id={`s-${s.slug}`} className="text-3xl md:text-4xl">{title || s.name}</h2>{(intro || s.description) && <p className="text-muted mt-2 max-w-xl">{intro || s.description}</p>}</div>
         <Link to={`/collections/${s.slug}`} className="link text-[15px] shrink-0">View all</Link>
       </div>
-      <ProductGrid items={s.items.slice(0, 8)} />
+      {coverflow && s.items.length >= 5
+        ? <Coverflow label={title || s.name} items={s.items.slice(0, 10).map((p, i) => <ProductCard key={p.id} p={p} eager={i < 3} />)} />
+        : carousel && s.items.length > 4
+        ? <Carousel label={title || s.name}>{s.items.slice(0, 12).map((p, i) => <ProductCard key={p.id} p={p} eager={i < 2} />)}</Carousel>
+        : <ProductGrid items={s.items.slice(0, 8)} />}
     </section>
   );
 }
@@ -237,10 +244,52 @@ function Story({ image }: { image?: string }) {
   );
 }
 
+const STORY_IMG = '/uploads/seed/banners/story-v3-portrait.webp?v=20261023';
+const EYEBROW: Record<string, string> = { bestsellers: 'Most loved', 'new-arrivals': 'Just landed', 'anti-tarnish': 'Made to last' };
+
+/** "Pick any 2" combos: the customer chooses which designs they get. */
+function PickYourDesigns({ items }: { items: P[] }) {
+  if (items.length < 2) return null;
+  return (
+    <section className="pt-24" aria-labelledby="pick-h">
+      <div className="bg-sand/70 border-y border-beige">
+        <div className="container-x py-14 md:py-20 grid lg:grid-cols-[0.8fr_1.2fr] gap-10 lg:gap-16 items-center">
+          <div>
+            <p className="eyebrow mb-3">Your combo, your call</p>
+            <h2 id="pick-h" className="text-4xl md:text-5xl leading-tight">Pick any 2 designs</h2>
+            <p className="mt-5 text-[17px] leading-relaxed text-muted max-w-md">On these earrings and rings you choose exactly which two designs come in your box — tap your favourites on the product page.</p>
+            <Link to="/shop?tag=pick-your-designs" className="btn-primary mt-8">Choose your pair</Link>
+          </div>
+          <ProductGrid items={items.slice(0, 4)} cols={2} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GiftReady() {
+  return (
+    <section className="container-x pt-24" aria-labelledby="gift-h">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="relative">
+          <div className="absolute -inset-3 md:-inset-4 border border-gold/50 pointer-events-none" aria-hidden />
+          <img src={assetUrl('/uploads/seed/banners/packaging-v3-square.webp?v=20261023')} alt="E-SHTYLE jewellery in a gift box with a pouch and tag" loading="lazy" className="relative w-full aspect-square object-cover" />
+        </div>
+        <div className="max-w-md">
+          <p className="eyebrow mb-3">Gift-ready</p>
+          <h2 id="gift-h" className="text-4xl md:text-5xl leading-tight">Packed to be given.</h2>
+          <p className="mt-5 text-[17px] leading-relaxed text-muted">Every order is checked and packed by hand, so it arrives ready to keep — or ready to gift.</p>
+          <div className="mt-8 flex flex-wrap gap-4"><Link to="/category/gift-sets" className="btn-primary">Shop gift sets</Link><Link to="/category/necksets" className="btn-outline">Jewellery sets</Link></div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function CareStrip() {
   const s = useSettings();
   const items = [
-    { icon: Truck, t: 'Delivery across India', b: s ? `Free shipping above ${inr(s.shipping.freeAbove)}. Usually ${s.shipping.estimateDays[0]}–${s.shipping.estimateDays[1]} working days.` : 'Shipped across India.' },
+    { icon: Truck, t: 'Delivery across India', b: s ? `${shipsFree(s.shipping) ? 'Free shipping on every order' : `Free shipping above ${inr(s.shipping.freeAbove)}`}. Usually ${s.shipping.estimateDays[0]}–${s.shipping.estimateDays[1]} working days.` : 'Shipped across India.' },
     { icon: ShieldCheck, t: 'Secure checkout', b: s?.cod.enabled ? 'Pay online or choose Cash on Delivery on eligible orders.' : 'Pay securely online.' },
     { icon: RotateCcw, t: 'Damaged-item returns', b: s ? `Damaged, defective or wrong item? Report it within ${s.returns.windowDays} days with your unboxing video.` : 'Report damaged or wrong items with your unboxing video.' },
     { icon: Sparkles, t: 'Care that keeps the shine', b: 'Keep pieces dry and away from perfume. Store each one in its pouch.' },
@@ -257,21 +306,30 @@ function CareStrip() {
   );
 }
 
-function Reviews({ reviews }: { reviews: HomeData['reviews'] }) {
-  if (!reviews.length) return null;
+const SOURCE: Record<string, string> = { whatsapp: 'via WhatsApp', instagram: 'via Instagram', meesho: 'via Meesho', nushop: 'via our Nushop store', website: 'on our website', in_person: 'in person', other: '' };
+
+/** Love notes: approved reviews from verified buyers + real customer messages the owner added (labelled with where they came from). */
+function Reviews({ reviews, testimonials = [] }: { reviews: HomeData['reviews']; testimonials?: Testimonial[] }) {
+  const notes = [
+    ...reviews.map((r) => ({ key: `r${r.authorName}${r.body?.slice(0, 20)}`, rating: r.rating, title: r.title, body: r.body || '', name: r.authorName || 'Customer', meta: 'Verified purchase', product: r.product })),
+    ...testimonials.map((t) => ({ key: t.id, rating: t.rating, title: undefined as string | undefined, body: t.quote, name: t.name, meta: [t.city, SOURCE[t.source]].filter(Boolean).join(' · '), product: t.productSlug ? { slug: t.productSlug, name: 'View the piece' } : undefined })),
+  ];
+  if (!notes.length) return null;
+  const card = (n: (typeof notes)[number]) => (
+    <figure className="h-full flex flex-col border border-beige bg-white p-7">
+      <span className="font-display text-6xl leading-none text-gold/70 -mb-4" aria-hidden>“</span>
+      {n.rating ? <Stars value={n.rating} /> : null}
+      {n.title && <p className="font-display text-xl text-espresso mt-3">{n.title}</p>}
+      <blockquote className="mt-3 text-[16px] leading-relaxed flex-1">{n.body}</blockquote>
+      <figcaption className="mt-6 pt-4 border-t border-beige text-sm"><span className="font-medium text-ink">{n.name}</span>{n.meta && <span className="text-muted"> · {n.meta}</span>}{n.product && <> · <Link to={`/product/${n.product.slug}`} className="link">{n.product.name}</Link></>}</figcaption>
+    </figure>
+  );
   return (
     <section className="container-x pt-24" aria-labelledby="rev-h">
-      <h2 id="rev-h" className="text-3xl md:text-4xl mb-8">From verified buyers</h2>
-      <div className="grid md:grid-cols-3 gap-6">
-        {reviews.slice(0, 3).map((r, i) => (
-          <figure key={i} className="border border-beige bg-white p-6">
-            <Stars value={r.rating} />
-            {r.title && <p className="font-display text-xl text-espresso mt-3">{r.title}</p>}
-            <blockquote className="mt-2 text-[15px] leading-relaxed">{r.body}</blockquote>
-            <figcaption className="mt-4 text-sm text-muted">{r.authorName} · Verified purchase{r.product && <> · <Link to={`/product/${r.product.slug}`} className="link">{r.product.name}</Link></>}</figcaption>
-          </figure>
-        ))}
-      </div>
+      <div className="text-center mb-10"><p className="eyebrow mb-2">Love notes</p><h2 id="rev-h" className="text-3xl md:text-5xl">What our customers say</h2></div>
+      {notes.length > 3
+        ? <Carousel label="Customer reviews" autoplay={6000} itemClass="w-[85%] sm:w-[48%] lg:w-[calc((100%-2*1.5rem)/3)]">{notes.map((n) => <div key={n.key} className="h-full">{card(n)}</div>)}</Carousel>
+        : <div className="flex flex-wrap justify-center gap-6">{notes.map((n) => <div key={n.key} className="w-full md:w-[calc((100%-3rem)/3)]">{card(n)}</div>)}</div>}
     </section>
   );
 }
@@ -295,22 +353,23 @@ export default function Home() {
   const { data, isLoading } = useQuery({ queryKey: ['home'], queryFn: () => api<HomeData>('/catalog/home'), staleTime: 60_000 });
   if (isLoading || !data) return <div className="container-x py-10"><div className="skeleton h-[70vh]" /></div>;
   const sec = data.sections;
-  const storyImg = sec['new-arrivals']?.items.find((p) => p.hoverImage)?.hoverImage?.url || sec['bestsellers']?.items[1]?.hoverImage?.url;
+  const storyImg = STORY_IMG;
   return (
     <>
       <Hero banners={data.banners.hero} />
       <ValueTicker />
       <CategoryArches cats={data.categories} />
       <ShopByPrice />
-      <SectionGrid s={sec['bestsellers']} title="The signature edit" intro="Our most-reached-for pieces — clover motifs, sculpted gold and everyday stackers." />
+      <SectionGrid coverflow s={sec['bestsellers']} title="The signature edit" intro="Our most-reached-for pieces — clover motifs, sculpted gold and everyday stackers." />
       <EditorialDuo banners={data.banners.editorial} />
-      <SectionGrid s={sec['new-arrivals']} />
+      <SectionGrid carousel s={sec['new-arrivals']} />
       <BrandFilm reel={data.reels?.find((r) => r.orientation === 'landscape')} />
       <ReelsRail reels={(data.reels || []).filter((r) => r.orientation === 'portrait')} instagram={s?.business.instagram} />
       <ShopTheLook look={data.banners.look?.[0]} />
       {data.banners.promo.map((b) => (
         <section key={b._id} className="container-x pt-24"><Link to={b.ctaUrl || '/shop'} className="relative block overflow-hidden aspect-[4/5] sm:aspect-[16/9] md:aspect-[16/7] bg-sand">{b.image?.url && <img src={assetUrl(b.image.url)} alt={b.image.alt || ''} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />}<div className="absolute inset-0 bg-gradient-to-r from-ink/60 to-transparent" /><div className="relative p-8 md:p-14 max-w-lg text-ivory"><h2 className="text-3xl md:text-5xl text-ivory">{b.title}</h2>{b.subtitle && <p className="mt-3">{b.subtitle}</p>}<span className="btn-gold mt-6">{b.ctaLabel || 'Shop now'}</span></div></Link></section>
       ))}
+      <PickYourDesigns items={data.pick || []} />
       <Story image={storyImg} />
       {(sec['anti-tarnish']?.items.length ?? 0) >= 4 && <SectionGrid s={sec['anti-tarnish']} />}
       <div className="container-x pt-24 grid lg:grid-cols-2 gap-14">
@@ -321,8 +380,9 @@ export default function Home() {
           </section>
         ))}
       </div>
+      <GiftReady />
       <CareStrip />
-      <Reviews reviews={data.reviews} />
+      <Reviews reviews={data.reviews} testimonials={data.testimonials} />
       <AsWorn items={[...(sec['bestsellers']?.items || []), ...(sec['new-arrivals']?.items || [])]} instagram={s?.business.instagram} />
     </>
   );

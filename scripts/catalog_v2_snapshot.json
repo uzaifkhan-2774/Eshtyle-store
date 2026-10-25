@@ -1,0 +1,4116 @@
+{
+ "version": "2026-10-20b",
+ "products": [
+  {
+   "sku": "ESH-001",
+   "name": "Golden Broad Cuff Bracelet",
+   "slug": "golden-broad-cuff-bracelet",
+   "category": "arm-cuffs",
+   "subcategory": null,
+   "price": 349,
+   "stock": 2,
+   "line": "A wide, softly concave cuff with a mirror finish that catches the light from every angle.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "statement"
+   ],
+   "keywords": [
+    "cuff bracelet",
+    "kada for women",
+    "broad bracelet",
+    "statement bracelet"
+   ],
+   "styleName": "Golden Broad Cuff Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-broad-cuff-bracelet/golden-broad-cuff-bracelet-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-002",
+   "name": "Golden Screw Bangle Bracelet with Stones",
+   "slug": "golden-screw-bangle-bracelet-with-stones",
+   "category": "bangles",
+   "subcategory": null,
+   "price": 299,
+   "stock": 12,
+   "line": "A clean oval bangle with screw motifs and sparkling stones — the everyday stacking essential.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "bestseller",
+    "stacking"
+   ],
+   "keywords": [
+    "screw bangle",
+    "love bangle",
+    "stone bangle",
+    "kada"
+   ],
+   "styleName": "Golden Screw Bangle Bracelet with Stones",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-screw-bangle-bracelet-with-stones/golden-screw-bangle-bracelet-with-stones-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-003",
+   "name": "Golden Ribbed Wide Cuff Bracelet",
+   "slug": "golden-ribbed-wide-cuff-bracelet",
+   "category": "arm-cuffs",
+   "subcategory": null,
+   "price": 299,
+   "stock": 2,
+   "line": "Fine vertical ribbing on a bold open cuff — architectural and effortless with workwear.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [],
+   "keywords": [
+    "cuff bracelet",
+    "wide cuff",
+    "kada for women",
+    "office wear bracelet"
+   ],
+   "styleName": "Golden Ribbed Wide Cuff Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-ribbed-wide-cuff-bracelet/golden-ribbed-wide-cuff-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-004",
+   "name": "Golden Bamboo Bangle Bracelet",
+   "slug": "golden-bamboo-bangle-bracelet",
+   "category": "bangles",
+   "subcategory": null,
+   "price": 299,
+   "stock": 12,
+   "line": "A slender jointed bangle inspired by bamboo — minimal, refined and easy to layer.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "stacking"
+   ],
+   "keywords": [
+    "bamboo bracelet",
+    "thin bangle",
+    "kada"
+   ],
+   "styleName": "Golden Bamboo Bangle Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bamboo-bangle-bracelet/golden-bamboo-bangle-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-005",
+   "name": "Golden Flower Cuff Bracelet",
+   "slug": "golden-flower-cuff-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 249,
+   "stock": 12,
+   "line": "Sculpted gold-tone blossoms that wrap the wrist in a soft garden of petals.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral"
+   ],
+   "keywords": [
+    "flower bracelet",
+    "floral cuff",
+    "cuff bracelet"
+   ],
+   "styleName": "Golden Flower Cuff Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-flower-cuff-bracelet/golden-flower-cuff-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-006",
+   "name": "Clover, Screw & Nail Bracelet Set of 3",
+   "slug": "clover-screw-nail-bracelet-set-of-3",
+   "category": "bracelets",
+   "subcategory": "bracelet-combos",
+   "price": 499,
+   "stock": 12,
+   "line": "Three signature shapes in one set: a black clover chain, a screw motif bangle and a nail cuff.",
+   "colour": "Black & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "bestseller",
+    "stacking",
+    "gift"
+   ],
+   "keywords": [
+    "bracelet set",
+    "stack bracelets",
+    "clover bracelet",
+    "nail bracelet",
+    "screw bangle"
+   ],
+   "styleName": "Clover, Screw & Nail Bracelet Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-9.webp?v=20261020b",
+     "thumb": "/uploads/seed/clover-screw-nail-bracelet-set-of-3/clover-screw-nail-bracelet-set-of-3-9-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-007",
+   "name": "Nail & Screw Bangle Bracelet Set of 2",
+   "slug": "nail-screw-bangle-bracelet-set-of-2",
+   "category": "bangles",
+   "subcategory": null,
+   "price": 399,
+   "stock": 12,
+   "line": "The power pair: a nail cuff and a screw motif bangle, designed to be worn together.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "stacking",
+    "gift"
+   ],
+   "keywords": [
+    "nail bracelet",
+    "screw bangle",
+    "bangle set",
+    "stack bracelets"
+   ],
+   "styleName": "Nail & Screw Bangle Bracelet Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/nail-screw-bangle-bracelet-set-of-2/nail-screw-bangle-bracelet-set-of-2-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-008",
+   "name": "Pink Stone Tulip Bracelet",
+   "slug": "pink-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 12,
+   "line": "A delicate vine of blush-pink tulip stones on a gold-tone chain.",
+   "colour": "Pink",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "gift",
+    "tulip"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her",
+    "pink bracelet"
+   ],
+   "styleName": "Pink Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 882
+    },
+    {
+     "url": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-tulip-bracelet/pink-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-009",
+   "name": "Pink & Purple Stone Tulip Bracelet",
+   "slug": "pink-purple-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 0,
+   "line": "Pink and purple tulip-cut stones climbing a fine gold-tone vine.",
+   "colour": "Pink & Purple",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "tulip"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her",
+    "purple bracelet"
+   ],
+   "styleName": "Pink & Purple Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-purple-stone-tulip-bracelet/pink-purple-stone-tulip-bracelet-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-010",
+   "name": "Silver Pink Stone Tulip Bracelet",
+   "slug": "silver-pink-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "Soft pink tulip stones on a silver-tone vine — fresh, feminine and easy to wear every day.",
+   "colour": "Pink",
+   "finish": "Silver-tone",
+   "tags": [
+    "floral",
+    "tulip",
+    "gift"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her",
+    "silver bracelet",
+    "pink bracelet"
+   ],
+   "styleName": "Silver Pink Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 820
+    },
+    {
+     "url": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 929
+    },
+    {
+     "url": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-stone-tulip-bracelet/silver-pink-stone-tulip-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-011",
+   "name": "White Stone Tulip Bracelet",
+   "slug": "white-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "Clear white tulip stones on a gold-tone vine — a quietly sparkling everyday piece.",
+   "colour": "White",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "tulip",
+    "gift"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her",
+    "white stone bracelet"
+   ],
+   "styleName": "White Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-stone-tulip-bracelet/white-stone-tulip-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-012",
+   "name": "Silver Pink & Purple Stone Tulip Bracelet",
+   "slug": "silver-pink-purple-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "Pink, lilac and clear stones on a silver-tone tulip vine.",
+   "colour": "Pink & Purple",
+   "finish": "Silver-tone",
+   "tags": [
+    "floral",
+    "tulip"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her",
+    "silver bracelet"
+   ],
+   "styleName": "Silver Pink & Purple Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/silver-pink-purple-stone-tulip-bracelet/silver-pink-purple-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-013",
+   "name": "Pink & Green Stone Tulip Bracelet",
+   "slug": "pink-green-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "Pink tulip stones with fresh green leaves on a gold-tone vine.",
+   "colour": "Pink & Green",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "tulip"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her"
+   ],
+   "styleName": "Pink & Green Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 575,
+     "height": 575
+    },
+    {
+     "url": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 575,
+     "height": 575
+    },
+    {
+     "url": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 575,
+     "height": 460
+    },
+    {
+     "url": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-stone-tulip-bracelet/pink-green-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 800,
+     "height": 800
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-014",
+   "name": "Blue Stone Tulip Bracelet",
+   "slug": "blue-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "Deep blue tulip stones on a gold-tone vine — a pop of colour for every outfit.",
+   "colour": "Blue",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "tulip"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her",
+    "blue bracelet"
+   ],
+   "styleName": "Blue Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/blue-stone-tulip-bracelet/blue-stone-tulip-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-015",
+   "name": "Red & Green Stone Tulip Bracelet",
+   "slug": "red-green-stone-tulip-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "Ruby-red tulip stones and green leaves on a gold-tone vine — festive and bright.",
+   "colour": "Red & Green",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "tulip",
+    "festive"
+   ],
+   "keywords": [
+    "tulip bracelet",
+    "stone bracelet",
+    "flower bracelet",
+    "korean bracelet",
+    "gift for her",
+    "red bracelet"
+   ],
+   "styleName": "Red & Green Stone Tulip Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-green-stone-tulip-bracelet/red-green-stone-tulip-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-016",
+   "name": "Golden Kashmiri Bangles Set",
+   "slug": "golden-kashmiri-bangles-set",
+   "category": "bangles",
+   "subcategory": null,
+   "price": 279,
+   "stock": 9,
+   "line": "A stack of fine golden bangles with delicate dangling details — made for festivals and weddings.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "festive",
+    "new"
+   ],
+   "keywords": [
+    "kashmiri bangles",
+    "bangles set",
+    "ethnic bangles",
+    "festive bangles",
+    "wedding bangles"
+   ],
+   "styleName": "Golden Kashmiri Bangles Set",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-kashmiri-bangles-set/golden-kashmiri-bangles-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-017",
+   "name": "Black Clover Charm Bracelet",
+   "slug": "black-clover-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 249,
+   "stock": 12,
+   "line": "Black clover motifs framed in gold-tone — timeless, graphic and endlessly wearable.",
+   "colour": "Black & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "bestseller",
+    "clover"
+   ],
+   "keywords": [
+    "clover bracelet",
+    "four leaf clover",
+    "lucky charm bracelet"
+   ],
+   "styleName": "Black Clover Charm Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet/black-clover-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-044",
+   "name": "Golden Multi-Wire Cuff Bracelet",
+   "slug": "golden-multi-wire-cuff-bracelet",
+   "category": "arm-cuffs",
+   "subcategory": null,
+   "price": 299,
+   "stock": 6,
+   "line": "Dozens of fine golden wires gathered into one bold open cuff — a modern statement piece.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "statement",
+    "new"
+   ],
+   "keywords": [
+    "cuff bracelet",
+    "wire bracelet",
+    "statement bracelet",
+    "kada for women"
+   ],
+   "styleName": "Golden Multi-Wire Cuff Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-multi-wire-cuff-bracelet/golden-multi-wire-cuff-bracelet-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-050",
+   "name": "Black Clover Bracelet & Screw Bangle Set of 2",
+   "slug": "black-clover-bracelet-screw-bangle-set",
+   "category": "bracelets",
+   "subcategory": "bracelet-combos",
+   "price": 299,
+   "stock": 12,
+   "line": "A black clover chain bracelet paired with a screw motif bangle — the easiest stack there is.",
+   "colour": "Black & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "stacking",
+    "gift",
+    "clover"
+   ],
+   "keywords": [
+    "bracelet set",
+    "clover bracelet",
+    "screw bangle",
+    "stack bracelets"
+   ],
+   "styleName": "Black Clover Bracelet & Screw Bangle Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-bracelet-screw-bangle-set/black-clover-bracelet-screw-bangle-set-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-058",
+   "name": "Stone-Studded Nail Bangle Bracelet",
+   "slug": "stone-studded-nail-bangle-bracelet",
+   "category": "bangles",
+   "subcategory": null,
+   "price": 349,
+   "stock": 12,
+   "line": "A sleek nail-shaped bangle lined with sparkling stones, with an easy push-and-pull opening.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "stacking",
+    "new"
+   ],
+   "keywords": [
+    "nail bracelet",
+    "nail bangle",
+    "stone bangle",
+    "kada"
+   ],
+   "styleName": "Stone-Studded Nail Bangle Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/stone-studded-nail-bangle-bracelet/stone-studded-nail-bangle-bracelet-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-062",
+   "name": "Pink Clover Charm Bracelet",
+   "slug": "pink-clover-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 249,
+   "stock": 12,
+   "line": "Soft pink clover motifs on a fine gold-tone chain — sweet, light and easy to gift.",
+   "colour": "Pink",
+   "finish": "Gold-tone",
+   "tags": [
+    "clover",
+    "gift"
+   ],
+   "keywords": [
+    "clover bracelet",
+    "pink bracelet",
+    "four leaf clover"
+   ],
+   "styleName": "Pink Clover Charm Bracelet",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-clover-bracelet/pink-clover-bracelet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-063",
+   "name": "Golden Stone-Studded Bracelet Watch",
+   "slug": "golden-stone-studded-bracelet-watch",
+   "category": "bracelets",
+   "subcategory": null,
+   "price": 599,
+   "stock": 3,
+   "line": "An ornate golden bracelet with coloured stones and a small watch face — traditional style for festive days.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "festive",
+    "new",
+    "watch"
+   ],
+   "keywords": [
+    "bracelet watch",
+    "watch for women",
+    "ethnic watch",
+    "festive jewellery"
+   ],
+   "styleName": "Golden Stone-Studded Bracelet Watch",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-stone-studded-bracelet-watch/golden-stone-studded-bracelet-watch-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-064",
+   "name": "Golden Snake Chain Anklet",
+   "slug": "golden-snake-chain-anklet",
+   "category": "anklets",
+   "subcategory": null,
+   "price": 229,
+   "stock": 12,
+   "line": "A smooth flat snake chain for the ankle with an adjustable extender.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [
+    "anklet",
+    "payal",
+    "gold anklet",
+    "snake chain anklet"
+   ],
+   "styleName": "Golden Snake Chain Anklet",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-snake-chain-anklet/golden-snake-chain-anklet-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-018",
+   "name": "Heart Pendant Necklace & Ring Gift Set",
+   "slug": "heart-necklace-and-ring-gift-set",
+   "category": "gift-sets",
+   "subcategory": null,
+   "price": 299,
+   "stock": 12,
+   "line": "A matching open-heart pendant and ring, presented ready to gift.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "gift",
+    "heart"
+   ],
+   "keywords": [
+    "heart necklace",
+    "heart ring",
+    "jewellery gift set",
+    "gift for girlfriend",
+    "valentine gift"
+   ],
+   "styleName": "Heart Pendant Necklace & Ring Gift Set",
+   "images": [
+    {
+     "url": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-4-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 878
+    },
+    {
+     "url": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/heart-necklace-and-ring-gift-set/heart-necklace-and-ring-gift-set-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-019",
+   "name": "Golden Flower Earrings & Cuff Bracelet Set",
+   "slug": "flower-earrings-and-bracelet-set",
+   "category": "gift-sets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 12,
+   "line": "Sculpted flower studs paired with the matching petal cuff.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "gift",
+    "floral"
+   ],
+   "keywords": [
+    "flower earrings",
+    "earring bracelet combo",
+    "jewellery set"
+   ],
+   "styleName": "Golden Flower Earrings & Cuff Bracelet Set",
+   "images": [
+    {
+     "url": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-2-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-earrings-and-bracelet-set/flower-earrings-and-bracelet-set-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-020",
+   "name": "Butterfly & Pearl Tulip Earrings Combo — Set of 2",
+   "slug": "butterfly-pearl-tulip-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 279,
+   "stock": 10,
+   "line": "Two pairs: pastel enamel butterfly studs and pink tulip studs with a pearl.",
+   "colour": "Pink & Blue",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo",
+    "gift"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "butterfly earrings",
+    "tulip earrings"
+   ],
+   "styleName": "Butterfly & Pearl Tulip Earrings Combo — Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1080,
+     "height": 1080
+    },
+    {
+     "url": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/butterfly-pearl-tulip-earrings-combo/butterfly-pearl-tulip-earrings-combo-5-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-021",
+   "name": "Pearl Flower & Crystal Claw Earrings Combo — Set of 2",
+   "slug": "pearl-flower-crystal-claw-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 279,
+   "stock": 10,
+   "line": "Two pairs: a crystal flower stud with a pearl, and sparkling claw-style crawler earrings.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "pearl earrings",
+    "claw earrings"
+   ],
+   "styleName": "Pearl Flower & Crystal Claw Earrings Combo — Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-flower-crystal-claw-earrings-combo/pearl-flower-crystal-claw-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-022",
+   "name": "Crystal Cherry & Pearl Tulip Earrings Combo — Set of 2",
+   "slug": "cherry-pearl-tulip-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 279,
+   "stock": 10,
+   "line": "Two pairs: crystal cherry studs with pearls and front-back pearl tulip earrings.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "cherry earrings",
+    "pearl earrings"
+   ],
+   "styleName": "Crystal Cherry & Pearl Tulip Earrings Combo — Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-pearl-tulip-earrings-combo/cherry-pearl-tulip-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-023",
+   "name": "Black Flower Stud & Long Drop Earrings Combo — Set of 2",
+   "slug": "black-flower-drop-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Two pairs in black and gold: a flower stud and an elegant long drop — day to evening.",
+   "colour": "Black & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "black earrings",
+    "drop earrings"
+   ],
+   "styleName": "Black Flower Stud & Long Drop Earrings Combo — Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-flower-drop-earrings-combo/black-flower-drop-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-024",
+   "name": "Pearl & Green Stone Stud Earrings Combo — Set of 3",
+   "slug": "pearl-green-stone-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Three pairs: a pearl tulip, a pearl halo stud and green triangle stone studs.",
+   "colour": "Green & White",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo",
+    "bestseller"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "pearl earrings",
+    "green earrings"
+   ],
+   "styleName": "Pearl & Green Stone Stud Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-green-stone-earrings-combo/pearl-green-stone-earrings-combo-5-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-025",
+   "name": "Cherry, Flower & Heart Stud Earrings Combo — Set of 3",
+   "slug": "cherry-flower-heart-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Three pairs: pearl cherry studs, sparkling flower studs and soft white hearts.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "heart earrings",
+    "cherry earrings"
+   ],
+   "styleName": "Cherry, Flower & Heart Stud Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/cherry-flower-heart-earrings-combo/cherry-flower-heart-earrings-combo-5-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-026",
+   "name": "Pearl Bow, Tulip & Crystal Claw Earrings Combo — Set of 3",
+   "slug": "pearl-bow-tulip-claw-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Three pairs: a pearl bow, a pearl tulip and crystal claw crawlers.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "bow earrings",
+    "pearl earrings"
+   ],
+   "styleName": "Pearl Bow, Tulip & Crystal Claw Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1080,
+     "height": 1080
+    },
+    {
+     "url": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-bow-tulip-claw-earrings-combo/pearl-bow-tulip-claw-earrings-combo-5-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-027",
+   "name": "Pearl Ribbon & Wreath Earrings Combo — Set of 3",
+   "slug": "pearl-ribbon-wreath-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Three pairs of pearl earrings: ribbon drops, a pearl wreath and a classic stud.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "pearl earrings"
+   ],
+   "styleName": "Pearl Ribbon & Wreath Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1080,
+     "height": 1080
+    },
+    {
+     "url": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pearl-ribbon-wreath-earrings-combo/pearl-ribbon-wreath-earrings-combo-5-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-028",
+   "name": "White Flower, Pearl Cross & Black Clover Earrings Combo — Set of 3",
+   "slug": "flower-pearl-cross-clover-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Three pairs: white enamel flowers, crossed pearl studs and black clover studs.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "clover earrings",
+    "flower earrings"
+   ],
+   "styleName": "White Flower, Pearl Cross & Black Clover Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/flower-pearl-cross-clover-earrings-combo/flower-pearl-cross-clover-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-029",
+   "name": "Camellia, Pearl Drop & Black Bow Earrings Combo — Set of 3",
+   "slug": "camellia-pearl-bow-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Three pairs: a camellia stud, a pearl drop and a black bow drop.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "bow earrings",
+    "pearl earrings"
+   ],
+   "styleName": "Camellia, Pearl Drop & Black Bow Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/camellia-pearl-bow-earrings-combo/camellia-pearl-bow-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-030",
+   "name": "Crystal Claw, Butterfly & Round Stud Earrings Combo — Set of 3",
+   "slug": "claw-butterfly-round-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 349,
+   "stock": 10,
+   "line": "Three pairs: crystal claw crawlers, white butterflies and a round crystal stud.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "butterfly earrings",
+    "claw earrings"
+   ],
+   "styleName": "Crystal Claw, Butterfly & Round Stud Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/claw-butterfly-round-earrings-combo/claw-butterfly-round-earrings-combo-5-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-032",
+   "name": "Bow, Butterfly & Pearl Earrings Combo — Set of 4",
+   "slug": "bow-butterfly-pearl-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 399,
+   "stock": 10,
+   "line": "Four pairs of dainty favourites: bows, butterflies, a crystal heart and pearls.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo",
+    "gift",
+    "bestseller"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "bow earrings",
+    "butterfly earrings"
+   ],
+   "styleName": "Bow, Butterfly & Pearl Earrings Combo — Set of 4",
+   "images": [
+    {
+     "url": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-butterfly-pearl-earrings-combo/bow-butterfly-pearl-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-065",
+   "name": "Pink Tulip, Pearl Halo & Flower Drop Earrings Combo — Set of 3",
+   "slug": "pink-tulip-pearl-flower-earrings-combo",
+   "category": "earring-combos",
+   "subcategory": null,
+   "price": 249,
+   "stock": 12,
+   "line": "Three pairs: pink crystal tulips, a pearl halo stud and white flowers with a pearl drop.",
+   "colour": "Pink & White",
+   "finish": "Gold-tone",
+   "tags": [
+    "combo",
+    "new"
+   ],
+   "keywords": [
+    "earrings combo",
+    "korean earrings",
+    "stud earrings",
+    "daily wear earrings",
+    "earring set",
+    "tulip earrings",
+    "pearl earrings"
+   ],
+   "styleName": "Pink Tulip, Pearl Halo & Flower Drop Earrings Combo — Set of 3",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-tulip-pearl-flower-earrings-combo/pink-tulip-pearl-flower-earrings-combo-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-033",
+   "name": "Golden Bow Pearl Drop Earrings",
+   "slug": "golden-bow-pearl-drop-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "price": 249,
+   "stock": 12,
+   "line": "A golden bow with a crystal centre and a lustrous pearl drop on a small hoop.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [
+    "pearl drop earrings",
+    "bow earrings",
+    "hoop earrings",
+    "party wear earrings"
+   ],
+   "styleName": "Golden Bow Pearl Drop Earrings",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-1-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-2-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-3-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pearl-drop-earrings/golden-bow-pearl-drop-earrings-4-sm.webp?v=20261020b",
+     "width": 1200,
+     "height": 1200
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-034",
+   "name": "Stud Earrings Gift Box Set",
+   "slug": "stud-earrings-gift-box-set",
+   "category": "jewellery-box-sets",
+   "subcategory": null,
+   "price": 850,
+   "stock": 6,
+   "line": "A foldable gift box filled with assorted dainty stud earrings — a ready-made present.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "gift",
+    "bestseller"
+   ],
+   "keywords": [
+    "earring box",
+    "earrings gift set",
+    "stud earrings set",
+    "gift for her"
+   ],
+   "styleName": "Stud Earrings Gift Box Set",
+   "images": [
+    {
+     "url": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/stud-earrings-gift-box-set/stud-earrings-gift-box-set-4-sm.webp?v=20261020b",
+     "width": 1080,
+     "height": 1080
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-031",
+   "name": "Gold & Silver Flat Snake Chain Necklace",
+   "slug": "snake-chain-necklace-gold-silver",
+   "category": "chains",
+   "subcategory": null,
+   "price": 299,
+   "stock": 12,
+   "line": "Smooth flat snake chains in gold-tone and silver-tone that lie beautifully alone or layered.",
+   "colour": "Gold & Silver",
+   "finish": "Gold-tone & silver-tone",
+   "tags": [
+    "layering"
+   ],
+   "keywords": [
+    "snake chain",
+    "flat chain",
+    "herringbone chain",
+    "silver chain"
+   ],
+   "styleName": "Gold & Silver Flat Snake Chain Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-2-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-necklace-gold-silver/snake-chain-necklace-gold-silver-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-035",
+   "name": "White Clover Necklace",
+   "slug": "white-clover-necklace",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 299,
+   "stock": 2,
+   "line": "White clover motifs spaced along a fine gold-tone chain.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "clover"
+   ],
+   "keywords": [
+    "clover necklace",
+    "four leaf clover",
+    "station necklace"
+   ],
+   "styleName": "White Clover Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/white-clover-necklace/white-clover-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-clover-necklace/white-clover-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-clover-necklace/white-clover-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-clover-necklace/white-clover-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-clover-necklace/white-clover-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-clover-necklace/white-clover-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-clover-necklace/white-clover-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-clover-necklace/white-clover-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/white-clover-necklace/white-clover-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/white-clover-necklace/white-clover-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-036",
+   "name": "Green Clover Necklace",
+   "slug": "green-clover-necklace",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 299,
+   "stock": 2,
+   "line": "Deep green clover motifs along a fine gold-tone chain.",
+   "colour": "Green & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "clover"
+   ],
+   "keywords": [
+    "clover necklace",
+    "green necklace",
+    "four leaf clover"
+   ],
+   "styleName": "Green Clover Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/green-clover-necklace/green-clover-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-necklace/green-clover-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-necklace/green-clover-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-necklace/green-clover-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-necklace/green-clover-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-necklace/green-clover-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-necklace/green-clover-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-necklace/green-clover-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-037",
+   "name": "Black Clover Necklace Set with Earrings, Bracelet & Ring",
+   "slug": "black-clover-necklace-set",
+   "category": "necksets",
+   "subcategory": null,
+   "price": 299,
+   "stock": 2,
+   "line": "The complete black clover look: necklace, bracelet, stud earrings and ring.",
+   "colour": "Black & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "clover",
+    "gift",
+    "bestseller"
+   ],
+   "keywords": [
+    "clover jewellery set",
+    "necklace set",
+    "jewellery set for women"
+   ],
+   "styleName": "Black Clover Necklace Set with Earrings, Bracelet & Ring",
+   "images": [
+    {
+     "url": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-2-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace-set/black-clover-necklace-set-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-038",
+   "name": "Golden Open Heart Pendant Necklace",
+   "slug": "open-heart-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "price": 249,
+   "stock": 12,
+   "line": "A softly sculpted open heart on a fine snake chain — a gift that says it all.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "gift"
+   ],
+   "keywords": [
+    "heart pendant",
+    "heart necklace",
+    "gift for girlfriend",
+    "valentine gift"
+   ],
+   "styleName": "Golden Open Heart Pendant Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-1-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-3-sm.webp?v=20261020b",
+     "width": 720,
+     "height": 729
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-4-sm.webp?v=20261020b",
+     "width": 735,
+     "height": 705
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-7-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-9.webp?v=20261020b",
+     "thumb": "/uploads/seed/open-heart-pendant-necklace/open-heart-pendant-necklace-9-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-039",
+   "name": "Black Clover Necklace",
+   "slug": "black-clover-necklace",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 299,
+   "stock": 2,
+   "line": "Black clover motifs along a fine gold-tone chain — the signature everyday necklace.",
+   "colour": "Black & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "clover",
+    "bestseller"
+   ],
+   "keywords": [
+    "clover necklace",
+    "black necklace",
+    "four leaf clover"
+   ],
+   "styleName": "Black Clover Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/black-clover-necklace/black-clover-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace/black-clover-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace/black-clover-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace/black-clover-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace/black-clover-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace/black-clover-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace/black-clover-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace/black-clover-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/black-clover-necklace/black-clover-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/black-clover-necklace/black-clover-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-045",
+   "name": "Layered Snake Chain Open Heart Necklace",
+   "slug": "layered-snake-chain-heart-necklace",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "Two golden layers in one: a flat snake chain and a fine chain with an open heart.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "layering",
+    "new"
+   ],
+   "keywords": [
+    "layered necklace",
+    "heart necklace",
+    "snake chain"
+   ],
+   "styleName": "Layered Snake Chain Open Heart Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/layered-snake-chain-heart-necklace/layered-snake-chain-heart-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-046",
+   "name": "Golden Heart Necklace & Stud Earrings Set",
+   "slug": "golden-heart-necklace-earrings-set",
+   "category": "necksets",
+   "subcategory": null,
+   "price": 349,
+   "stock": 6,
+   "line": "A sculpted golden heart pendant with matching heart studs.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "gift",
+    "new"
+   ],
+   "keywords": [
+    "heart necklace set",
+    "necklace with earrings",
+    "jewellery set for women",
+    "gift for her"
+   ],
+   "styleName": "Golden Heart Necklace & Stud Earrings Set",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-heart-necklace-earrings-set/golden-heart-necklace-earrings-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-047",
+   "name": "Emerald Green Stone Pendant Snake Chain Necklace",
+   "slug": "emerald-green-pendant-snake-chain-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "price": 329,
+   "stock": 6,
+   "line": "A rectangular emerald-green stone pendant on a flat golden snake chain.",
+   "colour": "Green & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [
+    "green stone pendant",
+    "emerald necklace",
+    "snake chain pendant"
+   ],
+   "styleName": "Emerald Green Stone Pendant Snake Chain Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-pendant-snake-chain-necklace/emerald-green-pendant-snake-chain-necklace-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-048",
+   "name": "Pink Stone Leaf Vine Necklace",
+   "slug": "pink-stone-leaf-vine-necklace",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 299,
+   "stock": 6,
+   "line": "A sweet V of pink stone leaves on a fine gold-tone chain.",
+   "colour": "Pink",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "new"
+   ],
+   "keywords": [
+    "pink necklace",
+    "stone necklace",
+    "flower necklace"
+   ],
+   "styleName": "Pink Stone Leaf Vine Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-9.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-leaf-vine-necklace/pink-stone-leaf-vine-necklace-9-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-049",
+   "name": "Pink Stone Vine Necklace & Bracelet Set",
+   "slug": "pink-stone-vine-necklace-bracelet-set",
+   "category": "necksets",
+   "subcategory": null,
+   "price": 499,
+   "stock": 6,
+   "line": "A matching pink stone vine necklace and bracelet — a complete look, ready to gift.",
+   "colour": "Pink",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "gift",
+    "new"
+   ],
+   "keywords": [
+    "necklace set",
+    "necklace and bracelet set",
+    "pink jewellery set",
+    "gift for her"
+   ],
+   "styleName": "Pink Stone Vine Necklace & Bracelet Set",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-9.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-stone-vine-necklace-bracelet-set/pink-stone-vine-necklace-bracelet-set-9-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-053",
+   "name": "Snake Chain & Heart Pendant Layered Necklace Set of 2",
+   "slug": "snake-chain-heart-pendant-necklace-set",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 399,
+   "stock": 6,
+   "line": "Two necklaces to layer: a flat snake chain and a fine chain with a puffed heart pendant.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "layering",
+    "new"
+   ],
+   "keywords": [
+    "layered necklace",
+    "heart pendant",
+    "snake chain",
+    "necklace set"
+   ],
+   "styleName": "Snake Chain & Heart Pendant Layered Necklace Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/snake-chain-heart-pendant-necklace-set/snake-chain-heart-pendant-necklace-set-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-054",
+   "name": "Bow & Puffed Heart Pendant Necklace",
+   "slug": "bow-puffed-heart-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "price": 329,
+   "stock": 6,
+   "line": "A golden bow above a puffed heart, on a fine chain — romantic and on-trend.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "bow",
+    "new"
+   ],
+   "keywords": [
+    "bow necklace",
+    "heart pendant",
+    "bow pendant"
+   ],
+   "styleName": "Bow & Puffed Heart Pendant Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/bow-puffed-heart-pendant-necklace/bow-puffed-heart-pendant-necklace-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-055",
+   "name": "Golden Bow Pendant Necklace",
+   "slug": "golden-bow-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "price": 299,
+   "stock": 6,
+   "line": "A dainty golden bow on a fine beaded station chain.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "bow",
+    "new"
+   ],
+   "keywords": [
+    "bow necklace",
+    "bow pendant",
+    "minimal necklace"
+   ],
+   "styleName": "Golden Bow Pendant Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-bow-pendant-necklace/golden-bow-pendant-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-056",
+   "name": "Golden Puffed Heart Pendant Necklace",
+   "slug": "golden-puffed-heart-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "price": 329,
+   "stock": 6,
+   "line": "A glossy puffed heart on a fine snake chain — a modern everyday favourite.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "gift",
+    "bestseller"
+   ],
+   "keywords": [
+    "heart pendant",
+    "heart necklace",
+    "puffed heart necklace"
+   ],
+   "styleName": "Golden Puffed Heart Pendant Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-9.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-puffed-heart-pendant-necklace/golden-puffed-heart-pendant-necklace-9-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-057",
+   "name": "Double Layer Heart Pendant Necklace",
+   "slug": "double-layer-heart-pendant-necklace",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 349,
+   "stock": 24,
+   "line": "A two-layer golden necklace finished with a puffed heart pendant.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "layering",
+    "new"
+   ],
+   "keywords": [
+    "layered necklace",
+    "heart necklace",
+    "double layer necklace"
+   ],
+   "styleName": "Double Layer Heart Pendant Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/double-layer-heart-pendant-necklace/double-layer-heart-pendant-necklace-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-059",
+   "name": "Emerald Green Octagon Pendant Necklace",
+   "slug": "emerald-green-octagon-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "price": 329,
+   "stock": 6,
+   "line": "An octagon-cut emerald-green stone in a golden frame on a fine chain.",
+   "colour": "Green & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [
+    "green stone pendant",
+    "emerald necklace",
+    "stone pendant"
+   ],
+   "styleName": "Emerald Green Octagon Pendant Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/emerald-green-octagon-pendant-necklace/emerald-green-octagon-pendant-necklace-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-060",
+   "name": "Pink & Green Flower Station Necklace",
+   "slug": "pink-green-flower-station-necklace",
+   "category": "necklaces",
+   "subcategory": null,
+   "price": 299,
+   "stock": 6,
+   "line": "Pink stone flowers with green leaves at the centre of a fine gold-tone chain.",
+   "colour": "Pink & Green",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "new"
+   ],
+   "keywords": [
+    "flower necklace",
+    "pink necklace",
+    "stone necklace"
+   ],
+   "styleName": "Pink & Green Flower Station Necklace",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-green-flower-station-necklace/pink-green-flower-station-necklace-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-061",
+   "name": "Pink Rose Vine Necklace & Bracelet Set",
+   "slug": "pink-rose-vine-necklace-bracelet-set",
+   "category": "necksets",
+   "subcategory": null,
+   "price": 499,
+   "stock": 6,
+   "line": "Pink roses and green leaves on a matching necklace and bracelet.",
+   "colour": "Pink & Green",
+   "finish": "Gold-tone",
+   "tags": [
+    "floral",
+    "gift",
+    "new"
+   ],
+   "keywords": [
+    "necklace set",
+    "necklace and bracelet set",
+    "flower jewellery set"
+   ],
+   "styleName": "Pink Rose Vine Necklace & Bracelet Set",
+   "images": [
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-1-sm.webp?v=20261020b",
+     "width": 1058,
+     "height": 1100
+    },
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-2-sm.webp?v=20261020b",
+     "width": 575,
+     "height": 575
+    },
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-3-sm.webp?v=20261020b",
+     "width": 575,
+     "height": 575
+    },
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-4-sm.webp?v=20261020b",
+     "width": 720,
+     "height": 720
+    },
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-5-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-6-sm.webp?v=20261020b",
+     "width": 575,
+     "height": 575
+    },
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-7-sm.webp?v=20261020b",
+     "width": 575,
+     "height": 575
+    },
+    {
+     "url": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/pink-rose-vine-necklace-bracelet-set/pink-rose-vine-necklace-bracelet-set-8-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-066",
+   "name": "Green Clover Jewellery Set with Necklace, Bracelet, Earrings & Ring",
+   "slug": "green-clover-jewellery-set",
+   "category": "necksets",
+   "subcategory": null,
+   "price": 499,
+   "stock": 6,
+   "line": "The complete green clover look: necklace, bracelet, stud earrings and ring.",
+   "colour": "Green & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "clover",
+    "gift",
+    "new"
+   ],
+   "keywords": [
+    "clover jewellery set",
+    "green necklace set",
+    "jewellery set for women"
+   ],
+   "styleName": "Green Clover Jewellery Set with Necklace, Bracelet, Earrings & Ring",
+   "images": [
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-8.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-8-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-9.webp?v=20261020b",
+     "thumb": "/uploads/seed/green-clover-jewellery-set/green-clover-jewellery-set-9-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-040",
+   "name": "Golden Nail Ring",
+   "slug": "golden-nail-ring",
+   "category": "rings",
+   "subcategory": null,
+   "price": 199,
+   "stock": 36,
+   "line": "A polished nail that wraps around the finger — bold, modern, unisex in spirit.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "stacking"
+   ],
+   "keywords": [
+    "nail ring",
+    "golden ring",
+    "statement ring"
+   ],
+   "styleName": "Golden Nail Ring",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-nail-ring/golden-nail-ring-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-nail-ring/golden-nail-ring-1-sm.webp?v=20261020b",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "url": "/uploads/seed/golden-nail-ring/golden-nail-ring-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-nail-ring/golden-nail-ring-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-nail-ring/golden-nail-ring-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-nail-ring/golden-nail-ring-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-nail-ring/golden-nail-ring-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-nail-ring/golden-nail-ring-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-nail-ring/golden-nail-ring-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-nail-ring/golden-nail-ring-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-nail-ring/golden-nail-ring-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-nail-ring/golden-nail-ring-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-041",
+   "name": "Golden Open Heart Ring",
+   "slug": "golden-open-heart-ring",
+   "category": "rings",
+   "subcategory": null,
+   "price": 199,
+   "stock": 36,
+   "line": "An open heart sculpted in gold-tone — sweet, simple and stackable.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "heart",
+    "gift"
+   ],
+   "keywords": [
+    "heart ring",
+    "golden ring",
+    "promise ring"
+   ],
+   "styleName": "Golden Open Heart Ring",
+   "images": [
+    {
+     "url": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-5.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-5-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-6.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-6-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-7.webp?v=20261020b",
+     "thumb": "/uploads/seed/golden-open-heart-ring/golden-open-heart-ring-7-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-042",
+   "name": "Red American Diamond Cocktail Ring",
+   "slug": "red-american-diamond-cocktail-ring",
+   "category": "rings",
+   "subcategory": null,
+   "price": 299,
+   "stock": 1,
+   "line": "Ruby-red stones framed by sparkling American diamonds — made for celebrations.",
+   "colour": "Red & White",
+   "finish": "Silver-tone",
+   "tags": [
+    "party"
+   ],
+   "keywords": [
+    "ad ring",
+    "american diamond ring",
+    "cocktail ring",
+    "party wear ring"
+   ],
+   "styleName": "Red American Diamond Cocktail Ring",
+   "images": [
+    {
+     "url": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/red-american-diamond-cocktail-ring/red-american-diamond-cocktail-ring-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  },
+  {
+   "sku": "ESH-043",
+   "name": "Solitaire & Screw Ring Set of 2",
+   "slug": "solitaire-screw-ring-set-of-2",
+   "category": "ring-combos",
+   "subcategory": null,
+   "price": 249,
+   "stock": 36,
+   "line": "A solitaire-style ring and a screw motif band, designed to stack.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "stacking",
+    "gift"
+   ],
+   "keywords": [
+    "ring set",
+    "stacking rings",
+    "solitaire ring",
+    "screw ring"
+   ],
+   "styleName": "Solitaire & Screw Ring Set of 2",
+   "images": [
+    {
+     "url": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-1.webp?v=20261020b",
+     "thumb": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-1-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-2.webp?v=20261020b",
+     "thumb": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-2-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-3.webp?v=20261020b",
+     "thumb": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-3-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    },
+    {
+     "url": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-4.webp?v=20261020b",
+     "thumb": "/uploads/seed/solitaire-screw-ring-set-of-2/solitaire-screw-ring-set-of-2-4-sm.webp?v=20261020b",
+     "width": 1400,
+     "height": 1400
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "antiTarnish": false
+  }
+ ]
+}

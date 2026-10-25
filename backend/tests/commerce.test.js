@@ -7,7 +7,7 @@ import { setupDb, teardownDb, client, seedProduct, makeUser, login, address, isR
 
 const REAL_MONGO = await isRealMongo();
 if (!REAL_MONGO) console.warn('⚠ Running on a non-MongoDB server (FerretDB): concurrency tests are SKIPPED. Run against MongoDB 7+ for full coverage.');
-import { Order, ProductVariant, Payment, Coupon, Shipment, WebhookEvent, Refund, ReturnRequest, User } from '../src/models/index.js';
+import { Order, ProductVariant, Payment, Coupon, Shipment, WebhookEvent, Refund, ReturnRequest, User, StoreSettings } from '../src/models/index.js';
 import { expireStaleOrders } from '../src/services/orderService.js';
 
 beforeAll(() => setupDb('esh_test_commerce'));
@@ -27,11 +27,16 @@ describe('cart & pricing', () => {
     const r = await c.post('/api/v1/cart/items', { variantId: String(variant._id), quantity: 1, price: 1 });
     expect(r.status).toBe(201);
     expect(r.body.totals.subtotal).toBe(30000);
-    expect(r.body.totals.shipping).toBe(5900); // below free threshold of ₹499
+    expect(r.body.totals.shipping).toBe(0); // default: free shipping on every order
     expect(r.body.totals.tax).toBe(Math.round((30000 * 3) / 103));
     const r2 = await c.patch(`/api/v1/cart/items/${r.body.items[0].id}`, { quantity: 2 });
     expect(r2.body.totals.subtotal).toBe(60000);
     expect(r2.body.totals.shipping).toBe(0);
+    // Threshold mode still works if the owner sets one in admin
+    await StoreSettings.updateOne({ key: 'store' }, { $set: { 'shipping.flatRate': 5900, 'shipping.freeAbove': 49900 } });
+    const r3 = await c.patch(`/api/v1/cart/items/${r.body.items[0].id}`, { quantity: 1 });
+    expect(r3.body.totals.shipping).toBe(5900);
+    await StoreSettings.updateOne({ key: 'store' }, { $set: { 'shipping.flatRate': 0, 'shipping.freeAbove': 0 } });
   });
 
   it('caps quantity at available stock', async () => {

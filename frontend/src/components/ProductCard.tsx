@@ -20,7 +20,7 @@ export function ProductCard({ p, eager }: { p: P; eager?: boolean }) {
           {p.hoverImage && <Img img={p.hoverImage} thumb alt="" sizes="(min-width:1024px) 25vw, 50vw" className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100 hidden md:block" />}
         </Link>
         {!p.inStock && <span className="absolute left-0 bottom-0 bg-ivory/95 text-ink text-xs px-2.5 py-1 pointer-events-none">Sold out</span>}
-        {p.inStock && p.isNew && <span className="absolute left-0 top-0 bg-espresso text-ivory text-xs px-2.5 py-1 pointer-events-none">New</span>}
+        {p.inStock && (p.pickCount || p.isNew) ? <span className="absolute left-0 top-0 flex flex-col items-start gap-px pointer-events-none">{p.isNew && <span className="bg-espresso text-ivory text-[11px] tracking-[0.12em] uppercase px-2.5 py-1">New</span>}{p.pickCount ? <span className="bg-gold text-white text-[11px] tracking-[0.12em] uppercase px-2.5 py-1">Pick any {p.pickCount}</span> : null}</span> : null}
         <button type="button" onClick={() => wl.toggle(p.id)} aria-pressed={saved} aria-label={saved ? `Remove ${p.name} from wishlist` : `Save ${p.name} to wishlist`} className="absolute right-2 top-2 grid h-9 w-9 place-items-center rounded-full bg-ivory/85 text-espresso backdrop-blur-sm hover:bg-ivory">
           <Heart size={17} className={saved ? 'fill-espresso' : ''} />
         </button>
@@ -33,7 +33,7 @@ export function ProductCard({ p, eager }: { p: P; eager?: boolean }) {
               </button>
             ) : (
               <Link to={href} className="hidden md:flex absolute inset-x-2 bottom-2 h-11 items-center justify-center bg-ivory/95 text-espresso text-[14px] tracking-wide translate-y-[130%] group-hover:translate-y-0 focus-visible:translate-y-0 transition-transform duration-300 hover:bg-espresso hover:text-ivory">
-                Choose {p.variantCount ? `from ${p.variantCount} options` : 'option'}
+                {p.pickCount ? `Choose your ${p.pickCount} designs` : <>Choose {p.variantCount ? `from ${p.variantCount} options` : 'option'}</>}
               </Link>
             )}
             {quick && (
@@ -45,7 +45,7 @@ export function ProductCard({ p, eager }: { p: P; eager?: boolean }) {
         )}
       </div>
       <Link to={href} className="block pt-3">
-        <h3 className="font-sans text-[15px] leading-snug text-ink line-clamp-2 group-hover:text-espresso">{p.name}</h3>
+        <h3 className="font-display text-[18px] leading-snug text-ink line-clamp-2 group-hover:text-gold-deep transition-colors">{p.name}</h3>
         <Price price={p.price} compareAt={p.compareAtPrice} className="mt-1 text-[15px]" />
         {p.antiTarnish && <p className="text-xs text-muted mt-0.5">Anti-tarnish finish</p>}
         {!quick && p.inStock && (p.variantCount || 0) > 1 && <p className="text-xs text-muted mt-0.5 md:hidden">{p.variantCount} options</p>}

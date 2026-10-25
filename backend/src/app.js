@@ -39,7 +39,7 @@ export function createApp() {
       directives: {
         defaultSrc: ["'self'"], scriptSrc: ["'self'", 'https://checkout.razorpay.com', 'https://sdk.cashfree.com', 'https://www.googletagmanager.com', 'https://connect.facebook.net'],
         styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'], fontSrc: ["'self'", 'https://fonts.gstatic.com'],
-        imgSrc: ["'self'", 'data:', 'blob:', 'https://res.cloudinary.com', 'https://www.facebook.com', 'https://www.google-analytics.com'],
+        imgSrc: ["'self'", 'data:', 'blob:', 'https://res.cloudinary.com', 'https://s3.ap-south-1.amazonaws.com', 'https://www.facebook.com', 'https://www.google-analytics.com'],
         mediaSrc: ["'self'", 'https://res.cloudinary.com'],
         connectSrc: ["'self'", 'https://api.razorpay.com', 'https://lumberjack.razorpay.com', 'https://*.cashfree.com', 'https://www.google-analytics.com', 'https://*.google-analytics.com'],
         frameSrc: ['https://api.razorpay.com', 'https://checkout.razorpay.com', 'https://*.cashfree.com'],

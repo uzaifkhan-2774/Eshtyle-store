@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { Link, NavLink, Outlet, ScrollRestoration, useLocation, useNavigate } from 'react-router';
 import { useQuery } from '@tanstack/react-query';
-import { Search, User, Heart, ShoppingBag, Menu, X, Mail, Phone } from 'lucide-react';
+import { Search, User, Heart, ShoppingBag, Menu, X, Mail, Phone, Globe } from 'lucide-react';
 import { api } from '../lib/api';
 import { useAuth, useCart, useSettings, useUI, useWishlist } from '../hooks/store';
-import { Logo, Img, Price, Qty, Spinner } from './ui';
+import { DesignChips, Logo, Img, Price, Qty, Spinner } from './ui';
 import { inr } from '../lib/format';
 import type { ProductCard } from '../lib/types';
 import { ConsentBanner } from './Consent';
@@ -143,7 +143,7 @@ function CartDrawer() {
                   <Link to={`/product/${l.slug}`} onClick={() => setCartOpen(false)} className="shrink-0"><Img src={l.image} alt={l.name} className="w-20 h-24 object-cover bg-sand" /></Link>
                   <div className="flex-1 min-w-0">
                     <Link to={`/product/${l.slug}`} onClick={() => setCartOpen(false)} className="block leading-snug hover:text-gold-deep">{l.name}</Link>
-                    {l.variantTitle !== 'Default' && <p className="text-sm text-muted">{l.variantTitle}</p>}
+                    {l.variantTitle !== 'Default' && <p className="text-sm text-muted">{l.variantTitle}</p>}<DesignChips designs={l.designs} small />
                     <p className="text-sm mt-1">{inr(l.unitPrice)}</p>
                     {l.outOfStock ? <p className="text-sm text-danger mt-2">Out of stock — please remove</p> : (
                       <div className="mt-2 flex items-center justify-between"><Qty value={l.quantity} max={l.maxQuantity} onChange={(n) => update.mutate({ id: l.id, quantity: n })} disabled={update.isPending} /></div>
@@ -192,6 +192,8 @@ function Newsletter() {
   );
 }
 
+const SOCIAL = { instagram: 'https://www.instagram.com/e.shtyle/', facebook: 'https://www.facebook.com/profile.php?id=61595521091481' };
+
 function Footer() {
   const s = useSettings();
   const b = s?.business;
@@ -206,8 +208,20 @@ function Footer() {
           <li><Link to="/about" className="hover:text-ivory">Our story</Link></li>
           {b?.email && <li><a href={`mailto:${b.email}`} className="hover:text-ivory inline-flex gap-2 items-center"><Mail size={15} />{b.email}</a></li>}
           {b?.phone && <li><a href={`tel:${b.phone}`} className="hover:text-ivory inline-flex gap-2 items-center"><Phone size={15} />{b.phone}</a></li>}
-          {([['Instagram', b?.instagram], ['Facebook', b?.facebook], ['YouTube', b?.youtube]] as const).filter(([, u]) => u).map(([n, u]) => <li key={n}><a href={u!} target="_blank" rel="noopener noreferrer" className="hover:text-ivory">{n}</a></li>)}
-        </ul></div>
+          <li><a href="https://e-shtyle.in" className="hover:text-ivory inline-flex gap-2 items-center"><Globe size={15} />e-shtyle.in</a></li>
+        </ul>
+          <div className="flex gap-3 mt-6" aria-label="Follow E-SHTYLE">
+            {[
+              { n: 'Instagram', u: b?.instagram || SOCIAL.instagram, d: 'M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2.8c2.5 0 2.8 0 3.8.1 2.5.1 3.6 1.3 3.7 3.7.1 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.4-1.2 3.6-3.7 3.7-1 .1-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.5-.1-3.6-1.3-3.7-3.7C4.4 15 4.4 14.7 4.4 12.2s0-2.8.1-3.8c.1-2.4 1.2-3.6 3.7-3.7 1-.1 1.3-.1 3.8-.1ZM12 1c-2.6 0-2.9 0-3.9.1C4.6 1.2 2.7 3.2 2.6 6.6 2.5 7.6 2.5 7.9 2.5 10.5v3c0 2.6 0 2.9.1 3.9.1 3.4 2.1 5.3 5.5 5.5 1 .1 1.3.1 3.9.1s2.9 0 3.9-.1c3.4-.2 5.4-2.1 5.5-5.5.1-1 .1-1.3.1-3.9v-3c0-2.6 0-2.9-.1-3.9-.1-3.4-2.1-5.3-5.5-5.5C14.9 1 14.6 1 12 1Z' },
+              { n: 'Facebook', u: b?.facebook || SOCIAL.facebook, d: 'M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4Z' },
+            ].map((x) => (
+              <a key={x.n} href={x.u} target="_blank" rel="noopener noreferrer" aria-label={`E-SHTYLE on ${x.n}`} className="grid h-10 w-10 place-items-center rounded-full border border-beige/30 text-beige transition hover:bg-gold hover:border-gold hover:text-ink">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden><path d={x.d} /></svg>
+              </a>
+            ))}
+            {b?.youtube && <a href={b.youtube} target="_blank" rel="noopener noreferrer" className="h-10 px-4 grid place-items-center rounded-full border border-beige/30 text-sm hover:bg-gold hover:text-ink">YouTube</a>}
+          </div>
+        </div>
       </div>
       <div className="border-t border-beige/15">
         <div className="container-x py-6 flex flex-col md:flex-row gap-3 justify-between text-sm text-beige/60">

@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { z } from 'zod';
 import { User } from '../models/index.js';
-import { ah, unauthorized, forbidden, badRequest } from '../lib/errors.js';
+import { ah, unauthorized, forbidden, badRequest, tooMany } from '../lib/errors.js';
 import { validate } from '../middleware/validate.js';
 import { requireAuth } from '../middleware/auth.js';
 import { authLimiter, otpLimiter } from '../middleware/rateLimit.js';
@@ -48,7 +48,7 @@ r.post('/login', authLimiter, validate(z.object({ email, password: z.string().mi
   const user = await User.findOne({ email: req.body.email }).select('+passwordHash');
   const fail = () => unauthorized('Incorrect email or password.');
   if (!user || !user.passwordHash || user.status !== 'active') { await dummyVerify(req.body.password); throw fail(); }
-  if (user.lockedUntil && user.lockedUntil > new Date()) throw fail();
+  if (user.lockedUntil && user.lockedUntil > new Date()) throw tooMany(`Too many wrong attempts. Please try again in ${Math.ceil((user.lockedUntil - Date.now()) / 60000)} minutes, or reset your password.`);
   if (!(await verifyPassword(user.passwordHash, req.body.password))) {
     user.failedLogins += 1;
     if (user.failedLogins >= 8) { user.lockedUntil = new Date(Date.now() + 15 * 60 * 1000); user.failedLogins = 0; }

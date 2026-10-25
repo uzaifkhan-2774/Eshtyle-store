@@ -19,10 +19,10 @@ export function PageHead({ title, sub, actions }: { title: string; sub?: ReactNo
 export const Card = ({ title, children, className = '', actions }: { title?: string; children: ReactNode; className?: string; actions?: ReactNode }) => (
   <section className={`bg-white border border-beige min-w-0 ${className}`}>{title && <div className="flex justify-between items-center px-5 pt-4"><h2 className="font-sans text-[15px] font-medium text-ink">{title}</h2>{actions}</div>}<div className="p-4 sm:p-5 min-w-0">{children}</div></section>
 );
-export function Table({ head, children, empty }: { head: ReactNode[]; children: ReactNode; empty?: boolean }) {
+export function Table({ head, children, empty, compact }: { head: ReactNode[]; children: ReactNode; empty?: boolean; compact?: boolean }) {
   return (
     <div className="bg-white border border-beige overflow-x-auto">
-      <table className="w-full text-sm min-w-[640px]">
+      <table className={`w-full text-sm ${compact ? '' : 'min-w-[640px]'}`}>
         <thead className="bg-sand/60 text-left text-muted"><tr>{head.map((h, i) => <th key={i} className="px-4 py-2.5 font-normal whitespace-nowrap">{h}</th>)}</tr></thead>
         <tbody className="divide-y divide-beige">{children}</tbody>
       </table>
@@ -32,7 +32,7 @@ export function Table({ head, children, empty }: { head: ReactNode[]; children: 
 }
 export const Td = ({ children, className = '' }: { children?: ReactNode; className?: string }) => <td className={`px-4 py-3 align-top ${className}`}>{children}</td>;
 const tone = (s: string) => (['delivered', 'paid', 'cod_collected', 'published', 'approved', 'active', 'resolved', 'processed', 'subscribed'].includes(s) ? 'bg-[#EEF4EC] text-success' : ['cancelled', 'failed', 'payment_failed', 'expired', 'rto', 'suspended', 'rejected', 'archived', 'refunded'].includes(s) ? 'bg-[#FBEDEA] text-danger' : ['pending_payment', 'pending', 'requested', 'open', 'refund_pending', 'draft'].includes(s) ? 'bg-[#FFF4DB] text-[#7A5A12]' : 'bg-sand text-espresso');
-export const Badge = ({ s, label }: { s: string; label?: string }) => <span className={`inline-block px-2 py-0.5 text-xs whitespace-nowrap ${tone(s)}`}>{label || STATUS_LABEL[s] || PAYMENT_LABEL[s] || s.replace(/_/g, ' ')}</span>;
+export const Badge = ({ s, label }: { s: string; label?: string }) => <span className={`inline-block px-2 py-0.5 text-xs whitespace-nowrap ${tone(s)}`}>{label || STATUS_LABEL[s] || PAYMENT_LABEL[s] || String(s || '—').replace(/_/g, ' ')}</span>;
 export const rupees = (paise?: number | null) => (paise == null ? '' : String(paise / 100));
 export const toPaise = (r: string | number) => Math.round(Number(r || 0) * 100);
 export function Confirm({ label, onConfirm, danger, children }: { label: string; onConfirm: () => void; danger?: boolean; children?: ReactNode }) {

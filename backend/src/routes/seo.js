@@ -12,7 +12,7 @@ const STATIC = ['', '/shop', '/about', '/contact', '/faqs', '/care-guide', '/shi
 // XML sitemap with product images (helps Google Images find the products).
 r.get('/sitemap.xml', ah(async (_req, res) => {
   const [ps, cs, cols, pages] = await Promise.all([
-    Product.find({ status: 'published' }).select('slug name updatedAt images').lean(),
+    Product.find({ status: 'published', isListed: { $ne: false } }).select('slug name updatedAt images').lean(),
     Category.find({ isPublished: true }).select('slug updatedAt').lean(),
     Collection.find({ isPublished: true }).select('slug updatedAt').lean(),
     Page.find({ isPublished: true }).select('slug updatedAt').lean(),
@@ -26,13 +26,13 @@ r.get('/sitemap.xml', ah(async (_req, res) => {
   res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(xml);
 }));
 
-r.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /account\nDisallow: /checkout\nDisallow: /cart\nDisallow: /search\nDisallow: /api/\nAllow: /api/v1/catalog/\nSitemap: ${env.APP_URL}/sitemap.xml\n`));
+r.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /account\nDisallow: /checkout\nDisallow: /cart\nDisallow: /search\nDisallow: /product/payment-test-product\nDisallow: /api/\nAllow: /api/v1/catalog/\nSitemap: ${env.APP_URL}/sitemap.xml\n`));
 
 // Google Merchant Center product feed → free listings in Google Shopping & the Shopping tab.
 // Add https://<domain>/feeds/google.xml as a "scheduled fetch" feed in Merchant Center.
 const GOOGLE_CATEGORY = { earrings: 194, 'earring-combos': 194, necklaces: 196, chains: 196, pendants: 196, necksets: 6463, rings: 200, 'ring-combos': 200, bracelets: 191, bangles: 191, 'arm-cuffs': 191, anklets: 189, 'gift-sets': 6463, 'jewellery-box-sets': 6463 };
 r.get('/feeds/google.xml', ah(async (_req, res) => {
-  const ps = await Product.find({ status: 'published' }).populate('category', 'slug name').lean();
+  const ps = await Product.find({ status: 'published', isListed: { $ne: false } }).populate('category', 'slug name').lean();
   const vs = await ProductVariant.find({ product: { $in: ps.map((p) => p._id) }, isActive: true }).lean();
   const items = [];
   for (const p of ps) {
@@ -65,7 +65,7 @@ ${(p.tags || []).filter((t) => !['new', 'bestseller'].includes(t)).slice(0, 5).m
 // Powers Advantage+ catalog ads: shoppers who viewed or carted a piece are shown that exact piece again.
 // ids are variant SKUs, matching the content_ids sent by the pixel and Conversions API.
 r.get('/feeds/meta.csv', ah(async (_req, res) => {
-  const ps = await Product.find({ status: 'published' }).populate('category', 'slug name').lean();
+  const ps = await Product.find({ status: 'published', isListed: { $ne: false } }).populate('category', 'slug name').lean();
   const vs = await ProductVariant.find({ product: { $in: ps.map((p) => p._id) }, isActive: true }).lean();
   const rows = [['id', 'item_group_id', 'title', 'description', 'availability', 'condition', 'price', 'sale_price', 'link', 'image_link', 'additional_image_link', 'brand', 'google_product_category', 'product_type', 'color', 'gender', 'age_group', 'custom_label_0', 'custom_label_1', 'custom_label_2']];
   for (const p of ps) {

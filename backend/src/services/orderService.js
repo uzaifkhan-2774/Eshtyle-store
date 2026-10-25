@@ -1,3 +1,4 @@
+import { designList } from './cartService.js';
 import crypto from 'node:crypto';
 import { Order, Payment, Coupon, Product, Cart, Shipment, Refund, getSettings } from '../models/index.js';
 import { reserveStock, releaseStock } from './inventory.js';
@@ -30,12 +31,13 @@ export function buildOrderItems(priced) {
       image: img?.thumb || img?.url, hsnCode: l.product.hsnCode, unitPrice: l.unitPrice, compareAtPrice: l.variant.compareAtPrice, quantity: l.quantity,
       lineSubtotal: l.lineSubtotal, lineDiscount: l.lineDiscount, lineTotal: l.lineTotal, taxRate: l.taxRate, taxAmount: l.taxAmount,
       returnable: l.product.returnable, returnWindowDays: l.product.returnWindowDays,
+      designs: l.designs?.length ? designList(l.product, l.designs) : undefined,
     };
   });
 }
 
 /** Called once an order is definitively confirmed (COD placed, or online payment verified). Idempotent per order. */
-async function onConfirmed(order) {
+export async function onConfirmed(order) {
   await Product.bulkWrite(order.items.map((i) => ({ updateOne: { filter: { _id: i.product }, update: { $inc: { salesCount: i.quantity } } } })));
   if (order.coupon?.code) await Coupon.updateOne({ code: order.coupon.code }, { $inc: { usedCount: 1 } });
   if (order.user) await Cart.updateOne({ user: order.user }, { $set: { items: [], couponCode: null } });
@@ -125,13 +127,20 @@ export async function expireStaleOrders() {
   return stale.length;
 }
 
-export async function cancelOrder(order, { reason, by, byCustomer }) {
-  const cancellable = ['pending_payment', 'confirmed', 'processing', 'payment_failed'];
+export async function cancelOrder(order, { reason, by, byCustomer, force = false }) {
+  // Staff can also cancel orders already booked with the courier but not yet picked up (e.g. a fraud order).
+  const cancellable = ['pending_payment', 'confirmed', 'processing', 'payment_failed', ...(byCustomer ? [] : ['ready_to_ship'])];
   if (!cancellable.includes(order.status)) throw badRequest(byCustomer ? 'This order can no longer be cancelled online. Please contact support.' : `Orders in status "${order.status}" cannot be cancelled here.`);
   const shipment = await Shipment.findOne({ order: order._id, kind: 'forward' });
   if (shipment?.awb && byCustomer) throw badRequest('Your order is being packed for dispatch and can no longer be cancelled online.');
   if (shipment?.providerOrderId && shiprocket.isConfigured()) {
-    try { await shiprocket.cancelOrders([shipment.providerOrderId]); shipment.status = 'cancelled'; await shipment.save(); } catch (e) { throw badRequest(`Could not cancel the Shiprocket shipment: ${e.message}`); }
+    try { await shiprocket.cancelOrders([shipment.providerOrderId]); shipment.status = 'cancelled'; await shipment.save(); }
+    catch (e) {
+      if (!force || byCustomer) throw badRequest(`Could not cancel the Shiprocket shipment: ${e.message}. Tick "Cancel anyway" to cancel on the website and then cancel it in Shiprocket yourself.`);
+      reason = `${reason} (Shiprocket shipment ${shipment.awb || shipment.providerOrderId} must be cancelled manually in Shiprocket)`;
+    }
+  } else if (shipment?.providerOrderId && !byCustomer) {
+    reason = `${reason} (also cancel shipment ${shipment.awb || shipment.providerOrderId} in Shiprocket — not connected here)`;
   }
   const claimed = await Order.findOneAndUpdate({ _id: order._id, stockReserved: true }, { $set: { stockReserved: false } });
   if (claimed) await releaseStock(order.items);

@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { useCart } from '../hooks/store';
-import { Empty, Img, Qty, Spinner, Notice } from '../components/ui';
+import { DesignChips, Empty, Img, Qty, Spinner, Notice } from '../components/ui';
 import { inr } from '../lib/format';
 import { useSeo } from '../lib/seo';
 
@@ -48,7 +48,7 @@ export default function Cart() {
             <li key={l.id} className="py-6 flex gap-5">
               <Link to={`/product/${l.slug}`} className="shrink-0"><Img src={l.image} alt={l.name} className="w-24 h-32 sm:w-28 sm:h-36 object-cover bg-sand" /></Link>
               <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:justify-between gap-3">
-                <div><Link to={`/product/${l.slug}`} className="text-[17px] hover:text-gold-deep">{l.name}</Link>{l.variantTitle !== 'Default' && <p className="text-sm text-muted">{l.variantTitle}</p>}<p className="text-sm mt-1">{inr(l.unitPrice)}</p>{l.outOfStock && <p className="text-sm text-danger mt-1">Out of stock</p>}</div>
+                <div><Link to={`/product/${l.slug}`} className="text-[17px] hover:text-gold-deep">{l.name}</Link>{l.variantTitle !== 'Default' && <p className="text-sm text-muted">{l.variantTitle}</p>}<DesignChips designs={l.designs} /><p className="text-sm mt-1">{inr(l.unitPrice)}</p>{l.outOfStock && <p className="text-sm text-danger mt-1">Out of stock</p>}</div>
                 <div className="flex sm:flex-col items-center sm:items-end gap-4 justify-between">
                   {!l.outOfStock && <Qty value={l.quantity} max={l.maxQuantity} onChange={(n) => update.mutate({ id: l.id, quantity: n })} disabled={update.isPending} />}
                   <p className="tabular-nums">{inr(l.lineTotal)}</p>
@@ -60,7 +60,7 @@ export default function Cart() {
         </ul>
         <aside className="bg-white border border-beige p-6 self-start space-y-5">
           <h2 className="text-2xl">Order summary</h2>
-          {remaining > 0 && <p className="text-sm bg-sand px-3 py-2">Add {inr(remaining)} more for free shipping.</p>}
+          {remaining > 0 ? <p className="text-sm bg-sand px-3 py-2">Add {inr(remaining)} more for free shipping.</p> : <p className="text-sm bg-sand px-3 py-2">Free shipping on this order.{cart.cod.fee ? ` Prepaid orders pay nothing extra; Cash on Delivery adds ${inr(cart.cod.fee)}.` : ''}</p>}
           <CouponBox />
           <Summary totals={cart.totals} />
           <button className="btn-primary w-full" onClick={() => nav('/checkout')} disabled={cart.items.every((i) => i.outOfStock)}>Continue to checkout</button>

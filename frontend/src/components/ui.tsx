@@ -111,3 +111,9 @@ export function Notice({ tone = 'info', children }: { tone?: 'info' | 'error' | 
   const c = tone === 'error' ? 'border-danger/40 bg-[#FBEDEA] text-danger' : tone === 'ok' ? 'border-success/30 bg-[#EEF4EC] text-success' : 'border-beige bg-sand text-ink';
   return <div role={tone === 'error' ? 'alert' : 'status'} className={`border px-4 py-3 text-sm ${c}`}>{children}</div>;
 }
+
+/** Chosen designs on a pick-your-designs combo (cart, checkout, orders). */
+export function DesignChips({ designs, small }: { designs?: { index: number; label: string; image?: string }[]; small?: boolean }) {
+  if (!designs?.length) return null;
+  return <div className="flex flex-wrap items-center gap-1.5 mt-1.5" aria-label="Chosen designs">{designs.map((d) => <span key={d.index} className="inline-flex items-center gap-1.5 border border-beige bg-ivory pr-2 text-xs">{d.image && <Img src={d.image} alt="" className={small ? 'w-6 h-6 object-cover' : 'w-8 h-8 object-cover'} />}{d.label}</span>)}</div>;
+}

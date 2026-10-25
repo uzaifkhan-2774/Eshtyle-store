@@ -3,6 +3,7 @@ const item = new mongoose.Schema({
   product: { type: mongoose.Types.ObjectId, ref: 'Product', required: true },
   variant: { type: mongoose.Types.ObjectId, ref: 'ProductVariant', required: true },
   quantity: { type: Number, required: true, min: 1, max: 10 },
+  designs: { type: [Number], default: undefined }, // chosen photo indexes for pick-your-designs combos
   addedAt: { type: Date, default: Date.now },
 }, { _id: true });
 const schema = new mongoose.Schema({

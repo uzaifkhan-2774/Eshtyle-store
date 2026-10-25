@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
 import path from 'node:path';
+import fs from 'node:fs';
+import { BACKEND_ROOT } from '../../config/paths.js';
 import { PRIVATE_DIR } from '../../services/storage.js';
 import { Router } from 'express';
 import { z } from 'zod';
@@ -16,11 +18,93 @@ import * as shiprocket from '../../services/shipping/shiprocket.js';
 import { notifyEmail } from '../../services/notify/index.js';
 import { formatINR } from '../../lib/money.js';
 import { releaseStock } from '../../services/inventory.js';
+import { quoteManual, createManual } from '../../services/manualOrder.js';
+import { revokeAllSessions } from '../../services/authService.js';
+import { sendDeliveredEmail } from '../../services/loyalty.js';
+import { addressSchema } from '../account.js';
+import { Product, ProductVariant } from '../../models/index.js';
 
 const r = Router();
 
+// ---- Bulk actions on many orders at once
+const idsSchema = z.array(z.string().refine((v) => mongoose.isValidObjectId(v), 'Invalid id')).min(1).max(100);
+r.post('/bulk', requirePerm('orders:write'), validate(z.object({ ids: idsSchema, action: z.enum(['processing', 'ship', 'cancel']), reason: z.string().trim().min(3).max(300).optional() })), ah(async (req, res) => {
+  if (req.body.action === 'ship' && !can(req.user.role, 'shipping:write')) throw badRequest('You do not have permission to create shipments.');
+  if (req.body.action === 'cancel' && !req.body.reason) throw badRequest('Give a reason for cancelling.');
+  const orders = await Order.find({ _id: { $in: req.body.ids } }).sort({ placedAt: 1 });
+  const results = [];
+  for (const o of orders) {
+    try {
+      if (req.body.action === 'cancel') {
+        await cancelOrder(o, { reason: req.body.reason, by: req.user._id });
+      } else if (req.body.action === 'processing') {
+        if (!(MANUAL_TRANSITIONS[o.status] || []).includes('processing')) throw new Error(`Cannot move from ${o.status.replace(/_/g, ' ')} to packing`);
+        pushStatus(o, 'processing', 'Marked as packing (bulk)', req.user._id); await o.save();
+      } else {
+        if (await Shipment.exists({ order: o._id, kind: 'forward', awb: { $exists: true, $ne: null } })) throw new Error('Already has a shipment');
+        if (!o.invoiceNumber) { o.invoiceNumber = await nextInvoiceNumber(); await o.save(); }
+        await createForwardShipment(o, { by: req.user._id });
+      }
+      results.push({ id: o._id, orderNumber: o.orderNumber, ok: true });
+    } catch (e) { results.push({ id: o._id, orderNumber: o.orderNumber, ok: false, error: e.message }); }
+  }
+  await audit(req, `order.bulk_${req.body.action}`, 'Order', null, { count: orders.length, ok: results.filter((x) => x.ok).length });
+  res.json({ results });
+}));
+r.get('/invoices', requirePerm('orders:read'), ah(async (req, res) => {
+  const ids = idsSchema.parse(String(req.query.ids || '').split(',').filter(Boolean));
+  const orders = (await Order.find({ _id: { $in: ids } }).sort({ placedAt: 1 })).filter((o) => INVOICE_STATUSES.includes(o.status));
+  if (!orders.length) throw badRequest('None of the selected orders is confirmed yet, so there is nothing to invoice.');
+  for (const o of orders) if (!o.invoiceNumber) { o.invoiceNumber = await nextInvoiceNumber(); await o.save(); }
+  const s = await getSettings();
+  sendInvoices(res, `${orders.length} invoices`, orders.map((o) => invoiceBody(o, s)));
+}));
+
+// ---- Manual orders (WhatsApp / Instagram / phone / in-store)
+r.get('/manual/products', requirePerm('orders:write'), ah(async (req, res) => {
+  const q = String(req.query.q || '').trim();
+  const f = { status: 'published' };
+  if (q) f.$or = [{ name: { $regex: escapeRegex(q), $options: 'i' } }, { sku: { $regex: escapeRegex(q), $options: 'i' } }];
+  const products = await Product.find(f).sort({ name: 1 }).limit(20).select('name sku images').lean();
+  const variants = await ProductVariant.find({ product: { $in: products.map((p) => p._id) }, isActive: true }).select('product sku title price stock').lean();
+  res.json({ items: products.flatMap((p) => variants.filter((v) => String(v.product) === String(p._id)).map((v) => ({
+    variantId: v._id, sku: v.sku, name: p.name, variantTitle: v.title, price: v.price, stock: v.stock, image: p.images?.[0]?.thumb || p.images?.[0]?.url,
+  }))) });
+}));
+const manualSchema = z.object({
+  customer: z.object({ name: z.string().trim().min(2).max(80), phone: z.string().trim().regex(/^[6-9]\d{9}$/, 'Enter a valid 10-digit mobile number'), email: z.string().trim().email().max(160).optional().or(z.literal('')).transform((v) => v || undefined) }),
+  address: addressSchema,
+  items: z.array(z.object({ variantId: z.string().refine((v) => mongoose.isValidObjectId(v), 'Invalid product'), quantity: z.number().int().min(1).max(50) })).min(1).max(30),
+  channel: z.enum(['whatsapp', 'instagram', 'phone', 'store', 'other']),
+  payment: z.enum(['cod', 'paid']),
+  paidVia: z.enum(['upi', 'bank_transfer', 'cash', 'card', 'other']).optional(),
+  paymentRef: z.string().trim().max(60).optional(),
+  couponCode: z.string().trim().max(24).optional().or(z.literal('')),
+  freeShipping: z.boolean().optional(), waiveCodFee: z.boolean().optional(), ignoreServiceability: z.boolean().optional(),
+  note: z.string().trim().max(300).optional(),
+});
+const manualQuoteSchema = z.object({
+  items: manualSchema.shape.items, payment: z.enum(['cod', 'paid']).default('cod'),
+  address: z.object({ pincode: z.string().trim().regex(/^[1-9]\d{5}$/, 'Enter a valid 6-digit pincode') }),
+  customer: z.object({ phone: z.string().max(15).optional(), email: z.string().max(160).optional() }).optional(),
+  couponCode: z.string().trim().max(24).optional().or(z.literal('')), freeShipping: z.boolean().optional(), waiveCodFee: z.boolean().optional(),
+});
+r.post('/manual/quote', requirePerm('orders:write'), validate(manualQuoteSchema), ah(async (req, res) => {
+  const c = req.body.customer || {};
+  const b = { ...req.body, customer: { phone: /^[6-9]\d{9}$/.test(c.phone || '') ? c.phone : '__none__', email: c.email || undefined } };
+  const { priced, quote, user } = await quoteManual(b);
+  res.json({ totals: priced.totals, coupon: priced.coupon, couponError: priced.couponError, cod: priced.cod, serviceability: quote, existingCustomer: user ? { name: user.name, email: user.email } : null });
+}));
+r.post('/manual', requirePerm('orders:write'), validate(manualSchema), ah(async (req, res) => {
+  const order = await createManual(req.body, req.user);
+  await audit(req, 'order.manual_create', 'Order', order._id, { channel: req.body.channel, payment: req.body.payment, total: order.totals.total });
+  res.status(201).json({ order: { _id: order._id, orderNumber: order.orderNumber } });
+}));
+
 function orderFilter(q) {
-  const f = {};
+  const f = { orderNumber: { $exists: true } }; // ignore records that are not E-SHTYLE orders (e.g. a shared database)
+  if (q.ids) f._id = { $in: String(q.ids).split(',').filter((x) => mongoose.isValidObjectId(x)).slice(0, 500) };
+  if (q.channel) f.channel = String(q.channel);
   if (q.status) f.status = { $in: String(q.status).split(',') };
   if (q.paymentStatus) f.paymentStatus = { $in: String(q.paymentStatus).split(',') };
   if (q.shippingStatus) f.shippingStatus = { $in: String(q.shippingStatus).split(',') };
@@ -32,7 +116,7 @@ function orderFilter(q) {
 r.get('/', requirePerm('orders:read'), ah(async (req, res) => {
   const { page, limit, skip } = pageParams(req.query, 100);
   const f = orderFilter(req.query);
-  const [items, total] = await Promise.all([Order.find(f).sort({ placedAt: -1 }).skip(skip).limit(limit).select('orderNumber placedAt status paymentStatus paymentMethod shippingStatus totals shippingAddress.fullName shippingAddress.city items.quantity').lean(), Order.countDocuments(f)]);
+  const [items, total] = await Promise.all([Order.find(f).sort({ placedAt: -1 }).skip(skip).limit(limit).select('orderNumber placedAt status channel paymentStatus paymentMethod shippingStatus totals shippingAddress.fullName shippingAddress.city items.quantity').lean(), Order.countDocuments(f)]);
   res.json({ items, total, page, pages: Math.ceil(total / limit) });
 }));
 r.get('/export/csv', requirePerm('reports:read'), ah(async (req, res) => {
@@ -67,7 +151,7 @@ r.post('/:id/status', requirePerm('orders:write'), validate(z.object({ status: z
   } else if (!allowed.includes(req.body.status)) throw badRequest(`Cannot move from ${o.status} to ${req.body.status}.`);
   pushStatus(o, req.body.status, req.body.note || 'Updated by staff', req.user._id);
   if (req.body.status === 'shipped') { o.shippingStatus = 'in_transit'; notifyEmail('shipped', o.email, { order: o, shipment: null }, { order: o._id }); }
-  if (req.body.status === 'delivered') { o.shippingStatus = 'delivered'; if (o.paymentMethod === 'cod') o.paymentStatus = 'cod_collected'; notifyEmail('delivered', o.email, { order: o }, { order: o._id }); }
+  if (req.body.status === 'delivered') { o.shippingStatus = 'delivered'; if (o.paymentMethod === 'cod') o.paymentStatus = 'cod_collected'; await sendDeliveredEmail(o); }
   await o.save();
   await audit(req, 'order.status', 'Order', o._id, { to: req.body.status, note: req.body.note });
   res.json({ order: o });
@@ -77,11 +161,21 @@ r.post('/:id/notes', requirePerm('orders:notes'), validate(z.object({ note: z.st
   o.statusHistory.push({ status: o.status, note: `[admin note] ${req.body.note}`, by: req.user._id }); await o.save();
   res.json({ order: o });
 }));
-r.post('/:id/cancel', requirePerm('orders:write'), validate(z.object({ reason: z.string().trim().min(3).max(300) })), ah(async (req, res) => {
+// Suspend the customer behind a fraud order: they can no longer sign in or place orders.
+async function blockCustomer(req, o) {
+  if (!o.user || !can(req.user.role, 'customers:write')) return false;
+  const u = await User.findById(o.user); if (!u || u.role !== 'customer' || u.status === 'suspended') return false;
+  u.status = 'suspended'; await u.save(); await revokeAllSessions(u._id);
+  await audit(req, 'customer.suspend', 'User', u._id, { reason: `Fraud order ${o.orderNumber}` });
+  return true;
+}
+const cancelSchema = z.object({ reason: z.string().trim().min(3).max(300), force: z.boolean().optional(), blockCustomer: z.boolean().optional() });
+r.post('/:id/cancel', requirePerm('orders:write'), validate(cancelSchema), ah(async (req, res) => {
   const o = await Order.findById(req.params.id); if (!o) throw notFound();
-  await cancelOrder(o, { reason: req.body.reason, by: req.user._id });
-  await audit(req, 'order.cancel', 'Order', o._id, { reason: req.body.reason });
-  res.json({ order: o });
+  await cancelOrder(o, { reason: req.body.reason, by: req.user._id, force: req.body.force });
+  const blocked = req.body.blockCustomer ? await blockCustomer(req, o) : false;
+  await audit(req, 'order.cancel', 'Order', o._id, { reason: req.body.reason, blocked });
+  res.json({ order: o, blocked });
 }));
 r.post('/:id/refund', requirePerm('refunds:write'), validate(z.object({ amount: z.number().int().min(100), reason: z.string().trim().min(3).max(300), method: z.enum(['gateway', 'bank_transfer', 'upi', 'store_credit']).default('gateway'), returnRequestId: z.string().optional() })), ah(async (req, res) => {
   const o = await Order.findById(req.params.id); if (!o) throw notFound();
@@ -135,25 +229,35 @@ r.post('/:id/rto-received', requirePerm('orders:write'), ah(async (req, res) => 
 }));
 
 // Printable GST invoice (HTML; staff print to PDF from the browser).
-r.get('/:id/invoice', requirePerm('orders:read'), ah(async (req, res) => {
-  const o = await Order.findById(req.params.id);
-  if (!o) throw notFound();
-  if (!['confirmed', 'processing', 'ready_to_ship', 'shipped', 'out_for_delivery', 'delivered', 'returned', 'return_requested'].includes(o.status)) throw badRequest('Invoices are generated for confirmed orders.');
-  if (!o.invoiceNumber) { o.invoiceNumber = await nextInvoiceNumber(); await o.save(); }
-  const s = await getSettings();
+const INVOICE_STATUSES = ['confirmed', 'processing', 'ready_to_ship', 'shipped', 'out_for_delivery', 'delivered', 'returned', 'return_requested'];
+const INVOICE_STYLE = 'body{font:13px/1.45 Arial,sans-serif;color:#241D19;max-width:820px;margin:24px auto;padding:0 16px}h1{font:600 22px Georgia,serif;color:#442B22;margin:0}table{width:100%;border-collapse:collapse;margin-top:16px}th,td{border:1px solid #E9DCCB;padding:6px;text-align:left;vertical-align:top}th{background:#FFF8EE}.r{text-align:right}.grid{display:flex;justify-content:space-between;gap:24px;margin-top:16px}.muted{color:#7a6a5e}@media print{button{display:none}}.page{page-break-after:always}.page:last-child{page-break-after:auto}';
+// Brand logo embedded in the invoice (data URI, so it prints even when saved as PDF / opened offline).
+let LOGO = '';
+try { LOGO = `data:image/png;base64,${fs.readFileSync(path.join(BACKEND_ROOT, 'assets', 'invoice-logo.png')).toString('base64')}`; } catch { /* invoice still works without it */ }
+const esc = (x) => String(x ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function invoiceBody(o, s) {
   const b = s.business; const a = o.shippingAddress;
-  const esc = (x) => String(x ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const intra = b.address?.state && a.state && b.address.state.toLowerCase() === a.state.toLowerCase();
-  const rows = o.items.map((i, n) => { const taxable = o.totals.taxInclusive ? i.lineTotal - i.taxAmount : i.lineTotal; return `<tr><td>${n + 1}</td><td>${esc(i.name)}${i.variantTitle !== 'Default' ? ` (${esc(i.variantTitle)})` : ''}<br><small>${esc(i.sku)}</small></td><td>${esc(i.hsnCode)}</td><td>${i.quantity}</td><td>${formatINR(i.unitPrice)}</td><td>${formatINR(i.lineDiscount)}</td><td>${formatINR(taxable)}</td><td>${intra ? `CGST ${i.taxRate / 2}% ${formatINR(Math.floor(i.taxAmount / 2))}<br>SGST ${i.taxRate / 2}% ${formatINR(Math.ceil(i.taxAmount / 2))}` : `IGST ${i.taxRate}% ${formatINR(i.taxAmount)}`}</td><td>${formatINR(i.lineTotal + (o.totals.taxInclusive ? 0 : i.taxAmount))}</td></tr>`; }).join('');
-  res.setHeader('Content-Security-Policy', "default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:");
-  res.send(`<!doctype html><html><head><meta charset="utf-8"><title>Invoice ${esc(o.invoiceNumber)}</title><style>body{font:13px/1.45 Arial,sans-serif;color:#241D19;max-width:820px;margin:24px auto;padding:0 16px}h1{font:600 22px Georgia,serif;color:#442B22;margin:0}table{width:100%;border-collapse:collapse;margin-top:16px}th,td{border:1px solid #E9DCCB;padding:6px;text-align:left;vertical-align:top}th{background:#FFF8EE}.r{text-align:right}.grid{display:flex;justify-content:space-between;gap:24px;margin-top:16px}.muted{color:#7a6a5e}@media print{button{display:none}}</style></head><body>
-<button onclick="print()">Print / Save as PDF</button>
-<div class="grid"><div><h1>Tax Invoice</h1><div class="muted">Invoice ${esc(o.invoiceNumber)} · ${new Date().toLocaleDateString('en-IN')}<br>Order ${esc(o.orderNumber)} · ${o.placedAt.toLocaleDateString('en-IN')}</div></div>
-<div class="r"><strong>${esc(b.legalName || b.name)}</strong><br>${esc(b.address?.line1)} ${esc(b.address?.line2)}<br>${esc(b.address?.city)} ${esc(b.address?.state)} ${esc(b.address?.pincode)}<br>${b.gstin ? 'GSTIN: ' + esc(b.gstin) : '<span style="color:#b00">GSTIN not set in Settings</span>'}</div></div>
+  const rows = o.items.map((i, n) => { const taxable = o.totals.taxInclusive ? i.lineTotal - i.taxAmount : i.lineTotal; return `<tr><td>${n + 1}</td><td>${esc(i.name)}${i.variantTitle !== 'Default' ? ` (${esc(i.variantTitle)})` : ''}<br><small>${esc(i.sku)}</small>${i.designs?.length ? `<br><strong>Chosen: ${i.designs.map((d) => esc(d.label)).join(', ')}</strong>` : ''}</td><td>${esc(i.hsnCode)}</td><td>${i.quantity}</td><td>${formatINR(i.unitPrice)}</td><td>${formatINR(i.lineDiscount)}</td><td>${formatINR(taxable)}</td><td>${intra ? `CGST ${i.taxRate / 2}% ${formatINR(Math.floor(i.taxAmount / 2))}<br>SGST ${i.taxRate / 2}% ${formatINR(Math.ceil(i.taxAmount / 2))}` : `IGST ${i.taxRate}% ${formatINR(i.taxAmount)}`}</td><td>${formatINR(i.lineTotal + (o.totals.taxInclusive ? 0 : i.taxAmount))}</td></tr>`; }).join('');
+  return `<div class="page"><div class="grid"><div>${LOGO ? `<img src="${LOGO}" alt="${esc(b.name || 'E-SHTYLE')}" style="height:56px;width:auto;display:block;margin-bottom:10px">` : ''}<h1>Tax Invoice</h1><div class="muted">Invoice ${esc(o.invoiceNumber)} · ${new Date().toLocaleDateString('en-IN')}<br>Order ${esc(o.orderNumber)} · ${o.placedAt.toLocaleDateString('en-IN')}</div></div>
+<div class="r"><strong>${esc(b.legalName || b.name)}</strong><br>${esc(b.address?.line1)} ${esc(b.address?.line2)}<br>${esc(b.address?.city)} ${esc(b.address?.state)} ${esc(b.address?.pincode)}<br>${b.phone ? 'Phone: ' + esc(b.phone) + '<br>' : ''}${b.email ? esc(b.email) + '<br>' : ''}${b.gstin ? 'GSTIN: ' + esc(b.gstin) : '<span style="color:#b00">GSTIN not set in Settings</span>'}</div></div>
 <div class="grid"><div><strong>Bill / Ship to</strong><br>${esc(a.fullName)}<br>${esc(a.line1)} ${esc(a.line2)}<br>${esc(a.city)}, ${esc(a.state)} ${esc(a.pincode)}<br>${esc(a.phone)}</div><div class="r">Place of supply: ${esc(a.state)}<br>Payment: ${o.paymentMethod === 'cod' ? 'Cash on Delivery' : 'Prepaid'}</div></div>
 <table><thead><tr><th>#</th><th>Item</th><th>HSN</th><th>Qty</th><th>Rate</th><th>Discount</th><th>Taxable</th><th>GST</th><th>Amount</th></tr></thead><tbody>${rows}</tbody></table>
 <table style="width:auto;margin-left:auto"><tr><td>Subtotal</td><td class="r">${formatINR(o.totals.subtotal)}</td></tr>${o.totals.discount ? `<tr><td>Discount</td><td class="r">−${formatINR(o.totals.discount)}</td></tr>` : ''}<tr><td>Shipping</td><td class="r">${formatINR(o.totals.shipping)}</td></tr>${o.totals.codFee ? `<tr><td>COD fee</td><td class="r">${formatINR(o.totals.codFee)}</td></tr>` : ''}<tr><td>Total GST${o.totals.taxInclusive ? ' (included)' : ''}</td><td class="r">${formatINR(o.totals.tax)}</td></tr><tr><th>Grand total</th><th class="r">${formatINR(o.totals.total)}</th></tr></table>
-<p class="muted">Shipping and COD charges shown are as charged; confirm their GST treatment with your accountant. This is a computer-generated invoice.</p></body></html>`);
+<p class="muted">Shipping and COD charges shown are as charged; confirm their GST treatment with your accountant. This is a computer-generated invoice.</p><p style="text-align:center;color:#C6A15B;font:italic 15px Georgia,serif;margin-top:18px">Thank you for shopping with ${esc(b.name || 'E-SHTYLE')}</p></div>`;
+}
+function sendInvoices(res, title, bodies) {
+  res.setHeader('Content-Security-Policy', "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:");
+  res.send(`<!doctype html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>${INVOICE_STYLE}</style></head><body>
+<button onclick="print()">Print / Save as PDF</button>
+${bodies.join('\n')}</body></html>`);
+}
+r.get('/:id/invoice', requirePerm('orders:read'), ah(async (req, res) => {
+  const o = await Order.findById(req.params.id);
+  if (!o) throw notFound();
+  if (!INVOICE_STATUSES.includes(o.status)) throw badRequest('Invoices are generated for confirmed orders only.');
+  if (!o.invoiceNumber) { o.invoiceNumber = await nextInvoiceNumber(); await o.save(); }
+  sendInvoices(res, `Invoice ${o.invoiceNumber}`, [invoiceBody(o, await getSettings())]);
 }));
 
 // Returns

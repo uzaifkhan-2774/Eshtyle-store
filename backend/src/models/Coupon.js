@@ -14,6 +14,8 @@ const schema = new mongoose.Schema({
   firstOrderOnly: { type: Boolean, default: false },
   categories: [{ type: mongoose.Types.ObjectId, ref: 'Category' }],
   campaign: String,
+  // Personal coupon (e.g. the thank-you reward): only this customer can use it.
+  assignedTo: { user: { type: mongoose.Types.ObjectId, ref: 'User' }, email: { type: String, lowercase: true, trim: true } },
   isActive: { type: Boolean, default: true },
 }, { timestamps: true });
 export default mongoose.model('Coupon', schema);

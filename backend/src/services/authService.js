@@ -21,6 +21,7 @@ let dummyHash; export const dummyVerify = async (p) => { dummyHash ||= await has
 const tokenHash = (t) => hmac(env.REFRESH_TOKEN_PEPPER, t);
 
 export async function issueSession(res, user, req, family) {
+  if (isProd && user.devOnly) throw badRequest('This is a local test account and cannot be used on the live site.');
   const raw = randomToken(32);
   await Session.create({ user: user._id, tokenHash: tokenHash(raw), family: family || randomToken(12), userAgent: req.get('user-agent')?.slice(0, 200), ip: req.ip, expiresAt: new Date(Date.now() + REFRESH_TTL_MS) });
   res.cookie(ACCESS_COOKIE, signAccess(user), { ...cookieBase(), maxAge: ACCESS_TTL_SEC * 1000, path: '/' });
@@ -36,7 +37,7 @@ export async function rotateSession(req, res) {
   if (!s || s.expiresAt < new Date()) return null;
   if (s.revokedAt) { await Session.updateMany({ family: s.family }, { $set: { revokedAt: new Date() } }); return null; }
   const user = await User.findById(s.user);
-  if (!user || user.status !== 'active') return null;
+  if (!user || user.status !== 'active' || (isProd && user.devOnly)) return null;
   const claimed = await Session.findOneAndUpdate({ _id: s._id, revokedAt: null }, { $set: { revokedAt: new Date() } });
   if (!claimed) return null;
   await issueSession(res, user, req, s.family);

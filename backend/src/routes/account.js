@@ -71,7 +71,7 @@ r.delete('/wishlist/:productId', ah(async (req, res) => {
 const publicOrder = (o, shipment) => ({
   id: o._id, orderNumber: o.orderNumber, status: o.status, paymentStatus: o.paymentStatus, paymentMethod: o.paymentMethod, shippingStatus: o.shippingStatus,
   items: o.items, totals: o.totals, coupon: o.coupon, shippingAddress: o.shippingAddress, placedAt: o.placedAt, statusHistory: o.statusHistory?.map((s) => ({ status: s.status, at: s.at, note: s.note && !/admin/i.test(s.note) ? s.note : undefined })),
-  invoiceNumber: o.invoiceNumber,
+  invoiceNumber: o.invoiceNumber, thankYouCoupon: o.thankYouCoupon,
   shipment: shipment ? { awb: shipment.awb, courierName: shipment.courierName, trackingUrl: shipment.trackingUrl, status: shipment.status, events: shipment.events?.slice(-20), deliveredAt: shipment.deliveredAt } : null,
 });
 export { publicOrder };

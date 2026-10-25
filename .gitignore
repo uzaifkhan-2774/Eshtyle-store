@@ -2,7 +2,7 @@ node_modules
 .env
 dist
 *.log
-backend/uploads
+backend/uplaods
 backend/uploads/products
 backend/uploads/banners
 backend/uploads/reels

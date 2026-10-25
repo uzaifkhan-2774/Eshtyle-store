@@ -70,3 +70,9 @@ Set in your host's secret store (never in git, never in `VITE_*`): `MONGODB_URI`
 - [ ] Mount a persistent, backed-up volume at `backend/private-uploads` and set a retention period for customer videos (e.g. delete 90 days after the return closes).
 - [ ] Print an “Please record an unboxing video” card for every parcel.
 - [ ] Train support staff: approve only when the video shows the sealed parcel + label, the intact tag and the problem.
+
+## Admin tools (added Oct 2026)
+- [ ] Set `ADMIN_ALERT_EMAIL` in `backend/.env` — new-order alerts and the daily low-stock email go there.
+- [ ] Abandoned-bag reminders go only to signed-in customers who ticked "email me offers"; each email has a one-click unsubscribe. Needs a working email provider (Resend/SMTP).
+- [ ] Admin → Orders → **New order** for WhatsApp / Instagram / phone orders (same prices, GST, stock and emails as the website).
+- [ ] Admin → **Sales & GST**: download the Sales register and HSN summary CSVs each month for your CA. Set GSTIN and business state in Settings first.

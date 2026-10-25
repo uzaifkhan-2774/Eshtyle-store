@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import { z } from 'zod';
-import { NewsletterSubscription, Order, Shipment, SupportTicket } from '../models/index.js';
+import mongoose from 'mongoose';
+import { NewsletterSubscription, Order, Shipment, SupportTicket, User } from '../models/index.js';
+import { unsubscribeToken } from '../services/reminders.js';
 import { ah, notFound } from '../lib/errors.js';
 import { validate } from '../middleware/validate.js';
 import { otpLimiter } from '../middleware/rateLimit.js';
@@ -19,6 +21,14 @@ r.get('/newsletter/unsubscribe', ah(async (req, res) => {
   const t = String(req.query.token || '');
   const s = t && (await NewsletterSubscription.findOneAndUpdate({ unsubscribeToken: t }, { $set: { status: 'unsubscribed' } }));
   res.json({ ok: Boolean(s) });
+}));
+
+// One-click unsubscribe from marketing emails (link in abandoned-bag emails). Signed per user, no login needed.
+r.get('/marketing/unsubscribe', ah(async (req, res) => {
+  const u = String(req.query.u || ''); const t = String(req.query.t || '');
+  const ok = mongoose.isValidObjectId(u) && safeEqual(t, unsubscribeToken(u)) && (await User.updateOne({ _id: u }, { $set: { 'marketingConsent.email': false, 'marketingConsent.updatedAt': new Date() } })).matchedCount > 0;
+  res.setHeader('Content-Security-Policy', "default-src 'none'; style-src 'unsafe-inline'");
+  res.status(ok ? 200 : 400).send(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>E-SHTYLE</title><body style="font:16px/1.6 Arial,sans-serif;background:#FFF8EE;color:#241D19;display:grid;place-items:center;min-height:90vh;margin:0"><div style="max-width:420px;text-align:center;padding:24px"><h1 style="font-family:Georgia,serif;font-weight:normal;color:#442B22">${ok ? 'You are unsubscribed' : 'This link is not valid'}</h1><p>${ok ? 'You will no longer receive offers or reminders by email. Order and delivery emails will still reach you.' : 'Please manage your email preferences from your account.'}</p></div></body>`);
 }));
 
 r.post('/contact', otpLimiter, optionalAuth, validate(z.object({ name: z.string().trim().min(2).max(80), email: z.string().trim().email().max(160), phone: z.string().trim().max(15).optional(), orderNumber: z.string().trim().max(30).optional(), subject: z.string().trim().max(120).optional(), message: z.string().trim().min(10).max(3000) })), ah(async (req, res) => {

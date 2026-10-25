@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router';
-import { AlertTriangle, CheckCircle2, Download, Upload } from 'lucide-react';
+import { AlertTriangle, CheckCircle2, Download, Plus, Upload } from 'lucide-react';
 import { assetUrl } from '../../lib/api';
 import { inr, date, dateTime } from '../../lib/format';
 import { Badge, Card, PageHead, Table, Td, useA, useAct } from '../kit';
@@ -65,7 +65,7 @@ export function Dashboard() {
       </div>
       <div className="grid lg:grid-cols-3 gap-4 mt-4">
         <Card title="Recent orders" className="lg:col-span-2" actions={<Link to="/admin/orders" className="text-sm link">All orders</Link>}>
-          {!data.recent.length ? <p className="text-muted text-sm">No orders yet.</p> : <ul className="divide-y divide-beige text-sm">{data.recent.map((o) => <li key={o._id}><Link to={`/admin/orders/${o._id}`} className="flex items-center gap-3 py-2.5 hover:text-gold-deep"><span className="font-medium w-36 shrink-0">{o.orderNumber}</span><span className="flex-1 truncate">{o.shippingAddress?.fullName}</span><Badge s={o.status} /><span className="tabular-nums w-20 text-right">{inr(o.totals.total)}</span></Link></li>)}</ul>}
+          {!data.recent.length ? <p className="text-muted text-sm">No orders yet.</p> : <ul className="divide-y divide-beige text-sm">{data.recent.map((o) => <li key={o._id}><Link to={`/admin/orders/${o._id}`} className="flex items-center gap-3 py-2.5 hover:text-gold-deep"><span className="font-medium w-36 shrink-0">{o.orderNumber}</span><span className="flex-1 truncate">{o.shippingAddress?.fullName}</span><Badge s={o.status} /><span className="tabular-nums w-20 text-right">{inr(o.totals?.total)}</span></Link></li>)}</ul>}
         </Card>
         <Card title="Low stock" actions={<Link to="/admin/products" className="text-sm link">Inventory</Link>}>
           {!data.lowStock.length ? <p className="text-sm text-muted">All variants are above their low-stock threshold.</p> : <ul className="text-sm space-y-2">{data.lowStock.map((v) => <li key={v.variantId} className="flex justify-between gap-2"><Link to={`/admin/products/${v.product?._id}`} className="truncate hover:text-gold-deep">{v.product?.name}{v.title !== 'Default' ? ` — ${v.title}` : ''}</Link><span className={v.stock === 0 ? 'text-danger' : ''}>{v.stock}</span></li>)}</ul>}
@@ -103,7 +103,7 @@ export function Products() {
   const act = useAct();
   const fileRef = useRef<HTMLInputElement>(null);
   const [importRes, setImportRes] = useState<{ ok: boolean; errors?: { line: number; message: string }[]; created?: number; updated?: number; products?: number; dryRun?: boolean } | null>(null);
-  const set = (k: string, v: string) => { const n = new URLSearchParams(params); if (v) n.set(k, v); else n.delete(k); n.delete('page'); setParams(n); };
+  const set = (k: string, v: string) => { const n = new URLSearchParams(params); if (v) n.set(k, v); else n.delete(k); if (k !== 'page') n.delete('page'); setParams(n); window.scrollTo({ top: 0 }); };
   const runImport = async (dryRun: boolean) => { const f = fileRef.current?.files?.[0]; if (!f) return; const fd = new FormData(); fd.append('file', f); const r = await act.mutateAsync({ path: `/admin/products/import/csv?dryRun=${dryRun}`, form: fd }); setImportRes(r as typeof importRes); };
   const review = data?.items.filter((p) => p.priceReviewRequired).length;
   return (
@@ -131,28 +131,56 @@ export function Products() {
   );
 }
 
-type ORow = { _id: string; orderNumber: string; placedAt: string; status: string; paymentStatus: string; paymentMethod: string; shippingStatus: string; totals: { total: number }; shippingAddress?: { fullName: string; city: string }; items: { quantity: number }[] };
+type ORow = { _id: string; orderNumber: string; placedAt: string; channel?: string; status: string; paymentStatus: string; paymentMethod: string; shippingStatus: string; totals: { total: number }; shippingAddress?: { fullName: string; city: string }; items: { quantity: number }[] };
 const TABS: [string, string][] = [['', 'All'], ['confirmed,processing', 'To ship'], ['ready_to_ship,shipped,out_for_delivery', 'In transit'], ['pending_payment', 'Awaiting payment'], ['delivered', 'Delivered'], ['return_requested,returned,rto', 'Returns & RTO'], ['cancelled,expired,payment_failed', 'Cancelled']];
 export function Orders() {
   const [params, setParams] = useSearchParams();
   const qs = new URLSearchParams(params); qs.set('limit', '50');
   const { data } = useA<{ items: ORow[]; total: number; pages: number }>(['orders', qs.toString()], `/admin/orders?${qs}`, { refetchInterval: 60000 });
-  const set = (k: string, v: string) => { const n = new URLSearchParams(params); if (v) n.set(k, v); else n.delete(k); n.delete('page'); setParams(n); };
+  const set = (k: string, v: string) => { const n = new URLSearchParams(params); if (v) n.set(k, v); else n.delete(k); if (k !== 'page') n.delete('page'); setParams(n); window.scrollTo({ top: 0 }); };
+  const [sel, setSel] = useState<string[]>([]);
+  const act = useAct();
+  const [results, setResults] = useState<{ orderNumber: string; ok: boolean; error?: string }[] | null>(null);
+  const pageIds = data?.items.map((o) => o._id) || [];
+  const allOn = pageIds.length > 0 && pageIds.every((id) => sel.includes(id));
+  const toggle = (id: string) => setSel((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]));
+  const bulk = (action: 'processing' | 'ship' | 'cancel', reason?: string) => act.mutate({ path: '/admin/orders/bulk', body: { ids: sel, action, reason } }, { onSuccess: (r: any) => { setResults(r.results); setSel([]); setBulkCancel(null); } });
+  const [bulkCancel, setBulkCancel] = useState<string | null>(null);
   return (
     <>
-      <PageHead title="Orders" sub={data ? `${data.total} orders` : ''} actions={<a className="btn-outline h-10" href={assetUrl(`/api/v1/admin/orders/export/csv?${params}`)}><Download size={16} />Export CSV</a>} />
+      <PageHead title="Orders" sub={data ? `${data.total} orders` : ''} actions={<><a className="btn-outline h-10" href={assetUrl(`/api/v1/admin/orders/export/csv?${params}`)}><Download size={16} />Export CSV</a><Link to="/admin/orders/new" className="btn-primary h-10"><Plus size={16} />New order</Link></>} />
+      {sel.length > 0 && (
+        <div className="sticky top-0 z-10 bg-espresso text-ivory px-4 py-3 mb-4 flex flex-wrap items-center gap-2 text-sm" role="region" aria-label="Bulk actions">
+          <span className="mr-2">{sel.length} selected</span>
+          <button className="btn-outline h-9 border-ivory/40 text-ivory hover:bg-ivory hover:text-espresso" disabled={act.isPending} onClick={() => bulk('processing')}>Mark as packing</button>
+          <button className="btn-outline h-9 border-ivory/40 text-ivory hover:bg-ivory hover:text-espresso" disabled={act.isPending} onClick={() => bulk('ship')}>Create Shiprocket shipments</button>
+          <a className="btn-outline h-9 border-ivory/40 text-ivory hover:bg-ivory hover:text-espresso" target="_blank" rel="noopener" href={assetUrl(`/api/v1/admin/orders/invoices?ids=${sel.join(',')}`)}>Print invoices</a>
+          <a className="btn-outline h-9 border-ivory/40 text-ivory hover:bg-ivory hover:text-espresso" href={assetUrl(`/api/v1/admin/orders/export/csv?ids=${sel.join(',')}`)}>Export selected</a>
+          {bulkCancel === null
+            ? <button className="btn-outline h-9 border-red-300 text-red-100 hover:bg-danger hover:border-danger" disabled={act.isPending} onClick={() => setBulkCancel('Fraud / fake order')}>Cancel orders</button>
+            : <span className="flex flex-wrap items-center gap-2"><input aria-label="Cancel reason" className="field h-9 w-56 text-ink" value={bulkCancel} onChange={(e) => setBulkCancel(e.target.value)} /><button className="btn-primary h-9 px-3 bg-danger border-danger" disabled={act.isPending || bulkCancel.trim().length < 3} onClick={() => bulk('cancel', bulkCancel.trim())}>Yes, cancel {sel.length}</button><button className="underline" onClick={() => setBulkCancel(null)}>No</button></span>}
+          <button className="ml-auto underline" onClick={() => setSel([])}>Clear</button>
+        </div>
+      )}
+      {results && (
+        <div className="bg-white border border-beige p-4 mb-4 text-sm">
+          <div className="flex justify-between"><strong className="font-medium">{results.filter((r) => r.ok).length} done, {results.filter((r) => !r.ok).length} skipped</strong><button className="link" onClick={() => setResults(null)}>Close</button></div>
+          {results.some((r) => !r.ok) && <ul className="mt-2 text-muted space-y-0.5">{results.filter((r) => !r.ok).map((r) => <li key={r.orderNumber}>{r.orderNumber}: {r.error}</li>)}</ul>}
+        </div>
+      )}
       <div className="flex gap-1 overflow-x-auto no-scrollbar border-b border-beige mb-4">{TABS.map(([v, l]) => <button key={l} onClick={() => set('status', v)} className={`px-3 py-2 text-sm whitespace-nowrap border-b-2 -mb-px ${(params.get('status') || '') === v ? 'border-espresso text-espresso' : 'border-transparent text-muted hover:text-ink'}`}>{l}</button>)}</div>
       <div className="flex flex-wrap gap-2 mb-4">
         <input defaultValue={params.get('q') || ''} onKeyDown={(e) => e.key === 'Enter' && set('q', (e.target as HTMLInputElement).value)} placeholder="Order no., name, phone, pincode" className="field h-10 max-w-xs" aria-label="Search orders" />
         <select value={params.get('paymentMethod') || ''} onChange={(e) => set('paymentMethod', e.target.value)} className="field h-10 w-auto" aria-label="Payment method"><option value="">All payments</option><option value="online">Prepaid</option><option value="cod">COD</option></select>
         <input type="date" value={params.get('from') || ''} onChange={(e) => set('from', e.target.value)} className="field h-10 w-auto" aria-label="From date" /><input type="date" value={params.get('to') || ''} onChange={(e) => set('to', e.target.value)} className="field h-10 w-auto" aria-label="To date" />
       </div>
-      <Table head={['Order', 'Placed', 'Customer', 'Items', 'Total', 'Payment', 'Status', 'Shipping']} empty={data && !data.items.length}>
+      <Table head={[<input key="all" type="checkbox" aria-label="Select all orders on this page" checked={allOn} onChange={() => setSel(allOn ? sel.filter((id) => !pageIds.includes(id)) : [...new Set([...sel, ...pageIds])])} />, 'Order', 'Placed', 'Customer', 'Items', 'Total', 'Payment', 'Status', 'Shipping']} empty={data && !data.items.length}>
         {data?.items.map((o) => (
           <tr key={o._id} className="hover:bg-ivory">
-            <Td><Link to={`/admin/orders/${o._id}`} className="font-medium hover:text-gold-deep">{o.orderNumber}</Link></Td><Td className="whitespace-nowrap text-muted">{dateTime(o.placedAt)}</Td>
-            <Td>{o.shippingAddress?.fullName}<p className="text-xs text-muted">{o.shippingAddress?.city}</p></Td><Td>{o.items.reduce((s, i) => s + i.quantity, 0)}</Td><Td>{inr(o.totals.total)}</Td>
-            <Td><Badge s={o.paymentStatus} /><p className="text-xs text-muted mt-1">{o.paymentMethod === 'cod' ? 'COD' : 'Prepaid'}</p></Td><Td><Badge s={o.status} /></Td><Td className="text-xs text-muted">{o.shippingStatus.replace(/_/g, ' ')}</Td>
+            <Td><input type="checkbox" aria-label={`Select order ${o.orderNumber}`} checked={sel.includes(o._id)} onChange={() => toggle(o._id)} /></Td>
+            <Td><Link to={`/admin/orders/${o._id}`} className="font-medium hover:text-gold-deep">{o.orderNumber}</Link>{o.channel && o.channel !== 'website' && <p className="text-xs text-muted">{({ whatsapp: 'WhatsApp', instagram: 'Instagram', phone: 'Phone', store: 'In store', other: 'Manual' } as Record<string, string>)[o.channel] || o.channel}</p>}</Td><Td className="whitespace-nowrap text-muted">{dateTime(o.placedAt)}</Td>
+            <Td>{o.shippingAddress?.fullName}<p className="text-xs text-muted">{o.shippingAddress?.city}</p></Td><Td>{(o.items || []).reduce((s, i) => s + i.quantity, 0)}</Td><Td>{inr(o.totals?.total)}</Td>
+            <Td><Badge s={o.paymentStatus} /><p className="text-xs text-muted mt-1">{o.paymentMethod === 'cod' ? 'COD' : 'Prepaid'}</p></Td><Td><Badge s={o.status} /></Td><Td className="text-xs text-muted">{(o.shippingStatus || 'not_shipped').replace(/_/g, ' ')}</Td>
           </tr>
         ))}
       </Table>

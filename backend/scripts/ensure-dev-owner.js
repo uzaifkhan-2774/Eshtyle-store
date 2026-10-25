@@ -22,7 +22,7 @@ await connectDb();
 const hash = await hashPassword(TEST_PASSWORD);
 for (const a of ACCOUNTS) {
   const u = (await User.findOne({ email: a.email })) || new User({ email: a.email });
-  Object.assign(u, { name: a.name, role: a.role, emailVerified: true, status: 'active', devOnly: true, passwordHash: hash });
+  Object.assign(u, { name: a.name, role: a.role, emailVerified: true, status: 'active', devOnly: true, failedLogins: 0, lockedUntil: undefined, passwordHash: hash });
   await u.save();
 }
 fs.writeFileSync(path.join(BACKEND_ROOT, 'ADMIN-LOGIN-LOCAL.txt'), `E-SHTYLE test logins (local testing only — they do not work on the live site)

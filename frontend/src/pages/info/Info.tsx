@@ -29,7 +29,7 @@ function Page({ title, intro, children, updated }: { title: string; intro?: Reac
 const contactLine = (s?: ReturnType<typeof useSettings>) => s?.business.email ? <a className="link" href={`mailto:${s.business.email}`}>{s.business.email}</a> : <Link className="link" to="/contact">our contact page</Link>;
 
 export function About() {
-  useSeo({ title: 'About E-SHTYLE', description: 'E-SHTYLE designs fashion and anti-tarnish jewellery for everyday elegance.' });
+  useSeo({ title: 'About E-SHTYLE', description: 'E-SHTYLE designs fashion jewellery for everyday elegance — clover sets, tulip bracelets, earring combos and more.' });
   return (
     <Page title="Everyday elegance, made to shine" intro="E-SHTYLE is an Indian jewellery label for women who want to feel put-together every day — not only on special occasions.">
       <p>We started E-SHTYLE because the pieces we loved were either too precious to wear daily or too fragile to last the week. So we set out to find a middle path: jewellery with a refined, editorial look, at prices that let you build a wardrobe of it.</p>
@@ -84,7 +84,7 @@ export function Faqs() {
   useSeo({ title: 'FAQs', description: 'Answers to common questions about E-SHTYLE orders, shipping, payments and jewellery care.' });
   const faqs: [string, ReactNode][] = [
     ['How long does delivery take?', `Orders are usually dispatched within 1–2 working days and delivered in ${s?.shipping.estimateDays[0] ?? 3}–${s?.shipping.estimateDays[1] ?? 7} working days, depending on your pincode. You can check your pincode on any product page.`],
-    ['Is shipping free?', s ? `Shipping is free on orders above ${inr(s.shipping.freeAbove)}. Below that, a flat ${inr(s.shipping.flatRate)} applies.` : 'Free shipping applies above a minimum order value shown at checkout.'],
+    ['Is shipping free?', s ? (s.shipping.freeAbove <= 0 || s.shipping.flatRate <= 0 ? `Yes — shipping is free on every order.${s.cod.enabled ? ` If you choose Cash on Delivery, a ${inr(s.cod.fee)} COD fee is added; prepaid orders pay nothing extra.` : ''}` : `Shipping is free on orders above ${inr(s.shipping.freeAbove)}. Below that, a flat ${inr(s.shipping.flatRate)} applies.`) : 'Free shipping applies above a minimum order value shown at checkout.'],
     ['Do you offer Cash on Delivery?', s?.cod.enabled ? `Yes, on eligible pincodes and orders up to ${inr(s.cod.maxOrderValue)}. A COD fee of ${inr(s.cod.fee)} applies.` : 'Cash on Delivery is currently unavailable.'],
     ['What payment methods do you accept?', 'UPI, debit and credit cards, net banking and popular wallets through our secure payment partner, plus Cash on Delivery where available.'],
     ['Is the jewellery anti-tarnish?', 'Only pieces marked “anti-tarnish finish” on their product page have that finish. All fashion jewellery lasts longest when kept dry and away from perfume — see our care guide.'],
@@ -127,7 +127,7 @@ export function ShippingPolicy() {
     <Page title="Shipping & delivery policy" updated="October 2026">
       <p>We ship across India through our courier partners.</p>
       <h2>Charges</h2>
-      <ul><li>Free shipping on orders above {s ? inr(s.shipping.freeAbove) : 'the threshold shown at checkout'}.</li><li>Orders below this have a flat shipping charge of {s ? inr(s.shipping.flatRate) : 'the amount shown at checkout'}.</li>{s?.cod.enabled && <li>Cash on Delivery orders carry an additional fee of {inr(s.cod.fee)}.</li>}</ul>
+      <ul>{s && (s.shipping.freeAbove <= 0 || s.shipping.flatRate <= 0) ? <li>Shipping is free on every order, anywhere we deliver in India.</li> : <><li>Free shipping on orders above {s ? inr(s.shipping.freeAbove) : 'the threshold shown at checkout'}.</li><li>Orders below this have a flat shipping charge of {s ? inr(s.shipping.flatRate) : 'the amount shown at checkout'}.</li></>}{s?.cod.enabled && <li>Cash on Delivery orders carry an additional fee of {inr(s.cod.fee)}.</li>}</ul>
       <h2>Dispatch and delivery</h2>
       <p>Orders are typically dispatched within 1–2 working days. Delivery usually takes {s?.shipping.estimateDays[0] ?? 3}–{s?.shipping.estimateDays[1] ?? 7} working days after dispatch; remote pincodes may take longer. Estimated dates are provided by the courier and are not guaranteed.</p>
       <h2>Tracking</h2>

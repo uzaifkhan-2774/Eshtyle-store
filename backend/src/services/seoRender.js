@@ -14,7 +14,7 @@ const jsonLd = (o) => `<script type="application/ld+json">${JSON.stringify(o).re
 
 async function productMeta(slug) {
   const p = await Product.findOne({ slug, status: 'published' }).populate('category', 'name slug').lean();
-  if (!p) return null;
+  if (!p || p.isListed === false) return null; // unlisted (e.g. ₹1 payment test) — no rich preview
   const vs = await ProductVariant.find({ product: p._id, isActive: true }).lean();
   const settings = await getSettings();
   const url = `${env.APP_URL}/product/${p.slug}`;
@@ -47,9 +47,9 @@ async function listMeta(kind, slug) {
   if (kind === 'category') {
     const kids = await Category.find({ parent: doc._id }).select('_id').lean();
     const ids = [doc._id, ...kids.map((k) => k._id)];
-    products = await Product.find({ status: 'published', $or: [{ category: { $in: ids } }, { subcategory: { $in: ids } }] }).sort({ inStock: -1, isFeatured: -1, sortOrder: 1 }).limit(60).select('name slug price images').lean();
+    products = await Product.find({ status: 'published', isListed: { $ne: false }, $or: [{ category: { $in: ids } }, { subcategory: { $in: ids } }] }).sort({ inStock: -1, isFeatured: -1, sortOrder: 1 }).limit(60).select('name slug price images').lean();
   } else {
-    const q = { status: 'published', ...(doc.type === 'tag' ? { tags: doc.tag } : doc.type === 'sale' ? { compareAtPrice: { $gt: 0 } } : doc.type === 'manual' ? { _id: { $in: doc.products } } : {}) };
+    const q = { status: 'published', isListed: { $ne: false }, ...(doc.type === 'tag' ? { tags: doc.tag } : doc.type === 'sale' ? { compareAtPrice: { $gt: 0 } } : doc.type === 'manual' ? { _id: { $in: doc.products } } : {}) };
     products = await Product.find(q).sort(doc.type === 'new_arrivals' ? { createdAt: -1 } : { salesCount: -1, isFeatured: -1 }).limit(60).select('name slug price images').lean();
   }
   const url = `${env.APP_URL}/${kind === 'category' ? 'category' : 'collections'}/${doc.slug}`;
@@ -70,7 +70,7 @@ async function homeMeta() {
     { '@context': 'https://schema.org', '@type': 'WebSite', name: 'E-SHTYLE', url: env.APP_URL, potentialAction: { '@type': 'SearchAction', target: `${env.APP_URL}/search?q={search_term_string}`, 'query-input': 'required name=search_term_string' } },
   ];
   const body = `<main><h1>E-SHTYLE — Everyday Elegance. Made to Shine.</h1><p>${esc(s.seo.defaultDescription)}</p><ul>${cats.map((c) => `<li><a href="/category/${esc(c.slug)}">${esc(c.name)}</a></li>`).join('')}</ul></main>`;
-  return { title: s.seo.defaultTitle, description: s.seo.defaultDescription, image: `${env.APP_URL}/brand/logo.png`, url: env.APP_URL, type: 'website', ld, body };
+  return { title: s.seo.defaultTitle, description: s.seo.defaultDescription, image: `${env.APP_URL}/og-default.jpg`, url: env.APP_URL, type: 'website', ld, body };
 }
 
 export async function metaForPath(pathname) {

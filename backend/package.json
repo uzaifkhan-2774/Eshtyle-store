@@ -13,7 +13,8 @@
     "seed:refresh": "node seed/seed.js --refresh-catalog",
     "create-owner": "node scripts/create-owner.js",
     "test": "vitest run",
-    "lint": "node --check src/server.js"
+    "lint": "node --check src/server.js",
+    "test-shiprocket": "node scripts/test-shiprocket.js"
   },
   "dependencies": {
     "argon2": "^0.45.1",

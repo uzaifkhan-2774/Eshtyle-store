@@ -12,6 +12,8 @@ const userSchema = new mongoose.Schema({
   phoneVerified: { type: Boolean, default: false },
   role: { type: String, enum: ROLES, default: 'customer', index: true },
   status: { type: String, enum: ['active', 'suspended', 'deleted'], default: 'active' },
+  // Test accounts created by `npm run dev`. They can never sign in when NODE_ENV=production.
+  devOnly: { type: Boolean, default: false },
   marketingConsent: { email: { type: Boolean, default: false }, sms: { type: Boolean, default: false }, whatsapp: { type: Boolean, default: false }, updatedAt: Date },
   lastLoginAt: Date,
   failedLogins: { type: Number, default: 0 },

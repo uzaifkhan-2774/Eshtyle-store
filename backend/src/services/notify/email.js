@@ -16,12 +16,12 @@ export async function sendEmail({ to, subject, html, text }) {
   if (env.EMAIL_PROVIDER === 'resend') {
     const r = await fetchJson('https://api.resend.com/emails', {
       method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ from: env.EMAIL_FROM, to: [to], subject, html, text }),
+      body: JSON.stringify({ from: env.EMAIL_FROM, to: [to], subject, html, text, ...(env.EMAIL_REPLY_TO ? { reply_to: env.EMAIL_REPLY_TO } : {}) }),
     }, { retries: 0 });
-    if (!r.ok) throw new Error(`Resend error ${r.status}`);
+    if (!r.ok) throw new Error(`Resend error ${r.status}: ${r.body?.message || r.body?.error || 'unknown'}`);
     return { id: r.body.id, provider: 'resend' };
   }
   transport ||= nodemailer.createTransport({ host: env.SMTP_HOST, port: env.SMTP_PORT || 587, secure: (env.SMTP_PORT || 587) === 465, auth: { user: env.SMTP_USER, pass: env.SMTP_PASS } });
-  const info = await transport.sendMail({ from: env.EMAIL_FROM, to, subject, html, text });
+  const info = await transport.sendMail({ from: env.EMAIL_FROM, to, subject, html, text, ...(env.EMAIL_REPLY_TO ? { replyTo: env.EMAIL_REPLY_TO } : {}) });
   return { id: info.messageId, provider: 'smtp' };
 }

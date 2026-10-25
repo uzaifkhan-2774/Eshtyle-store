@@ -15,7 +15,9 @@
     "seed:live": "npm --prefix backend run seed",
     "create-owner": "npm --prefix backend run create-owner --",
     "doctor": "node backend/scripts/doctor.js",
-    "test-email": "node backend/scripts/test-email.js"
+    "test-email": "node backend/scripts/test-email.js",
+    "fresh-images": "node scripts/dev.mjs --seed-only --refresh-catalog",
+    "test-shiprocket": "node backend/scripts/test-shiprocket.js"
   },
   "devDependencies": {
     "mongodb-memory-server": "11.2.0"

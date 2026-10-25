@@ -21,7 +21,7 @@ export function OrderConfirmed() {
       <p className="text-lg text-muted mt-3">Order <strong className="text-ink font-medium">{orderNumber}</strong>. {o?.paymentMethod === 'cod' ? 'Please keep the amount ready for Cash on Delivery.' : 'Your payment has been received.'} We’ve emailed you a confirmation and will send tracking details when it ships.</p>
       {o && (
         <div className="grid md:grid-cols-2 gap-10 mt-10">
-          <ul className="space-y-3">{o.items.map((i) => <li key={i._id} className="flex gap-3 items-center"><Img src={i.image} alt="" className="w-14 h-16 object-cover bg-sand" /><span className="flex-1 text-[15px]">{i.name}{i.variantTitle !== 'Default' && <span className="block text-sm text-muted">{i.variantTitle}</span>}</span><span className="text-sm">×{i.quantity}</span></li>)}</ul>
+          <ul className="space-y-3">{(o.items || []).map((i) => <li key={i._id} className="flex gap-3 items-center"><Img src={i.image} alt="" className="w-14 h-16 object-cover bg-sand" /><span className="flex-1 text-[15px]">{i.name}{i.variantTitle !== 'Default' && <span className="block text-sm text-muted">{i.variantTitle}</span>}</span><span className="text-sm">×{i.quantity}</span></li>)}</ul>
           <div><Summary totals={o.totals} showShippingNote={false} /><p className="text-sm text-muted mt-4">Delivering to {o.shippingAddress.fullName}, {o.shippingAddress.city} {o.shippingAddress.pincode}</p></div>
         </div>
       )}

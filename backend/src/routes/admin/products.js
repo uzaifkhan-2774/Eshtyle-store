@@ -35,7 +35,7 @@ const productSchema = z.object({
   claims: z.object({ antiTarnish: z.boolean(), hypoallergenic: z.boolean(), waterResistant: z.boolean(), note: z.string().max(200) }).partial().optional(),
   specifications: z.array(z.object({ label: z.string().max(40), value: z.string().max(200) })).max(20).optional(),
   dimensions: z.string().max(120).optional(), weightGrams: z.number().min(0).max(5000).optional(), packageContents: z.string().max(200).optional(), careInstructions: z.string().max(1500).optional(),
-  isFeatured: z.boolean().optional(), codAvailable: z.boolean().optional(), returnable: z.boolean().optional(), returnWindowDays: z.number().int().min(0).max(60).optional(), hsnCode: z.string().max(10).optional(),
+  isFeatured: z.boolean().optional(), isListed: z.boolean().optional(), designPick: z.object({ count: z.number().int().min(0).max(6) }).optional(), codAvailable: z.boolean().optional(), returnable: z.boolean().optional(), returnWindowDays: z.number().int().min(0).max(60).optional(), hsnCode: z.string().max(10).optional(),
   sortOrder: z.number().int().optional(), seo: z.object({ title: z.string().max(70), description: z.string().max(170) }).partial().optional(), related: z.array(oid).max(12).optional(), priceReviewRequired: z.boolean().optional(),
   variants: z.array(variantSchema).min(1, 'Add at least one variant').max(60),
 });
@@ -47,6 +47,7 @@ r.get('/', requirePerm('products:read'), ah(async (req, res) => {
   if (req.query.category && mongoose.isValidObjectId(req.query.category)) f.category = req.query.category;
   if (req.query.q) { const rx = new RegExp(escapeRegex(String(req.query.q).slice(0, 60)), 'i'); const vs = await ProductVariant.find({ sku: rx }).select('product').lean(); f.$or = [{ name: rx }, { sku: rx }, { _id: { $in: vs.map((v) => v.product) } }]; }
   if (req.query.stock === 'out') f.inStock = false;
+  if (req.query.stock === 'low') { const low = (await ProductVariant.find({ isActive: true, stock: { $lte: 10 } }).select('product stock lowStockThreshold').lean()).filter((v) => v.stock <= (v.lowStockThreshold ?? 3)); f._id = { $in: low.map((v) => v.product) }; }
   if (req.query.review === 'true') f.priceReviewRequired = true;
   const [items, total] = await Promise.all([Product.find(f).sort({ updatedAt: -1 }).skip(skip).limit(limit).populate('category', 'name').lean(), Product.countDocuments(f)]);
   const vs = await ProductVariant.find({ product: { $in: items.map((p) => p._id) } }).select('product stock sku').lean();

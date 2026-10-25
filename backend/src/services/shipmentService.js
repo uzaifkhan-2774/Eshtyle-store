@@ -1,3 +1,4 @@
+import { sendDeliveredEmail } from './loyalty.js';
 import { Order, Shipment } from '../models/index.js';
 import * as shiprocket from './shipping/shiprocket.js';
 import { notifyEmail } from './notify/index.js';
@@ -83,7 +84,7 @@ export async function applyTrackingUpdate(shipment, { statusLabel, events = [], 
     if (m.order === 'delivered' && order.paymentMethod === 'cod') order.paymentStatus = 'cod_collected';
     if (m.order === 'shipped' && prev !== 'shipped') notifyEmail('shipped', order.email, { order, shipment }, { order: order._id });
     if (m.order === 'out_for_delivery') notifyEmail('trackingUpdate', order.email, { order, status: 'Out for delivery today' }, { order: order._id });
-    if (m.order === 'delivered') notifyEmail('delivered', order.email, { order }, { order: order._id });
+    if (m.order === 'delivered') await sendDeliveredEmail(order);
   }
   await order.save();
 }

@@ -34,8 +34,8 @@ export function CustomerView() {
         <Card title="Addresses" className="lg:col-span-2">{!data.addresses.length ? <p className="text-sm text-muted">None saved.</p> : <ul className="grid sm:grid-cols-2 gap-3 text-sm">{data.addresses.map((a: any) => <li key={a._id}>{a.fullName}, {a.line1}, {a.city} {a.pincode} · {a.phone}</li>)}</ul>}</Card>
       </div>
       <h2 className="text-2xl mt-8 mb-3">Orders</h2>
-      <Table head={['Order', 'Placed', 'Total', 'Status', 'Payment']} empty={!data.orders.length}>{data.orders.map((o: any) => <tr key={o._id}><Td><Link to={`/admin/orders/${o._id}`} className="link">{o.orderNumber}</Link></Td><Td>{dateTime(o.placedAt)}</Td><Td>{inr(o.totals.total)}</Td><Td><Badge s={o.status} /></Td><Td><Badge s={o.paymentStatus} /></Td></tr>)}</Table>
-      {data.tickets.length > 0 && <><h2 className="text-2xl mt-8 mb-3">Support messages</h2><ul className="space-y-2 text-sm">{data.tickets.map((t: any) => <li key={t._id} className="bg-white border border-beige p-3"><Badge s={t.status} /> {t.subject || 'Message'} — {t.message.slice(0, 160)}</li>)}</ul></>}
+      <Table head={['Order', 'Placed', 'Total', 'Status', 'Payment']} empty={!data.orders.length}>{data.orders.map((o: any) => <tr key={o._id}><Td><Link to={`/admin/orders/${o._id}`} className="link">{o.orderNumber}</Link></Td><Td>{dateTime(o.placedAt)}</Td><Td>{inr(o.totals?.total)}</Td><Td><Badge s={o.status} /></Td><Td><Badge s={o.paymentStatus} /></Td></tr>)}</Table>
+      {data.tickets.length > 0 && <><h2 className="text-2xl mt-8 mb-3">Support messages</h2><ul className="space-y-2 text-sm">{data.tickets.map((t: any) => <li key={t._id} className="bg-white border border-beige p-3"><Badge s={t.status} /> {t.subject || 'Message'} — {String(t.message || '').slice(0, 160)}</li>)}</ul></>}
     </>
   );
 }
@@ -177,7 +177,7 @@ export function Marketing() {
         columns={[['', (b) => <Img src={b.image?.thumb || b.image?.url} alt="" className="w-16 h-12 object-cover bg-sand" />], ['Headline', (b) => b.title], ['Placement', (b) => b.placement], ['Link', (b) => b.ctaUrl], ['Status', (b) => <Badge s={b.isActive ? 'active' : 'draft'} label={b.isActive ? 'Live' : 'Off'} />]]} />}
       {tab === 'collections' && <Crud path="/collections" title="Collections" sub="Smart collections fill themselves; manual ones list the products you pick." blank={{ type: 'tag', isPublished: true }}
         fields={[{ k: 'name', label: 'Name' }, { k: 'slug', label: 'URL slug' }, { k: 'type', label: 'Type', type: 'select', options: [['manual', 'Manual'], ['tag', 'By tag'], ['new_arrivals', 'New arrivals'], ['bestsellers', 'Bestsellers (by sales)'], ['sale', 'On sale']] }, { k: 'tag', label: 'Tag (for “By tag”)' }, { k: 'description', label: 'Description', type: 'textarea' }, { k: 'image', label: 'Image', type: 'image' }, { k: 'sortOrder', label: 'Order', type: 'number' }, { k: 'isPublished', label: 'Published', type: 'bool' }]}
-        columns={[['Name', (c) => <a href={`/collections/${c.slug}`} target="_blank" rel="noopener noreferrer" className="link">{c.name}</a>], ['Type', (c) => c.type.replace('_', ' ') + (c.tag ? `: ${c.tag}` : '')], ['Status', (c) => <Badge s={c.isPublished ? 'published' : 'draft'} />]]} />}
+        columns={[['Name', (c) => <a href={`/collections/${c.slug}`} target="_blank" rel="noopener noreferrer" className="link">{c.name}</a>], ['Type', (c) => String(c.type || '').replace('_', ' ') + (c.tag ? `: ${c.tag}` : '')], ['Status', (c) => <Badge s={c.isPublished ? 'published' : 'draft'} />]]} />}
       {tab === 'pages' && <Crud path="/pages" title="Campaign landing pages" sub="Published at /offers/your-slug — link them from ads and emails." blank={{ isPublished: false }}
         fields={[{ k: 'title', label: 'Title' }, { k: 'slug', label: 'URL slug' }, { k: 'intro', label: 'Intro', type: 'textarea' }, { k: 'body', label: 'Body (blank line = new paragraph)', type: 'textarea' }, { k: 'heroImage', label: 'Hero image', type: 'image' }, { k: 'linkedCollection', label: 'Products from collection', type: 'select', options: [['', 'None'], ...(cols.data?.items || []).map((c) => [c._id, c.name] as [string, string])] }, { k: 'couponCode', label: 'Coupon to promote' }, { k: 'seo.title', label: 'SEO title' }, { k: 'seo.description', label: 'SEO description' }, { k: 'isPublished', label: 'Published', type: 'bool' }]}
         columns={[['Title', (p) => p.title], ['URL', (p) => <a className="link" href={`/offers/${p.slug}`} target="_blank" rel="noopener noreferrer">/offers/{p.slug}</a>], ['Status', (p) => <Badge s={p.isPublished ? 'published' : 'draft'} />]]} />}
@@ -198,7 +198,48 @@ export function Reviews() {
         <li key={r._id} className="bg-white border border-beige p-4"><div className="flex flex-wrap justify-between gap-2"><span><Stars value={r.rating} /> <strong className="font-medium ml-2">{r.title}</strong></span><span className="text-sm text-muted">{r.authorName} · {r.product?.name} · {date(r.createdAt)}</span></div><p className="mt-2 text-[15px]">{r.body}</p>
           <div className="flex gap-2 mt-3">{r.status !== 'approved' && <button className="btn-primary h-9 text-sm" onClick={() => act.mutate({ path: `/admin/reviews/${r._id}`, body: { status: 'approved' }, ok: 'Approved' })}>Approve</button>}{r.status !== 'rejected' && <button className="btn-outline h-9 text-sm" onClick={() => act.mutate({ path: `/admin/reviews/${r._id}`, body: { status: 'rejected' }, ok: 'Rejected' })}>Reject</button>}{r.status === 'approved' && <Toggle label="Feature on homepage" checked={!!r.featured} onChange={(b) => act.mutate({ path: `/admin/reviews/${r._id}`, body: { status: 'approved', featured: b } })} />}</div></li>
       ))}</ul>}
+      <Testimonials />
     </>
+  );
+}
+
+const T_SOURCES: [string, string][] = [['whatsapp', 'WhatsApp'], ['instagram', 'Instagram'], ['meesho', 'Meesho'], ['nushop', 'Nushop store'], ['website', 'Website'], ['in_person', 'In person'], ['other', 'Other']];
+const tBlank = { name: '', city: '', quote: '', rating: '5', source: 'whatsapp', productSlug: '', consent: false };
+/** Real customer messages (WhatsApp, Instagram…) shown on the homepage with their source. */
+function Testimonials() {
+  const { data } = useA<{ items: any[] }>(['testimonials'], '/admin/testimonials');
+  const act = useAct();
+  const [f, setF] = useState(tBlank);
+  const [editId, setEditId] = useState<string | null>(null);
+  const body = (x: typeof tBlank, extra = {}) => ({ name: x.name, city: x.city || undefined, quote: x.quote, rating: x.rating ? Number(x.rating) : null, source: x.source, productSlug: x.productSlug || undefined, consentConfirmed: x.consent, ...extra });
+  const submit = () => act.mutate({ path: editId ? `/admin/testimonials/${editId}` : '/admin/testimonials', method: editId ? 'PUT' : 'POST', body: body(f), ok: editId ? 'Testimonial updated' : 'Testimonial added' }, { onSuccess: () => { setF(tBlank); setEditId(null); } });
+  return (
+    <div className="mt-10">
+      <PageHead title="Testimonials" sub="Real messages customers sent you on WhatsApp, Instagram or elsewhere. Shown on the homepage under “What our customers say”, with where they came from. Never add made-up reviews." />
+      <Card title={editId ? 'Edit testimonial' : 'Add a testimonial'}>
+        <form className="grid sm:grid-cols-2 gap-3" onSubmit={(e) => { e.preventDefault(); submit(); }}>
+          <Input label="Customer name (first name is fine)" value={f.name} onChange={(e) => setF({ ...f, name: e.target.value })} required maxLength={60} />
+          <Input label="City (optional)" value={f.city} onChange={(e) => setF({ ...f, city: e.target.value })} maxLength={60} />
+          <div className="sm:col-span-2"><Textarea label="Their message (copy it exactly)" value={f.quote} onChange={(e) => setF({ ...f, quote: e.target.value })} required minLength={5} maxLength={600} rows={3} /></div>
+          <Select label="Where it came from" value={f.source} onChange={(e) => setF({ ...f, source: e.target.value })}>{T_SOURCES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</Select>
+          <Select label="Stars (only if they gave a rating)" value={f.rating} onChange={(e) => setF({ ...f, rating: e.target.value })}><option value="">No stars</option>{[5, 4, 3, 2, 1].map((n) => <option key={n} value={n}>{n} stars</option>)}</Select>
+          <Input label="Product link name (optional, e.g. golden-dripping-heart-earrings)" value={f.productSlug} onChange={(e) => setF({ ...f, productSlug: e.target.value.trim() })} />
+          <label className="flex items-start gap-2 text-sm sm:col-span-2"><input type="checkbox" className="accent-espresso mt-1" checked={f.consent} onChange={(e) => setF({ ...f, consent: e.target.checked })} required /><span>This is a real message from this customer, and they agreed to it being shown on the website.</span></label>
+          <div className="sm:col-span-2 flex gap-2"><button className="btn-primary h-10" disabled={act.isPending || !f.consent}>{editId ? 'Save changes' : 'Add testimonial'}</button>{editId && <button type="button" className="btn-ghost h-10" onClick={() => { setEditId(null); setF(tBlank); }}>Cancel</button>}</div>
+        </form>
+      </Card>
+      {!!data?.items.length && <ul className="space-y-3 mt-4">{data.items.map((t) => (
+        <li key={t._id} className="bg-white border border-beige p-4">
+          <div className="flex flex-wrap justify-between gap-2 text-sm"><span><strong className="font-medium">{t.name}</strong>{t.city ? ` · ${t.city}` : ''} · {T_SOURCES.find(([v]) => v === t.source)?.[1]}{t.rating ? ` · ${t.rating}★` : ''}</span><span className={t.isActive ? 'text-gold-deep' : 'text-muted'}>{t.isActive ? 'Showing' : 'Hidden'}</span></div>
+          <p className="mt-2 text-[15px]">“{t.quote}”</p>
+          <div className="flex flex-wrap gap-2 mt-3">
+            <button className="btn-outline h-9 text-sm" onClick={() => { setEditId(t._id); setF({ name: t.name, city: t.city || '', quote: t.quote, rating: t.rating ? String(t.rating) : '', source: t.source, productSlug: t.productSlug || '', consent: true }); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Edit</button>
+            <button className="btn-outline h-9 text-sm" onClick={() => act.mutate({ path: `/admin/testimonials/${t._id}`, method: 'PUT', body: { ...body({ name: t.name, city: t.city || '', quote: t.quote, rating: t.rating ? String(t.rating) : '', source: t.source, productSlug: t.productSlug || '', consent: true }), isActive: !t.isActive }, ok: t.isActive ? 'Hidden' : 'Showing' })}>{t.isActive ? 'Hide' : 'Show'}</button>
+            <Confirm label="Delete" danger onConfirm={() => act.mutate({ path: `/admin/testimonials/${t._id}`, method: 'DELETE', ok: 'Deleted' })} />
+          </div>
+        </li>
+      ))}</ul>}
+    </div>
   );
 }
 
@@ -212,7 +253,7 @@ export function Returns() {
     <>
       <PageHead title="Returns" actions={<select className="field h-10 w-auto" value={status} onChange={(e) => setStatus(e.target.value)} aria-label="Filter"><option value="">All</option>{['requested', 'approved', 'pickup_scheduled', 'received', 'rejected', 'closed'].map((s) => <option key={s} value={s}>{s.replace('_', ' ')}</option>)}</select>} />
       {!data?.items.length ? <p className="text-muted">No return requests.</p> : <ul className="space-y-3">{data.items.map((r) => {
-        const items = r.items.map((x: any) => { const oi = r.order?.items.find((i: any) => i._id === x.orderItem); return `${oi?.name || 'Item'} ×${x.quantity}`; }).join(', ');
+        const items = (r.items || []).map((x: any) => { const oi = r.order?.items?.find((i: any) => i._id === x.orderItem); return `${oi?.name || 'Item'} ×${x.quantity}`; }).join(', ');
         const go = (body: object, ok: string) => act.mutate({ path: `/admin/orders/returns/${r._id}`, body: { adminNote: note[r._id] || undefined, ...body }, ok });
         return (
           <li key={r._id} className="bg-white border border-beige p-4 text-sm">
@@ -274,7 +315,7 @@ export function SettingsPage({ canEdit }: { canEdit: boolean }) {
     business: { ...pick(s.business, ['name', 'legalName', 'ownerName', 'gstin', 'pan', 'email', 'phone', 'whatsapp', 'instagram', 'facebook', 'youtube']), address: pick(s.business.address, ['line1', 'line2', 'city', 'state', 'pincode']) },
     announcement: pick(s.announcement, ['text', 'link', 'isActive']), tax: pick(s.tax, ['rate', 'pricesIncludeTax', 'invoicePrefix']),
     shipping: pick(s.shipping, ['flatRate', 'freeAbove', 'estimateDaysMin', 'estimateDaysMax', 'defaultWeightGrams', 'blockedPincodes']), cod: pick(s.cod, ['enabled', 'fee', 'maxOrderValue', 'minOrderValue']),
-    returns: pick(s.returns, ['windowDays', 'policySummary', 'reasons', 'requireVideo']), orders: pick(s.orders, ['reservationMinutes', 'maxQtyPerItem']), seo: pick(s.seo, ['defaultTitle', 'defaultDescription']), analytics: pick(s.analytics, ['gaMeasurementId', 'metaPixelId']),
+    returns: pick(s.returns, ['windowDays', 'policySummary', 'reasons', 'requireVideo']), loyalty: pick(s.loyalty, ['thankYouEnabled', 'thankYouAmount', 'thankYouMinOrder', 'thankYouDays']), orders: pick(s.orders, ['reservationMinutes', 'maxQtyPerItem']), seo: pick(s.seo, ['defaultTitle', 'defaultDescription']), analytics: pick(s.analytics, ['gaMeasurementId', 'metaPixelId']),
   } }); };
   return (
     <>
@@ -282,10 +323,11 @@ export function SettingsPage({ canEdit }: { canEdit: boolean }) {
       <div className="grid lg:grid-cols-2 gap-4">
         <Card title="Business & invoices"><div className="grid sm:grid-cols-2 gap-3">{f('business.name', 'Store name')}{f('business.legalName', 'Legal name')}{f('business.ownerName', 'Owner / grievance officer')}{f('business.gstin', 'GSTIN', 'text', 'Leave blank until you have a real GSTIN')}{f('business.pan', 'PAN')}{f('business.address.line1', 'Address line 1')}{f('business.address.line2', 'Address line 2')}{f('business.address.city', 'City')}{f('business.address.state', 'State', 'text', 'Used to choose CGST+SGST vs IGST')}{f('business.address.pincode', 'Pincode')}{f('tax.invoicePrefix', 'Invoice prefix')}</div></Card>
         <Card title="Contact & social"><div className="grid sm:grid-cols-2 gap-3">{f('business.email', 'Support email')}{f('business.phone', 'Support phone')}{f('business.whatsapp', 'WhatsApp number')}{f('business.instagram', 'Instagram URL')}{f('business.facebook', 'Facebook URL')}{f('business.youtube', 'YouTube URL')}</div></Card>
-        <Card title="Shipping"><div className="grid sm:grid-cols-2 gap-3">{f('shipping.flatRate', 'Shipping charge ₹', 'money')}{f('shipping.freeAbove', 'Free shipping above ₹', 'money')}{f('shipping.estimateDaysMin', 'Delivery estimate from (days)', 'number')}{f('shipping.estimateDaysMax', 'Delivery estimate to (days)', 'number')}{f('shipping.defaultWeightGrams', 'Default parcel weight (g)', 'number')}<Input label="Blocked pincodes (comma separated)" value={(s.shipping.blockedPincodes || []).join(', ')} onChange={(e) => setS((x: any) => setPath(x, 'shipping.blockedPincodes', e.target.value.split(',').map((p: string) => p.trim()).filter(Boolean)))} disabled={!canEdit} /></div></Card>
+        <Card title="Shipping"><div className="grid sm:grid-cols-2 gap-3">{f('shipping.flatRate', 'Shipping charge ₹', 'money')}{f('shipping.freeAbove', 'Free shipping above ₹ (0 = free on every order)', 'money')}{f('shipping.estimateDaysMin', 'Delivery estimate from (days)', 'number')}{f('shipping.estimateDaysMax', 'Delivery estimate to (days)', 'number')}{f('shipping.defaultWeightGrams', 'Default parcel weight (g)', 'number')}<Input label="Blocked pincodes (comma separated)" value={(s.shipping.blockedPincodes || []).join(', ')} onChange={(e) => setS((x: any) => setPath(x, 'shipping.blockedPincodes', e.target.value.split(',').map((p: string) => p.trim()).filter(Boolean)))} disabled={!canEdit} /></div></Card>
         <Card title="Cash on Delivery"><div className="grid sm:grid-cols-2 gap-3"><div className="sm:col-span-2">{f('cod.enabled', 'Offer Cash on Delivery', 'bool')}</div>{f('cod.fee', 'COD fee ₹', 'money')}{f('cod.maxOrderValue', 'Max COD order ₹', 'money')}{f('cod.minOrderValue', 'Min COD order ₹', 'money')}</div></Card>
         <Card title="Tax (GST)"><div className="grid sm:grid-cols-2 gap-3">{f('tax.rate', 'GST rate %', 'number', 'Imitation jewellery (HSN 7117) is commonly 3% — confirm with your CA')}<div className="flex items-end">{f('tax.pricesIncludeTax', 'Prices include GST', 'bool')}</div></div></Card>
         <Card title="Returns & orders"><div className="grid sm:grid-cols-2 gap-3">{f('returns.windowDays', 'Return window (days)', 'number')}{f('orders.reservationMinutes', 'Hold stock for unpaid orders (min)', 'number')}<label className="flex items-center gap-2 text-sm sm:col-span-2"><input type="checkbox" checked={s.returns.requireVideo !== false} disabled={!canEdit} onChange={(e) => setS((x: any) => setPath(x, 'returns.requireVideo', e.target.checked))} /> Require an unboxing video for every return request</label><Textarea className="sm:col-span-2" label="Return reasons (one per line)" value={(s.returns.reasons || []).join('\n')} onChange={(e) => setS((x: any) => setPath(x, 'returns.reasons', e.target.value.split('\n').filter(Boolean)))} disabled={!canEdit} /></div></Card>
+        <Card title="Thank-you reward"><p className="text-xs text-muted mb-3">When an order is delivered, the customer gets a personal one-time coupon for their next order in the “Delivered” email. It works only on their account.</p><div className="grid sm:grid-cols-2 gap-3"><div className="sm:col-span-2">{f('loyalty.thankYouEnabled', 'Send a thank-you coupon on delivery', 'bool')}</div>{f('loyalty.thankYouAmount', 'Discount ₹', 'money')}{f('loyalty.thankYouMinOrder', 'Minimum next order ₹', 'money')}{f('loyalty.thankYouDays', 'Valid for (days)', 'number')}</div></Card>
         <Card title="Announcement bar"><div className="space-y-3">{f('announcement.text', 'Text')}{f('announcement.link', 'Link')}{f('announcement.isActive', 'Show announcement', 'bool')}</div></Card>
         <Card title="SEO & analytics"><div className="space-y-3">{f('seo.defaultTitle', 'Default page title')}{f('seo.defaultDescription', 'Default description')}{f('analytics.gaMeasurementId', 'Google Analytics ID', 'text', 'G-XXXX. Loads only after visitor consent')}{f('analytics.metaPixelId', 'Meta Pixel ID', 'text', 'Loads only after visitor consent')}</div></Card>
       </div>

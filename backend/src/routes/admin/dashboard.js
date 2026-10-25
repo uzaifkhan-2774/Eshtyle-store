@@ -32,7 +32,7 @@ r.get('/', requirePerm('dashboard'), ah(async (req, res) => {
     ReturnRequest.countDocuments({ status: { $in: ['requested', 'approved', 'pickup_scheduled', 'received'] } }),
     SupportTicket.countDocuments({ status: { $ne: 'resolved' } }),
     Review.countDocuments({ status: 'pending' }),
-    Order.find().sort({ createdAt: -1 }).limit(8).select('orderNumber totals status paymentStatus paymentMethod placedAt shippingAddress.fullName').lean(),
+    Order.find({ orderNumber: { $exists: true }, totals: { $exists: true } }).sort({ createdAt: -1 }).limit(8).select('orderNumber totals status paymentStatus paymentMethod placedAt shippingAddress.fullName').lean(),
     ProductVariant.find({ isActive: true }).select('stock price').lean(),
   ]);
   res.json({

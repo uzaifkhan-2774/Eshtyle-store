@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { z } from 'zod';
 import mongoose from 'mongoose';
 import { stringify } from 'csv-stringify/sync';
-import { Reel, User, Order, Address, Category, Collection, Coupon, Banner, Page, NewsletterSubscription, Review, Product, AuditLog, SupportTicket, StoreSettings, Notification, getSettings } from '../../models/index.js';
+import { Testimonial, Reel, User, Order, Address, Category, Collection, Coupon, Banner, Page, NewsletterSubscription, Review, Product, AuditLog, SupportTicket, StoreSettings, Notification, getSettings } from '../../models/index.js';
 import { ah, badRequest, notFound, forbidden } from '../../lib/errors.js';
 import { validate } from '../../middleware/validate.js';
 import { requirePerm, PERMISSIONS } from '../../middleware/auth.js';
@@ -90,6 +90,23 @@ r.get('/newsletter/export', requirePerm('marketing:write'), ah(async (req, res) 
   res.send(stringify([['email', 'consent_at', 'source'], ...items.map((i) => [i.email, i.consentAt?.toISOString(), i.source])]));
 }));
 
+// ---- Testimonials (real customer messages from WhatsApp/Instagram etc., added with permission)
+const tSchema = z.object({ name: z.string().trim().min(1).max(60), city: z.string().trim().max(60).optional(), quote: z.string().trim().min(5).max(600), rating: z.number().int().min(1).max(5).nullable().optional(),
+  source: z.enum(['whatsapp', 'instagram', 'meesho', 'nushop', 'website', 'in_person', 'other']), productSlug: z.string().trim().max(120).optional(), isActive: z.boolean().optional(), sortOrder: z.number().int().optional(),
+  consentConfirmed: z.literal(true, { errorMap: () => ({ message: 'Confirm this is a real message and the customer agreed to show it.' }) }) });
+r.get('/testimonials', requirePerm('reviews:write'), ah(async (_req, res) => res.json({ items: await Testimonial.find().sort({ sortOrder: 1, createdAt: -1 }).lean() })));
+r.post('/testimonials', requirePerm('reviews:write'), validate(tSchema), ah(async (req, res) => {
+  const t = await Testimonial.create({ ...req.body, addedBy: req.user._id });
+  await audit(req, 'testimonial.create', 'Testimonial', t._id); res.status(201).json({ item: t });
+}));
+r.put('/testimonials/:id', requirePerm('reviews:write'), validate(tSchema), ah(async (req, res) => {
+  const t = await Testimonial.findByIdAndUpdate(req.params.id, { $set: req.body }, { new: true }); if (!t) throw notFound();
+  await audit(req, 'testimonial.update', 'Testimonial', t._id); res.json({ item: t });
+}));
+r.delete('/testimonials/:id', requirePerm('reviews:write'), ah(async (req, res) => {
+  await Testimonial.deleteOne({ _id: req.params.id }); await audit(req, 'testimonial.delete', 'Testimonial', req.params.id); res.json({ ok: true });
+}));
+
 // ---- Reviews moderation
 r.get('/reviews', requirePerm('reviews:write'), ah(async (req, res) => {
   const items = await Review.find(req.query.status ? { status: req.query.status } : {}).sort({ createdAt: -1 }).limit(200).populate('product', 'name slug').lean();
@@ -147,6 +164,7 @@ const settingsSchema = z.object({
   tax: z.object({ rate: z.number().min(0).max(28), pricesIncludeTax: z.boolean(), invoicePrefix: z.string().max(10) }).partial().optional(),
   shipping: z.object({ flatRate: z.number().int().min(0), freeAbove: z.number().int().min(0), estimateDaysMin: z.number().int().min(1), estimateDaysMax: z.number().int().min(1), defaultWeightGrams: z.number().int().min(1), blockedPincodes: z.array(z.string().regex(/^\d{6}$/)) }).partial().optional(),
   cod: z.object({ enabled: z.boolean(), fee: z.number().int().min(0), maxOrderValue: z.number().int().min(0), minOrderValue: z.number().int().min(0) }).partial().optional(),
+  loyalty: z.object({ thankYouEnabled: z.boolean(), thankYouAmount: z.number().int().min(0).max(100000), thankYouMinOrder: z.number().int().min(0).max(10000000), thankYouDays: z.number().int().min(1).max(365) }).partial().optional(),
   returns: z.object({ windowDays: z.number().int().min(0).max(60), policySummary: z.string().max(1000), reasons: z.array(z.string().max(80)).max(12), requireVideo: z.boolean() }).partial().optional(),
   orders: z.object({ reservationMinutes: z.number().int().min(10).max(1440), maxQtyPerItem: z.number().int().min(1).max(50) }).partial().optional(),
   seo: z.object({ defaultTitle: z.string().max(70), defaultDescription: z.string().max(170) }).partial().optional(),
