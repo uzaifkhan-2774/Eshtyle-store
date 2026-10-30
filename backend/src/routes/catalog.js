@@ -186,7 +186,7 @@ r.get('/home', ah(async (_req, res) => {
     Banner.find(live).sort({ sortOrder: 1 }).lean(),
     Category.find({ isPublished: true, parent: null }).sort({ sortOrder: 1 }).lean(),
     Collection.find({ isPublished: true }).sort({ sortOrder: 1 }).lean(),
-    Review.find({ status: 'approved', featured: true, verifiedPurchase: true }).sort({ createdAt: -1 }).limit(6).populate('product', 'name slug').lean(),
+    Review.find({ status: 'approved', featured: true }).sort({ createdAt: -1 }).limit(6).populate('product', 'name slug').lean(),
     getSettings(),
     Testimonial.find({ isActive: true }).sort({ sortOrder: 1, createdAt: -1 }).limit(12).select('name city quote rating source productSlug').lean(),
   ]);

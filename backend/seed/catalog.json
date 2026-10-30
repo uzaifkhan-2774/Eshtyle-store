@@ -1,5 +1,5 @@
 {
- "version": "2026-10-23",
+ "version": "2026-10-29",
  "products": [
   {
    "sku": "ESHTYLE_01",
@@ -1620,12 +1620,12 @@
   },
   {
    "sku": "ESHTYLE_36",
-   "name": "Black Clover Necklace",
+   "name": "Clover Necklace",
    "slug": "black-clover-necklace",
    "category": "necklaces",
    "subcategory": null,
-   "line": "Black clover motifs along a fine gold-tone chain — the signature everyday necklace.",
-   "colour": "Black & Gold",
+   "line": "Clover motifs along a fine gold-tone chain — the signature everyday necklace.",
+   "colour": "Black, Red",
    "finish": "Gold-tone",
    "tags": [
     "clover",
@@ -1636,10 +1636,10 @@
     "black necklace",
     "four leaf clover"
    ],
-   "styleName": "Black Clover Necklace",
+   "styleName": "Clover Necklace",
    "antiTarnish": false,
    "price": 299,
-   "stock": 5,
+   "stock": 10,
    "pick": 0,
    "images": [
     {
@@ -1658,7 +1658,52 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FQ0F7IHM63-2026-10-21_content_eba5fec2_30d6_41a6_a0fd_fd979a966076.jpeg"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "label": "Black",
+     "sku": "ESHTYLE_36",
+     "stock": 5,
+     "images": [
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DZC0K95KWE-2026-10-21_front_view_aa9fd9e8_162c_4a11_b16d_9ae1c6ea4827.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/RPDGSSJOZL-2026-10-21_office_look_8c262b35_a805_4b65_a6b8_1e5153f37df3.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/U30ORKHIXG-2026-10-21_table_shot_ba0e75bc_d45d_4c74_b0f5_830fb74bafb3.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C5XT8WXVED-2026-10-21_model_shot_9910f455_56e5_406c_8563_9ed2e0c63f50.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FQ0F7IHM63-2026-10-21_content_eba5fec2_30d6_41a6_a0fd_fd979a966076.jpeg"
+      }
+     ]
+    },
+    {
+     "label": "Red",
+     "sku": "ESHTYLE_115",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-00100/esh-00100-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00100/esh-00100-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00100/esh-00100-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00100/esh-00100-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00100/esh-00100-5.jpg"
+      }
+     ]
+    }
+   ],
    "video": null,
    "priceKnown": true,
    "description": "Material And Construction: The necklace features a delicate gold-tone chain with evenly placed clover-shaped motifs.\n\nStylish Design: Black clover accents create a refined contrast against the gold-tone chain.\n\nUser Experience: The lightweight-looking necklace features a fine chain and a front drop design for an elegant appearance.\n\nVersatile Occasion: Its understated design complements office wear, casual outfits, and semi-formal looks.\n\nIdeal For: This necklace is designed for women who prefer minimal jewellery with a distinctive motif.\n\nLifestyle Essential: The necklace adds a polished finishing touch to open-neck shirts, blouses, and dresses.",
@@ -2278,8 +2323,8 @@
    "slug": "clover-screw-nail-bracelet-set-of-3",
    "category": "bracelets",
    "subcategory": "bracelet-combos",
-   "line": "Three signature shapes in one set: a black clover chain, a screw motif bangle and a nail cuff.",
-   "colour": "Black & Gold",
+   "line": "Three signature shapes in one set: a clover chain, a screw motif bangle and a nail cuff.",
+   "colour": "Black, Gold, White, Red, Blue, Pink",
    "finish": "Gold-tone",
    "tags": [
     "bestseller",
@@ -2295,8 +2340,8 @@
    ],
    "styleName": "Clover, Screw & Nail Bracelet Set of 3",
    "antiTarnish": false,
-   "price": 598,
-   "stock": 6,
+   "price": 599,
+   "stock": 31,
    "pick": 0,
    "images": [
     {
@@ -2330,7 +2375,179 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VYQYH44POC-2026-10-21_size_view_9de9c74d_5584_4df7_b4ec_f12a63027aa2.jpeg"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "label": "Black",
+     "sku": "ESHTYLE_51",
+     "stock": 6,
+     "images": [
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DELMBIOWAD-2026-10-21_3db831a6cb07cd77502af0f6266321f2_e911822c_0beb_4280_af69_23a10e4b5d3c.jpg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IOUVOAV1OC-2026-10-21_2a4231d2d6343385c85d11c98af28c46_c127ea48_49b2_4716_aa25_c3ed793a461f.jpg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/5HNPGCELOQ-2026-10-21_a6142fa91172cf8c122b1ae8643a4528_d1ef6206_c734_4727_897f_6543e8d05b9a.jpg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/M369EU2L6L-2026-10-21_35b160ac9db341458126d84338dacd80_c2fb354c_b1ab_4be3_984d_f75be723caf7.jpg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/TJE5M7ORH4-2026-10-21_front_view_c10b0676_9b31_4584_888c_5b318910c2d2.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FLNS6Y1WYB-2026-10-21_close_up_1ea3e346_fe04_429b_bf1f_a19e034b6cb1.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/9257YMNZK8-2026-10-21_model_hand_1_074538fd_bbfc_45b9_97cf_9f6fff3f97a5.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VD9JK0XU6J-2026-10-21_images__1__2412a886_ae9e_4a47_940f_a95109261a11.jfif"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/WVV695XXB1-2026-10-21_images_1d84306c_279c_4027_af30_3e349c3362e0.jfif"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VYQYH44POC-2026-10-21_size_view_9de9c74d_5584_4df7_b4ec_f12a63027aa2.jpeg"
+      }
+     ]
+    },
+    {
+     "label": "Gold",
+     "sku": "ESHTYLE_125",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-00110/esh-00110-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00110/esh-00110-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00110/esh-00110-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00110/esh-00110-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00110/esh-00110-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00110/esh-00110-6.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00110/esh-00110-7.jpg"
+      }
+     ]
+    },
+    {
+     "label": "White",
+     "sku": "ESHTYLE_128",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-00113/esh-00113-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00113/esh-00113-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00113/esh-00113-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00113/esh-00113-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00113/esh-00113-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00113/esh-00113-6.jpg"
+      }
+     ]
+    },
+    {
+     "label": "Red",
+     "sku": "ESHTYLE_133",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-00118/esh-00118-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00118/esh-00118-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00118/esh-00118-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00118/esh-00118-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00118/esh-00118-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00118/esh-00118-6.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00118/esh-00118-7.jpg"
+      }
+     ]
+    },
+    {
+     "label": "Blue",
+     "sku": "ESHTYLE_134",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-00119/esh-00119-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00119/esh-00119-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00119/esh-00119-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00119/esh-00119-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00119/esh-00119-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00119/esh-00119-6.jpg"
+      }
+     ]
+    },
+    {
+     "label": "Pink",
+     "sku": "ESHTYLE_135",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-6.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-7.jpg"
+      }
+     ]
+    }
+   ],
    "video": null,
    "priceKnown": true,
    "description": "Material & Construction: The set features three coordinated bracelet styles with polished gold-tone finishes.\n\nStylish Design: It combines a screw-detail bangle, a sleek nail-inspired cuff, and a delicate black clover charm bracelet.\n\nUser Experience: The layered design creates a stylish stacked look when worn together.\n\nVersatile Occasion: These bracelets complement everyday outfits, festive looks, and dressy occasions.\n\nIdeal For: The set is designed for women who enjoy elegant layered wrist accessories.\n\nVariety & Options: The coordinated set offers contrasting textures and silhouettes for a balanced statement look.",
@@ -3462,12 +3679,12 @@
   },
   {
    "sku": "ESHTYLE_74",
-   "name": "Black Clover Charm Bracelet",
+   "name": "Clover Charm Bracelet",
    "slug": "black-clover-bracelet",
    "category": "bracelets",
    "subcategory": null,
-   "line": "Black clover motifs framed in gold-tone — timeless, graphic and endlessly wearable.",
-   "colour": "Black & Gold",
+   "line": "Clover motifs framed in gold-tone — timeless, graphic and endlessly wearable.",
+   "colour": "Black, Blue, Red, White, Gold",
    "finish": "Gold-tone",
    "tags": [
     "bestseller",
@@ -3478,10 +3695,10 @@
     "four leaf clover",
     "lucky charm bracelet"
    ],
-   "styleName": "Black Clover Charm Bracelet",
+   "styleName": "Clover Charm Bracelet",
    "antiTarnish": false,
    "price": 299,
-   "stock": 6,
+   "stock": 26,
    "pick": 0,
    "images": [
     {
@@ -3503,7 +3720,136 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UT2FRSWADH-2026-10-21_front_view_c1366386_16b0_4ede_8e3f_b3f90713f529.jpeg"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "label": "Black",
+     "sku": "ESHTYLE_74",
+     "stock": 6,
+     "images": [
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/XUSFJYJU6D-2026-10-21_product_packaging_4bf96179_6c92_4430_a994_53847298c0d7.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PHRJSBQMRH-2026-10-21_content_4698572c_4e42_4c09_8605_5c0c7ea2d8ee.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YYIH43VYMX-2026-10-21_model_shot_5c182fcc_a716_4c7d_8438_d004fe33c43a.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/I4KTC9H6Q4-2026-10-21_close_up_028c1fca_835f_4550_8032_f8649b75afbf.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/2GFRTTB5O5-2026-10-21_dish_shot_381fb63f_a5d2_41bc_a2fa_b7979aceeff3.jpeg"
+      },
+      {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UT2FRSWADH-2026-10-21_front_view_c1366386_16b0_4ede_8e3f_b3f90713f529.jpeg"
+      }
+     ]
+    },
+    {
+     "label": "Blue",
+     "sku": "ESHTYLE_111",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-0096/esh-0096-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0096/esh-0096-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0096/esh-0096-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0096/esh-0096-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0096/esh-0096-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0096/esh-0096-6.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0096/esh-0096-7.jpg"
+      }
+     ]
+    },
+    {
+     "label": "Red",
+     "sku": "ESHTYLE_112",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-0097/esh-0097-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0097/esh-0097-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0097/esh-0097-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0097/esh-0097-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0097/esh-0097-5.jpg"
+      }
+     ]
+    },
+    {
+     "label": "White",
+     "sku": "ESHTYLE_113",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-0098/esh-0098-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0098/esh-0098-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0098/esh-0098-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0098/esh-0098-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0098/esh-0098-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0098/esh-0098-6.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0098/esh-0098-7.jpg"
+      }
+     ]
+    },
+    {
+     "label": "Gold",
+     "sku": "ESHTYLE_114",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-0099/esh-0099-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0099/esh-0099-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0099/esh-0099-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0099/esh-0099-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0099/esh-0099-5.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-0099/esh-0099-6.jpg"
+      }
+     ]
+    }
+   ],
    "video": null,
    "priceKnown": true,
    "description": "Material And Construction: The bracelet features a delicate gold-tone chain design with multiple clover-shaped charms.\n\nStylish Design: Black clover motifs with gold-tone outlines create a striking and elegant contrast.\n\nUser Experience: The lightweight-looking chain construction offers a refined accessory style for everyday wear.\n\nVersatile Occasion: This bracelet complements casual outfits, festive looks and occasion wear.\n\nIdeal For: It is suitable for women who prefer elegant jewellery with a distinctive clover pattern.\n\nFashion Essential: The bracelet adds a graceful finishing touch when worn alone or styled with other accessories.",
@@ -5013,6 +5359,929 @@
    "material": "Stainless steel",
    "packOf": 2,
    "sheetCode": "ESHTYLE_106"
+  },
+  {
+   "sku": "ESHTYLE_107",
+   "name": "Golden Red Green Stone Vine Bracelet",
+   "slug": "golden-red-green-stone-vine-bracelet",
+   "category": "bracelets",
+   "subcategory": null,
+   "line": "A vine-style pattern with red and green stones.",
+   "colour": "Gold, Red & Green",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Red Green Stone Vine Bracelet",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-0015/esh-0015-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0015/esh-0015-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0015/esh-0015-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0015/esh-0015-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0015/esh-0015-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0015/esh-0015-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A gold-tone bracelet with coloured stones and a secure clasp.\n\nStylish Design: A vine-style pattern with red and green stones.\n\nVersatile Occasion: Adds colour to festive and everyday outfits.\n\nIdeal For: Women who love colourful bracelets.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-0015-Red-Green-Golden-tulip-bracelet"
+  },
+  {
+   "sku": "ESHTYLE_108",
+   "name": "Golden Clover Necklace",
+   "slug": "golden-clover-necklace",
+   "category": "chains",
+   "subcategory": null,
+   "line": "Four-leaf clover stations create a refined, classic look.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Clover Necklace",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-0094/esh-0094-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0094/esh-0094-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0094/esh-0094-3.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A fine gold-tone chain with clover motifs spaced along the necklace.\n\nStylish Design: Four-leaf clover stations create a refined, classic look.\n\nVersatile Occasion: Wear alone or layered for daily wear and special occasions.\n\nIdeal For: Women who like elegant everyday necklaces.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-0094-Golden-Clover-Necklace"
+  },
+  {
+   "sku": "ESHTYLE_109",
+   "name": "Golden Snake Chain Necklace",
+   "slug": "golden-snake-chain-necklace-109",
+   "category": "chains",
+   "subcategory": null,
+   "line": "A minimal pendant that adds a subtle highlight to the neckline.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Snake Chain Necklace",
+   "antiTarnish": false,
+   "price": 398,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A fine gold-tone chain with a securely attached pendant.\n\nStylish Design: A minimal pendant that adds a subtle highlight to the neckline.\n\nVersatile Occasion: Suits everyday, office and festive outfits.\n\nIdeal For: Women who love dainty necklaces.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-0094-Golden-Snake-Chain"
+  },
+  {
+   "sku": "ESHTYLE_110",
+   "name": "Golden Stone Studded Bracelet Watch",
+   "slug": "golden-stone-studded-bracelet-watch-110",
+   "category": "bracelets",
+   "subcategory": null,
+   "line": "A gold-tone bracelet-style analog watch with a stone-studded case and links.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Stone Studded Bracelet Watch",
+   "antiTarnish": false,
+   "price": 599,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-0095/esh-0095-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0095/esh-0095-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0095/esh-0095-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0095/esh-0095-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0095/esh-0095-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0095/esh-0095-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Design: A gold-tone bracelet-style analog watch with a stone-studded case and links.\n\nDial: A clear white dial with easy-to-read numerals.\n\nVersatile Occasion: Doubles as a statement bracelet for parties and festive wear.\n\nIdeal For: Women who like dressy watches.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-0095"
+  },
+  {
+   "sku": "ESHTYLE_116",
+   "name": "Golden Green Stone Flower Pendant Necklace",
+   "slug": "golden-green-stone-flower-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "line": "A minimal pendant that adds a subtle highlight to the neckline.",
+   "colour": "Gold & Green",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Green Stone Flower Pendant Necklace",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-7.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-8.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-9.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00101/esh-00101-10.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A fine gold-tone chain with a securely attached pendant.\n\nStylish Design: A minimal pendant that adds a subtle highlight to the neckline.\n\nVersatile Occasion: Suits everyday, office and festive outfits.\n\nIdeal For: Women who love dainty necklaces.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00101"
+  },
+  {
+   "sku": "ESHTYLE_117",
+   "name": "Golden Tulip Coin Pendant Necklace",
+   "slug": "golden-tulip-coin-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "line": "A minimal pendant that adds a subtle highlight to the neckline.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Tulip Coin Pendant Necklace",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00102/esh-00102-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00102/esh-00102-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00102/esh-00102-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00102/esh-00102-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00102/esh-00102-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00102/esh-00102-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00102/esh-00102-7.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A fine gold-tone chain with a securely attached pendant.\n\nStylish Design: A minimal pendant that adds a subtle highlight to the neckline.\n\nVersatile Occasion: Suits everyday, office and festive outfits.\n\nIdeal For: Women who love dainty necklaces.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00102"
+  },
+  {
+   "sku": "ESHTYLE_118",
+   "name": "Golden Solitaire Crystal Pendant Necklace",
+   "slug": "golden-solitaire-crystal-pendant-necklace",
+   "category": "pendants",
+   "subcategory": null,
+   "line": "A minimal pendant that adds a subtle highlight to the neckline.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Solitaire Crystal Pendant Necklace",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-7.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A fine gold-tone chain with a securely attached pendant.\n\nStylish Design: A minimal pendant that adds a subtle highlight to the neckline.\n\nVersatile Occasion: Suits everyday, office and festive outfits.\n\nIdeal For: Women who love dainty necklaces.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00103"
+  },
+  {
+   "sku": "ESHTYLE_119",
+   "name": "Golden Flower Pendant Necklace & Earrings Set",
+   "slug": "golden-flower-pendant-necklace-earrings-set",
+   "category": "necksets",
+   "subcategory": null,
+   "line": "Coordinated gold-tone pieces for a complete, put-together look.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Flower Pendant Necklace & Earrings Set",
+   "antiTarnish": false,
+   "price": 499,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00104/esh-00104-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00104/esh-00104-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00104/esh-00104-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00104/esh-00104-4.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Set Includes: A pendant necklace with matching stud earrings.\n\nStylish Design: Coordinated gold-tone pieces for a complete, put-together look.\n\nVersatile Occasion: Great for gifting, festive wear and parties.\n\nIdeal For: Women who like matching jewellery sets.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00104"
+  },
+  {
+   "sku": "ESHTYLE_120",
+   "name": "Golden Mini Clover Chain",
+   "slug": "golden-mini-clover-chain",
+   "category": "chains",
+   "subcategory": null,
+   "line": "Four-leaf clover stations create a refined, classic look.",
+   "colour": "Gold & Black",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Mini Clover Chain",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-7.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-8.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-9.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-10.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A fine gold-tone chain with clover motifs spaced along the necklace.\n\nStylish Design: Four-leaf clover stations create a refined, classic look.\n\nVersatile Occasion: Wear alone or layered for daily wear and special occasions.\n\nIdeal For: Women who like elegant everyday necklaces.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00105"
+  },
+  {
+   "sku": "ESHTYLE_121",
+   "name": "Golden Spiral Stud Earrings",
+   "slug": "golden-spiral-stud-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "line": "A modern sculpted design that catches the light.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Spiral Stud Earrings",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00106/esh-00106-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00106/esh-00106-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00106/esh-00106-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00106/esh-00106-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00106/esh-00106-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00106/esh-00106-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00106/esh-00106-7.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: Gold-tone earrings with secure push-back closures.\n\nStylish Design: A modern sculpted design that catches the light.\n\nVersatile Occasion: Easy to style with western and ethnic outfits.\n\nIdeal For: Women who enjoy statement yet wearable earrings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00106"
+  },
+  {
+   "sku": "ESHTYLE_122",
+   "name": "Golden Leaf Drop Earrings",
+   "slug": "golden-leaf-drop-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "line": "A modern sculpted design that catches the light.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Leaf Drop Earrings",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-7.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-8.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: Gold-tone earrings with secure push-back closures.\n\nStylish Design: A modern sculpted design that catches the light.\n\nVersatile Occasion: Easy to style with western and ethnic outfits.\n\nIdeal For: Women who enjoy statement yet wearable earrings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00107"
+  },
+  {
+   "sku": "ESHTYLE_123",
+   "name": "Golden Puffed Heart Stud Earrings",
+   "slug": "golden-puffed-heart-stud-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "line": "A modern sculpted design that catches the light.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Puffed Heart Stud Earrings",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-7.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00108/esh-00108-8.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: Gold-tone earrings with secure push-back closures.\n\nStylish Design: A modern sculpted design that catches the light.\n\nVersatile Occasion: Easy to style with western and ethnic outfits.\n\nIdeal For: Women who enjoy statement yet wearable earrings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00108"
+  },
+  {
+   "sku": "ESHTYLE_124",
+   "name": "Golden Ivy Leaf Stud Earrings",
+   "slug": "golden-ivy-leaf-stud-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "line": "A modern sculpted design that catches the light.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Ivy Leaf Stud Earrings",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00109/esh-00109-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00109/esh-00109-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00109/esh-00109-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00109/esh-00109-4.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: Gold-tone earrings with secure push-back closures.\n\nStylish Design: A modern sculpted design that catches the light.\n\nVersatile Occasion: Easy to style with western and ethnic outfits.\n\nIdeal For: Women who enjoy statement yet wearable earrings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00109"
+  },
+  {
+   "sku": "ESHTYLE_126",
+   "name": "Golden Green Stone Twist Ring",
+   "slug": "golden-green-stone-twist-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "A sculpted statement design for a bold finishing touch.",
+   "colour": "Gold & Green",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Green Stone Twist Ring",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00111/esh-00111-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00111/esh-00111-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00111/esh-00111-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00111/esh-00111-4.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A gold-tone open ring with an adjustable fit.\n\nStylish Design: A sculpted statement design for a bold finishing touch.\n\nVersatile Occasion: Ideal for parties, festive looks and everyday styling.\n\nIdeal For: Women who like eye-catching rings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00111"
+  },
+  {
+   "sku": "ESHTYLE_127",
+   "name": "Golden Spiral Statement Ring",
+   "slug": "golden-spiral-statement-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "A sculpted statement design for a bold finishing touch.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Spiral Statement Ring",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00112/esh-00112-1.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: A gold-tone open ring with an adjustable fit.\n\nStylish Design: A sculpted statement design for a bold finishing touch.\n\nVersatile Occasion: Ideal for parties, festive looks and everyday styling.\n\nIdeal For: Women who like eye-catching rings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00112"
+  },
+  {
+   "sku": "ESHTYLE_129",
+   "name": "Golden Textured Heart Stud Earrings",
+   "slug": "golden-textured-heart-stud-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "line": "A modern sculpted design that catches the light.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Textured Heart Stud Earrings",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-7.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-8.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: Gold-tone earrings with secure push-back closures.\n\nStylish Design: A modern sculpted design that catches the light.\n\nVersatile Occasion: Easy to style with western and ethnic outfits.\n\nIdeal For: Women who enjoy statement yet wearable earrings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00114"
+  },
+  {
+   "sku": "ESHTYLE_130",
+   "name": "Golden Sunflower Stud Earrings",
+   "slug": "golden-sunflower-stud-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "line": "A modern sculpted design that catches the light.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Sunflower Stud Earrings",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00115/esh-00115-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00115/esh-00115-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00115/esh-00115-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00115/esh-00115-4.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: Gold-tone earrings with secure push-back closures.\n\nStylish Design: A modern sculpted design that catches the light.\n\nVersatile Occasion: Easy to style with western and ethnic outfits.\n\nIdeal For: Women who enjoy statement yet wearable earrings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00115"
+  },
+  {
+   "sku": "ESHTYLE_131",
+   "name": "Golden Mini Stud Earrings",
+   "slug": "golden-mini-stud-earrings",
+   "category": "earrings",
+   "subcategory": null,
+   "line": "A modern sculpted design that catches the light.",
+   "colour": "Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Golden Mini Stud Earrings",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Material & Construction: Gold-tone earrings with secure push-back closures.\n\nStylish Design: A modern sculpted design that catches the light.\n\nVersatile Occasion: Easy to style with western and ethnic outfits.\n\nIdeal For: Women who enjoy statement yet wearable earrings.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00116"
+  },
+  {
+   "sku": "ESHTYLE_132",
+   "name": "Pink Clover Necklace & Earrings Set",
+   "slug": "pink-clover-necklace-earrings-set",
+   "category": "necksets",
+   "subcategory": null,
+   "line": "Coordinated gold-tone pieces for a complete, put-together look.",
+   "colour": "Gold & Pink",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Pink Clover Necklace & Earrings Set",
+   "antiTarnish": false,
+   "price": 299,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00117/esh-00117-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00117/esh-00117-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00117/esh-00117-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00117/esh-00117-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00117/esh-00117-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Set Includes: A pendant necklace with matching stud earrings.\n\nStylish Design: Coordinated gold-tone pieces for a complete, put-together look.\n\nVersatile Occasion: Great for gifting, festive wear and parties.\n\nIdeal For: Women who like matching jewellery sets.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00117"
+  },
+  {
+   "sku": "ESHTYLE_136",
+   "name": "Compact Travel Jewellery Box",
+   "slug": "compact-travel-jewellery-box",
+   "category": "jewellery-box-sets",
+   "subcategory": null,
+   "line": "A compact travel jewellery box with a soft interior.",
+   "colour": "Teal",
+   "finish": "Gold-tone",
+   "tags": [
+    "new"
+   ],
+   "keywords": [],
+   "styleName": "Compact Travel Jewellery Box",
+   "antiTarnish": false,
+   "price": 799,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00121/esh-00121-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00121/esh-00121-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00121/esh-00121-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00121/esh-00121-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00121/esh-00121-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00121/esh-00121-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00121/esh-00121-7.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": true,
+   "description": "Design: A compact travel jewellery box with a soft interior.\n\nStorage: Separate spaces for rings, earrings and necklaces keep pieces organised.\n\nUse: Handy for travel and daily storage; a thoughtful gift.\n\nIdeal For: Anyone who wants to keep jewellery neat and safe.",
+   "material": "Stainless steel",
+   "packOf": 1,
+   "sheetCode": "ESHTYLE-Catalogue-ESH-00121"
   }
  ]
 }

@@ -136,11 +136,12 @@ r.post('/orders/:orderNumber/returns', uploadLimiter, evidenceUpload.single('vid
   res.status(201).json({ returnRequest: { ...rr.toObject(), video: rr.video?.key ? { uploaded: true, durationSec: rr.video.durationSec } : undefined } });
 }));
 
-// Reviews — verified purchasers only, moderated before publishing.
+// Reviews — any signed-in customer can review; buyers with a delivered order get a "Verified purchase" badge. Moderated before publishing.
 r.post('/reviews', validate(z.object({ productId: oid, rating: z.number().int().min(1).max(5), title: z.string().trim().max(100).optional(), body: z.string().trim().min(10).max(2000) })), ah(async (req, res) => {
-  const order = await Order.findOne({ user: req.user._id, status: 'delivered', 'items.product': req.body.productId });
-  if (!order) throw badRequest('You can review items from delivered orders.');
-  const review = await Review.create({ product: req.body.productId, user: req.user._id, order: order._id, rating: req.body.rating, title: req.body.title, body: req.body.body, authorName: (req.user.name || 'Customer').split(' ')[0], verifiedPurchase: true });
+  if (!(await Product.exists({ _id: req.body.productId }))) throw badRequest('Product not found.');
+  if (await Review.exists({ product: req.body.productId, user: req.user._id })) throw badRequest('You have already reviewed this product.');
+  const order = await Order.findOne({ user: req.user._id, status: 'delivered', 'items.product': req.body.productId }).select('_id');
+  const review = await Review.create({ product: req.body.productId, user: req.user._id, order: order?._id, rating: req.body.rating, title: req.body.title, body: req.body.body, authorName: (req.user.name || 'Customer').split(' ')[0], verifiedPurchase: Boolean(order) });
   res.status(201).json({ review, message: 'Thank you! Your review will appear after moderation.' });
 }));
 
