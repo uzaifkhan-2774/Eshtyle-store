@@ -4,7 +4,8 @@ Usage:  python3 scripts/catalog_v3.py <sheet.tsv>
 
 * Price = "Selling Price" from the sheet, exactly (set ADD below to add a fixed amount to every price).
   MRP is NOT shown on the site (a flat 2x MRP would read as a fake discount).
-* Stock = "Quantity". Rows that share a Product Code and differ only in Size become one product with size options.
+* Stock = "Quantity". Rows that share a Product Code become one product: with colour options when their Colour
+  differs (each colour keeps its own photos and stock), otherwise with size options.
 * Photos = the sheet's Image 1..10 links, used directly (change a link in the sheet or in Admin → photo changes).
 * Products that already existed in the earlier catalogue keep their name, link (slug), category and copy,
   so existing links, reviews and orders stay connected.
@@ -13,7 +14,7 @@ import csv, html, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "2026-10-23"
+VERSION = "2026-10-29"
 ADD = 0  # rupees added to every sheet price
 
 # Combos where the customer chooses which designs they get (each photo = one design). sheet SKU -> how many to pick
@@ -37,6 +38,24 @@ FAMILY = {"earrings": "e", "earring-combos": "e", "necklaces": "n", "chains": "n
           "anklets": "a", "jewellery-box-sets": "x"}
 
 
+# Colour-variation families: the product's display name (the first row's name mentions only one colour).
+FAMILY_NAME = {"ESHTYLE_74": "Clover Charm Bracelet",
+               "ESHTYLE_36": "Clover Necklace"}
+FIRST_NEW = 107  # rows from ESHTYLE_107 on are new products (never in the old catalogue)
+
+
+def colour_label(c):
+    c = c.strip().lower().replace("balck", "black").replace("grren", "green").replace("plight", "light")
+    parts = [x.strip() for x in re.split(r",|\band\b|&", c) if x.strip()]
+    other = [x for x in parts if x not in ("gold", "golden")]
+    return (" & ".join(other) or "gold").title()
+
+
+def img(u):
+    u = u.strip()
+    return re.sub(r"^https?://(www\.)?e-shtyle\.(com|in)(?=/uploads/)", "", u)
+
+
 def slugify(s):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
 
@@ -47,13 +66,14 @@ def clean_name(n):
     n = re.sub(r"^Gold Stainless Steel\s+", "Golden ", n, flags=re.I)
     n = re.sub(r"^Silver[- ]Tone\s+", "Silver ", n, flags=re.I)
     n = re.sub(r"\bAnd\b", "&", n)
+    n = re.sub(r"^Golden Golden\b", "Golden", n)
     return n[:1].upper() + n[1:]
 
 
 def category(name, ptype, pack):
     t = f"{name} {ptype}".lower()
     if "watch" in t: return "bracelets"
-    if "organi" in t or "storage box" in t: return "jewellery-box-sets"
+    if "organi" in t or "storage box" in t or "jewellery box" in t or "jwellry box" in t: return "jewellery-box-sets"
     if "anklet" in t or "anklete" in t: return "anklets"
     if re.search(r"necklace.*(earring|bracelet|ring)|jewellery set|set with", t) or re.search(r"(necklace|neckalce|chain).*(earing|braclete|ring)", ptype.lower()):
         return "necksets"
@@ -101,22 +121,27 @@ def main(sheet_path):
         num = int(sku.split("_")[1])
         ptype = r[col["attr_Product Type"]].strip()
         pack = int(r[col["attr_Pack Of"]] or 1)
-        price = int(float(r[col["Selling Price"]])) + ADD
-        imgs = [r[i].strip() for i in range(col["Image 1"], col["Image 10"] + 1) if r[i].strip().startswith("http")]
+        price = max(int(float(x[col["Selling Price"]])) for x in rs) + ADD
+        imgs = [img(r[i]) for i in range(col["Image 1"], col["Image 10"] + 1) if r[i].strip().startswith("http")]
         bullets = description(r[col["Description"]])
         material = r[col["attr_Material"]].strip() if "attr_Material" in col else ""
         name = NAME_FIX.get(sku) or clean_name(r[col["Name"]].strip())
         cat = CAT_FIX.get(sku) or category(name, ptype, pack)
 
         m = re.search(r"ESHP?-0*(\d+)", code)
-        o = old.get("ESH-%03d" % int(m.group(1))) if (m and "new-stock" not in code and sku not in NO_MAP) else None
+        o = old.get("ESH-%03d" % int(m.group(1))) if (m and "new-stock" not in code and sku not in NO_MAP and num < FIRST_NEW) else None
         if o and FAMILY.get(o["category"]) != FAMILY.get(cat) and not (FAMILY.get(o["category"]) in "sb" and FAMILY.get(cat) in "sb"):
             o = None  # different kind of product: do not reuse the old page
         if o and o["slug"] in used:
             o = None
 
         variants = []
-        if len(rs) > 1:
+        colours = [colour_label(x[col["Colour"]]) for x in rs]
+        if len(rs) > 1 and len(set(colours)) == len(colours):
+            variants = [{"label": c, "sku": x[col["Sku Id"]].strip(), "stock": int(x[col["Quantity"]] or 0),
+                         "images": [{"url": img(x[i])} for i in range(col["Image 1"], col["Image 10"] + 1) if x[i].strip().startswith("http")]}
+                        for c, x in zip(colours, rs)]
+        elif len(rs) > 1:
             by_size = {}
             for x in rs:
                 size = x[col["Size"]].strip()
@@ -137,6 +162,11 @@ def main(sheet_path):
             item = {"name": name, "slug": slug, "category": cat, "subcategory": "bracelet-combos" if cat == "bracelets" and "set" in name.lower() else None,
                     "line": line, "colour": colour, "finish": "Silver-tone" if name.lower().startswith("silver") else "Gold-tone",
                     "tags": ["new"] if "new-stock" in code or num >= 75 else [], "keywords": [], "styleName": name, "antiTarnish": False}
+        if len(variants) > 1 and not variants[0]["label"].startswith("Size"):
+            if sku in FAMILY_NAME: item["name"] = item["styleName"] = FAMILY_NAME[sku]
+            item["colour"] = ", ".join(v["label"] for v in variants)
+            item["line"] = re.sub(r"\b(black|red|white|blue|pink|green)\s+(?=clover)", "", item["line"], flags=re.I)
+            item["line"] = item["line"][:1].upper() + item["line"][1:]
         used.add(item["slug"])
         pick = PICK_RING.get(sku, 0)
         if not pick and num > PICK_EARRINGS_AFTER and pack == 2 and "earring" in (ptype + " " + name).lower():

@@ -6,7 +6,7 @@ import { api, assetUrl } from '../lib/api';
 import type { ProductCard as PC, ProductDetail, Img as ImgT } from '../lib/types';
 import { Breadcrumbs, Img, Price, Qty, Spinner, Stars } from '../components/ui';
 import { ProductGrid } from '../components/ProductCard';
-import { useSettings, useCart, useUI, useWishlist, pushRecentlyViewed, getRecentlyViewed } from '../hooks/store';
+import { useAuth, useSettings, useCart, useUI, useWishlist, pushRecentlyViewed, getRecentlyViewed } from '../hooks/store';
 import { useSeo } from '../lib/seo';
 import { inr, shipsFree } from '../lib/format';
 import { track } from '../lib/analytics';
@@ -83,14 +83,44 @@ function Details({ p, shipping }: { p: ProductDetail; shipping: Res['shipping'] 
 }
 
 function Reviews({ productId, avg, count }: { productId: string; avg: number; count: number }) {
-  const { data } = useQuery({ queryKey: ['reviews', productId], queryFn: () => api<{ items: { _id: string; rating: number; title?: string; body?: string; authorName?: string; createdAt: string }[]; total: number }>(`/catalog/products/${productId}/reviews`) });
+  const { data } = useQuery({ queryKey: ['reviews', productId], queryFn: () => api<{ items: { _id: string; rating: number; title?: string; body?: string; authorName?: string; verifiedPurchase?: boolean; createdAt: string }[]; total: number }>(`/catalog/products/${productId}/reviews`) });
   return (
     <section className="container-x pt-20" aria-labelledby="reviews-h">
-      <div className="flex flex-wrap items-end gap-4 mb-6"><h2 id="reviews-h" className="text-3xl">Reviews</h2>{count > 0 && <span className="flex items-center gap-2 text-muted"><Stars value={avg} /> {avg.toFixed(1)} from {count} verified {count === 1 ? 'buyer' : 'buyers'}</span>}</div>
-      {!data?.items.length ? <p className="text-muted max-w-xl">No reviews yet. Bought this piece? You can review it from <Link to="/account/orders" className="link">your orders</Link> once it’s delivered.</p> : (
-        <ul className="grid md:grid-cols-2 gap-6">{data.items.map((r) => <li key={r._id} className="border-t border-beige pt-5"><Stars value={r.rating} />{r.title && <p className="font-medium mt-2">{r.title}</p>}<p className="mt-1 text-[15px] leading-relaxed">{r.body}</p><p className="text-sm text-muted mt-2">{r.authorName} · Verified purchase · {new Date(r.createdAt).toLocaleDateString('en-IN', { month: 'short', year: 'numeric' })}</p></li>)}</ul>
+      <div className="flex flex-wrap items-end gap-4 mb-6"><h2 id="reviews-h" className="text-3xl">Reviews</h2>{count > 0 && <span className="flex items-center gap-2 text-muted"><Stars value={avg} /> {avg.toFixed(1)} from {count} {count === 1 ? 'review' : 'reviews'}</span>}</div>
+      {!data?.items.length ? <p className="text-muted max-w-xl">No reviews yet. Be the first to share what you think of this piece.</p> : (
+        <ul className="grid md:grid-cols-2 gap-6">{data.items.map((r) => <li key={r._id} className="border-t border-beige pt-5"><Stars value={r.rating} />{r.title && <p className="font-medium mt-2">{r.title}</p>}<p className="mt-1 text-[15px] leading-relaxed">{r.body}</p><p className="text-sm text-muted mt-2">{r.authorName}{r.verifiedPurchase ? ' · Verified purchase' : ''} · {new Date(r.createdAt).toLocaleDateString('en-IN', { month: 'short', year: 'numeric' })}</p></li>)}</ul>
       )}
+      <WriteReview productId={productId} />
     </section>
+  );
+}
+
+function WriteReview({ productId }: { productId: string }) {
+  const { user } = useAuth();
+  const [open, setOpen] = useState(false); const [rating, setRating] = useState(0); const [title, setTitle] = useState(''); const [body, setBody] = useState('');
+  const [msg, setMsg] = useState<string>(); const [err, setErr] = useState<string>(); const [busy, setBusy] = useState(false);
+  const here = typeof window !== 'undefined' ? window.location.pathname : '/';
+  if (msg) return <p className="mt-8 text-success">{msg}</p>;
+  if (!user) return <p className="mt-8"><Link to={`/login?next=${encodeURIComponent(here + '#reviews-h')}`} className="btn-outline h-11 inline-flex items-center px-6">Log in to write a review</Link></p>;
+  if (!open) return <button type="button" className="btn-outline h-11 px-6 mt-8" onClick={() => setOpen(true)}>Write a review</button>;
+  const submit = async (e: FormEvent) => {
+    e.preventDefault(); setErr(undefined);
+    if (!rating) return setErr('Please choose a star rating.');
+    if (body.trim().length < 10) return setErr('Please write at least 10 characters.');
+    setBusy(true);
+    try { const r = await api<{ message: string }>('/account/reviews', { body: { productId, rating, title: title.trim() || undefined, body: body.trim() } }); setMsg(r.message); }
+    catch (x) { setErr((x as Error).message); } finally { setBusy(false); }
+  };
+  return (
+    <form onSubmit={submit} className="mt-8 max-w-xl space-y-4 bg-ivory border border-beige p-5">
+      <div><p className="text-sm mb-2">Your rating</p>
+        <div className="flex gap-1" role="radiogroup" aria-label="Rating">{[1, 2, 3, 4, 5].map((n) => <button key={n} type="button" role="radio" aria-checked={rating === n} aria-label={`${n} star${n > 1 ? 's' : ''}`} onClick={() => setRating(n)} className={`text-3xl leading-none transition ${n <= rating ? 'text-gold' : 'text-beige hover:text-gold/60'}`}>★</button>)}</div></div>
+      <label className="block"><span className="label">Title (optional)</span><input className="field" value={title} onChange={(e) => setTitle(e.target.value)} maxLength={100} /></label>
+      <label className="block"><span className="label">Your review</span><textarea className="field h-auto min-h-28 py-3" value={body} onChange={(e) => setBody(e.target.value)} maxLength={2000} required /></label>
+      {err && <p className="text-sm text-danger" role="alert">{err}</p>}
+      <div className="flex gap-3"><button className="btn-primary h-11 px-6" disabled={busy}>{busy ? 'Sending…' : 'Submit review'}</button><button type="button" className="btn-outline h-11 px-6" onClick={() => setOpen(false)}>Cancel</button></div>
+      <p className="text-xs text-muted">Reviews appear after a quick check by our team.</p>
+    </form>
   );
 }
 
