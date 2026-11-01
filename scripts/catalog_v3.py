@@ -14,12 +14,16 @@ import csv, html, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "2026-10-29"
+VERSION = "2026-11-01"
 ADD = 0  # rupees added to every sheet price
 
 # Combos where the customer chooses which designs they get (each photo = one design). sheet SKU -> how many to pick
-PICK_RING = {"ESHTYLE_99": 2}
-PICK_EARRINGS_AFTER = 82  # owner: "82 ke bad earing ... quantity 2 ... 2 earing choose krne ka option"
+PICK_RING = {}  # owner (2026-11-01): no "pick any 2" anywhere
+# Sold as ONE piece at this price, whatever the sheet's "Pack Of" says (owner: "299 me single kr").
+SINGLE_AT = {"ESHTYLE_99": 299, "ESHTYLE_56": 299}
+PICK_EARRINGS_AFTER = None  # owner (2026-10-31): no more "pick any 2" earrings — each is a single pair
+# Earrings listed as "Pack of 2" in the sheet are sold as ONE pair, at most this price (owner: "350 wale ... 299 ... single pcs").
+EARRING_SINGLE_PRICE = 299
 
 # Names fixed where the sheet's auto-generated name did not match the product type.
 NAME_FIX = {
@@ -27,13 +31,38 @@ NAME_FIX = {
     "ESHTYLE_104": "Multicolour Pendant Necklace & Earrings Set",
     "ESHTYLE_106": "Golden Statement Necklace",
     "ESHTYLE_70": "Foldable Jewellery Organiser Case",
+    "ESHTYLE_120": "Golden Mini Clover Bracelet",
+    "ESHTYLE_131": "Golden Mini Starfish Stud Earrings",
 }
 # Category fixes where the sheet's product type is wrong (e.g. a pendant entered as "arm cf").
 CAT_FIX = {"ESHTYLE_52": "pendants", "ESHTYLE_62": "gift-sets"}
+# Category moves applied after the page is matched to the old catalogue (so existing links stay the same).
+POST_CAT = {"ESHTYLE_72": "necklaces", "ESHTYLE_108": "necklaces",  # clover necklaces sit with the other clover necklaces
+           "ESHTYLE_120": "bracelets",  # photos show it worn on the wrist
+           "ESHTYLE_70": "earring-combos"}  # 12 pairs of stud earrings in a box
+
+# Which photo goes first (1 = the sheet's Image 1): the photo with the piece worn by a model.
+FRONT = {"ESHTYLE_02": 3, "ESHTYLE_03": 6, "ESHTYLE_05": 3, "ESHTYLE_06": 3, "ESHTYLE_07": 3, "ESHTYLE_10": 5, "ESHTYLE_11": 2,
+         "ESHTYLE_12": 4, "ESHTYLE_13": 3, "ESHTYLE_14": 4, "ESHTYLE_16": 4, "ESHTYLE_17": 4, "ESHTYLE_19": 2, "ESHTYLE_21": 3,
+         "ESHTYLE_23": 5, "ESHTYLE_24": 3, "ESHTYLE_25": 3, "ESHTYLE_26": 3, "ESHTYLE_27": 3, "ESHTYLE_28": 3, "ESHTYLE_29": 2,
+         "ESHTYLE_33": 4, "ESHTYLE_36": 4, "ESHTYLE_39": 2, "ESHTYLE_40": 6, "ESHTYLE_41": 3, "ESHTYLE_42": 2, "ESHTYLE_43": 3,
+         "ESHTYLE_50": 3, "ESHTYLE_52": 2, "ESHTYLE_53": 3, "ESHTYLE_54": 2, "ESHTYLE_55": 3, "ESHTYLE_56": 2, "ESHTYLE_57": 5,
+         "ESHTYLE_59": 3, "ESHTYLE_61": 4, "ESHTYLE_62": 6, "ESHTYLE_63": 7, "ESHTYLE_64": 3, "ESHTYLE_67": 2, "ESHTYLE_68": 4,
+         "ESHTYLE_69": 2, "ESHTYLE_71": 3, "ESHTYLE_74": 3, "ESHTYLE_75": 4, "ESHTYLE_76": 2, "ESHTYLE_78": 2, "ESHTYLE_80": 5,
+         "ESHTYLE_82": 2, "ESHTYLE_84": 4, "ESHTYLE_85": 6, "ESHTYLE_86": 4, "ESHTYLE_87": 6, "ESHTYLE_88": 4, "ESHTYLE_90": 6,
+         "ESHTYLE_91": 2, "ESHTYLE_94": 6, "ESHTYLE_97": 4, "ESHTYLE_99": 8, "ESHTYLE_102": 2, "ESHTYLE_103": 4, "ESHTYLE_105": 7,
+         "ESHTYLE_107": 5, "ESHTYLE_108": 2, "ESHTYLE_109": 2, "ESHTYLE_112": 2, "ESHTYLE_113": 3, "ESHTYLE_114": 3, "ESHTYLE_116": 9,
+         "ESHTYLE_117": 2, "ESHTYLE_119": 4, "ESHTYLE_120": 4, "ESHTYLE_121": 7, "ESHTYLE_123": 2, "ESHTYLE_124": 3, "ESHTYLE_125": 2,
+         "ESHTYLE_126": 2, "ESHTYLE_130": 3, "ESHTYLE_131": 5, "ESHTYLE_132": 2, "ESHTYLE_133": 3, "ESHTYLE_134": 5, "ESHTYLE_135": 7}
+
+
+def front_first(sku, urls):
+    k = FRONT.get(sku, 1) - 1
+    return [urls[k]] + urls[:k] + urls[k + 1:] if 0 < k < len(urls) else urls
 # Old catalogue mappings that are wrong (the sheet reuses a code number for a different product).
 NO_MAP = {"ESHTYLE_16", "ESHTYLE_18", "ESHTYLE_37", "ESHTYLE_72"}
 
-FAMILY = {"earrings": "e", "earring-combos": "e", "necklaces": "n", "chains": "n", "pendants": "n", "necksets": "s",
+FAMILY = {"watches": "b", "earrings": "e", "earring-combos": "e", "necklaces": "n", "chains": "n", "pendants": "n", "necksets": "s",
           "gift-sets": "s", "rings": "r", "ring-combos": "r", "bracelets": "b", "bangles": "b", "arm-cuffs": "b",
           "anklets": "a", "jewellery-box-sets": "x"}
 
@@ -72,7 +101,7 @@ def clean_name(n):
 
 def category(name, ptype, pack):
     t = f"{name} {ptype}".lower()
-    if "watch" in t: return "bracelets"
+    if "watch" in t: return "watches"
     if "organi" in t or "storage box" in t or "jewellery box" in t or "jwellry box" in t: return "jewellery-box-sets"
     if "anklet" in t or "anklete" in t: return "anklets"
     if re.search(r"necklace.*(earring|bracelet|ring)|jewellery set|set with", t) or re.search(r"(necklace|neckalce|chain).*(earing|braclete|ring)", ptype.lower()):
@@ -122,7 +151,11 @@ def main(sheet_path):
         ptype = r[col["attr_Product Type"]].strip()
         pack = int(r[col["attr_Pack Of"]] or 1)
         price = max(int(float(x[col["Selling Price"]])) for x in rs) + ADD
-        imgs = [img(r[i]) for i in range(col["Image 1"], col["Image 10"] + 1) if r[i].strip().startswith("http")]
+        if ptype.lower() == "earring" and pack == 2:
+            pack, price = 1, min(price, EARRING_SINGLE_PRICE)
+        if sku in SINGLE_AT:
+            pack, price = 1, SINGLE_AT[sku]
+        imgs = front_first(sku, [img(r[i]) for i in range(col["Image 1"], col["Image 10"] + 1) if r[i].strip().startswith("http")])
         bullets = description(r[col["Description"]])
         material = r[col["attr_Material"]].strip() if "attr_Material" in col else ""
         name = NAME_FIX.get(sku) or clean_name(r[col["Name"]].strip())
@@ -139,7 +172,7 @@ def main(sheet_path):
         colours = [colour_label(x[col["Colour"]]) for x in rs]
         if len(rs) > 1 and len(set(colours)) == len(colours):
             variants = [{"label": c, "sku": x[col["Sku Id"]].strip(), "stock": int(x[col["Quantity"]] or 0),
-                         "images": [{"url": img(x[i])} for i in range(col["Image 1"], col["Image 10"] + 1) if x[i].strip().startswith("http")]}
+                         "images": [{"url": u} for u in front_first(x[col["Sku Id"]].strip(), [img(x[i]) for i in range(col["Image 1"], col["Image 10"] + 1) if x[i].strip().startswith("http")])]}
                         for c, x in zip(colours, rs)]
         elif len(rs) > 1:
             by_size = {}
@@ -167,9 +200,12 @@ def main(sheet_path):
             item["colour"] = ", ".join(v["label"] for v in variants)
             item["line"] = re.sub(r"\b(black|red|white|blue|pink|green)\s+(?=clover)", "", item["line"], flags=re.I)
             item["line"] = item["line"][:1].upper() + item["line"][1:]
+        if sku in CAT_FIX or sku in POST_CAT: item["category"] = POST_CAT.get(sku) or CAT_FIX[sku]
+        if "watch" in item["name"].lower(): item["category"] = "watches"
+        if sku in NAME_FIX and sku not in ("ESHTYLE_80", "ESHTYLE_104", "ESHTYLE_106", "ESHTYLE_70"): item["name"] = item["styleName"] = NAME_FIX[sku]
         used.add(item["slug"])
         pick = PICK_RING.get(sku, 0)
-        if not pick and num > PICK_EARRINGS_AFTER and pack == 2 and "earring" in (ptype + " " + name).lower():
+        if not pick and PICK_EARRINGS_AFTER and num > PICK_EARRINGS_AFTER and pack == 2 and "earring" in (ptype + " " + name).lower():
             pick = 2
         if pick:
             item["tags"] = sorted(set(item["tags"]) | {"pick-your-designs"})

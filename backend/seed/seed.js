@@ -11,6 +11,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { connectDb, disconnectDb } from '../src/config/db.js';
+import { applyCategoryImages } from './category-images.js';
 import { Category, Collection, Product, ProductVariant, Banner, Coupon, Reel, getSettings, StoreSettings } from '../src/models/index.js';
 import { RETURN_REASONS } from '../src/models/StoreSettings.js';
 import { refreshProductStock } from '../src/services/inventory.js';
@@ -45,6 +46,7 @@ const CATEGORIES = [
   ['Bracelets', 'bracelets', 'Clover, tulip and charm bracelets — and stacks that work together.', 'Bracelets for Women Online — Clover, Charm & Stone Bracelets', 'Shop bracelets for women: clover bracelets, stone tulip bracelets, charm bracelets and bracelet sets. Cash on Delivery across India.'],
   ['Bangles', 'bangles', 'Polished bangles for everyday stacking.', 'Bangles & Kada for Women — Golden Bangle Bracelets', 'Golden bangle bracelets and kada for women: screw bangles, bamboo bangles and stackable sets. Shop online at E-SHTYLE.'],
   ['Arm Cuffs', 'arm-cuffs', 'Bold sculpted cuffs.', 'Cuff Bracelets for Women — Golden Wide Cuffs', 'Bold golden cuff bracelets for women: broad, ribbed and sculpted cuffs for statement styling. Shop online with COD.'],
+  ['Watches', 'watches', 'Bracelet-style watches that double as jewellery.', 'Watches for Women — Golden Bracelet Watches', 'Golden bracelet watches for women from E-SHTYLE. Shop online with Cash on Delivery.'],
   ['Anklets', 'anklets', 'Delicate anklets.', 'Anklets for Women', 'Delicate anklets for women from E-SHTYLE.'],
   ['Jewellery Box Sets', 'jewellery-box-sets', 'Boxed collections ready to gift.', 'Jewellery Gift Boxes — Earring Box Sets', 'Jewellery gift boxes and earring box sets, ready to gift. Shop online at E-SHTYLE.'],
   ['Jewellery Gift Sets', 'gift-sets', 'Matching sets, presented beautifully.', 'Jewellery Gift Sets for Women — Gifts for Her', 'Jewellery gift sets for women: matching necklace & ring sets and earring & bracelet sets. Thoughtful gifts for her, delivered across India.'],
@@ -54,7 +56,7 @@ const CATEGORY_KEYWORDS = {
   necklaces: ['necklace for women', 'stylish necklace'], chains: ['chain for women', 'necklace for women'], pendants: ['pendant for women', 'necklace for women', 'chain with pendant'],
   necksets: ['necklace set', 'jewellery set'], rings: ['ring for women', 'finger ring'], 'ring-combos': ['ring for women', 'ring set'],
   bracelets: ['bracelet for women', 'hand jewellery'], bangles: ['bangles for women', 'bracelet for women', 'kada for women'], 'arm-cuffs': ['bracelet for women', 'cuff bracelet'],
-  'gift-sets': ['jewellery gift set', 'gift for her', 'gift for girlfriend'], 'jewellery-box-sets': ['gift for her', 'jewellery gift box'],
+  watches: ['watch for women', 'bracelet watch'], 'gift-sets': ['jewellery gift set', 'gift for her', 'gift for girlfriend'], 'jewellery-box-sets': ['gift for her', 'jewellery gift box'],
 };
 const SUBCATS = [['Bracelet Combos', 'bracelet-combos', 'bracelets']];
 
@@ -198,6 +200,9 @@ async function main() {
     }
     if (pick) await Category.updateOne({ _id: id, 'image.url': { $exists: false } }, { $set: { image: { url: pick.url, thumb: pick.thumb, alt: `${CATEGORIES.find((c) => c[1] === slug)?.[0] || slug} for women by E-SHTYLE` } } });
   }
+
+  // Owner's own choice of category photos (backend/seed/category-images.json) wins over the defaults above.
+  await applyCategoryImages({ log: () => {} });
 
   const cols = [
     { name: 'Bestsellers', slug: 'bestsellers', type: 'bestsellers', showInNav: true, sortOrder: 0, description: 'Ranked by real orders. Until sales data builds up, this shows our signature pieces.' },

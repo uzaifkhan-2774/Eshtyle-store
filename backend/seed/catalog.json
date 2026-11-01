@@ -1,11 +1,11 @@
 {
- "version": "2026-10-29",
+ "version": "2026-11-01",
  "products": [
   {
    "sku": "ESHTYLE_01",
    "name": "Golden Stone-Studded Bracelet Watch",
    "slug": "golden-stone-studded-bracelet-watch",
-   "category": "bracelets",
+   "category": "watches",
    "subcategory": null,
    "line": "An ornate golden bracelet with coloured stones and a small watch face — traditional style for festive days.",
    "colour": "Gold",
@@ -83,13 +83,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/2VY4GFPHWY-2026-10-21_f74ed7eeeb083ca31fb67a12cf2cd8e2_c632fd1a_55b0_4f42_9a41_2ee3aead93ee.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/72B49A8HU5-2026-10-21_2c681342fdcd5b9a67282221bb7a9f61_3b063f4a_8795_41d9_9c13_267cfc55f3e0.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OF0PAHXAVH-2026-10-21_a5ea506d1a68a48f6aa60c01046517cb_db6ee458_db09_4b4a_be40_f532d79feb77.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/2VY4GFPHWY-2026-10-21_f74ed7eeeb083ca31fb67a12cf2cd8e2_c632fd1a_55b0_4f42_9a41_2ee3aead93ee.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ED3SNCTKQ7-2026-10-21_images__9__jfif_801d608f_2edb_437c_bf4a_0e48750bd441.jpg"
@@ -138,6 +138,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/A44L1K5H3V-2026-10-21_download__4__jfif_b387541a_2b50_46cb_b0f7_296e1deb3fa4.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/P9BCDQUBA4-2026-10-21_7083ddb1_ba89_4301_a4dc_e66601c3076f_jfif_125f502a_7525_45a7_9ad8_b29fa26c31ae.jpg"
     },
     {
@@ -151,9 +154,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KGOPWYSS23-2026-10-21_51dVkP27iYL__AC_UY1100__5e89717e_911c_454b_adff_a75af4062d6b.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/A44L1K5H3V-2026-10-21_download__4__jfif_b387541a_2b50_46cb_b0f7_296e1deb3fa4.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UP0SHMCKGL-2026-10-21_images__8__jfif_26a9e030_a7d3_4eed_98c8_d301b8acf547.jpg"
@@ -251,13 +251,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ECO39C57MS-2026-10-21_model_shot_9b7d3387_5656_46c8_8cbd_d5157d20a0fb.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/O0DNUG00S9-2026-10-21_front_view_1_65d5abd6_6e0f_4a0f_96c0_8f40860cd4cc.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/5LA8LBBTSX-2026-10-21_front_view_c997fc2e_a7d4_4ada_9e7f_2c9c0a111227.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ECO39C57MS-2026-10-21_model_shot_9b7d3387_5656_46c8_8cbd_d5157d20a0fb.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ORIUK2FWD8-2026-10-21_car_stering_shot_6edc0e98_d4f9_410a_82b2_72f8c460497d.jpeg"
@@ -419,6 +419,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6RI3M18GQK-2026-10-21_51q2lGTyZsL__SY575____Copy_c2040c6e_0f05_4fb7_a3e4_cf8b43872acd.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/TFPBR8R3QY-2026-10-21_f5678815b2f2997775c0e22500192ffa___Copy_cf64c983_ae49_4b4f_9c98_96a12c4463d5.jpg"
     },
     {
@@ -429,9 +432,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ABBPYUC40K-2026-10-21_51cDRC9ZTWL__SY575____Copy_4ac99ef2_b078_42b3_b103_6edf7dbca0f1.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6RI3M18GQK-2026-10-21_51q2lGTyZsL__SY575____Copy_c2040c6e_0f05_4fb7_a3e4_cf8b43872acd.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/P1XIEUZF9D-2026-10-21_na_na_1_tulip_bl_nc_l_pink_rukayas_original_imahz5uehdyhgdh8___Copy_5dc26758_3708_425a_9ab5_9655575d1365.jpg"
@@ -481,10 +481,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HBG67M02IA-2026-10-21_download__5__1b0e7c3f_9945_4a29_a41e_f4c236932333.png"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/B0M9JE7CC8-2026-10-21_model_ear_259d116a_4991_44f5_bf7b_3e89d4f60860.jpeg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/B0M9JE7CC8-2026-10-21_model_ear_259d116a_4991_44f5_bf7b_3e89d4f60860.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HBG67M02IA-2026-10-21_download__5__1b0e7c3f_9945_4a29_a41e_f4c236932333.png"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HWQLCTI122-2026-10-21_content_1_f7d8c4ed_60ed_4902_8f2f_b5d7d4b71085.jpeg"
@@ -533,6 +533,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/TVL4MOSPQY-2026-10-21_front_view_08499e53_1f01_4cf6_bd50_acb7a6a5d972.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/WBVAJ1LF3X-2026-10-21_content_df7cda90_d89f_4ee7_a142_ea95aa2c15bf.jpeg"
     },
     {
@@ -540,9 +543,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/NDBUGKFV6N-2026-10-21_rose_single_8459fd4b_7d90_4b33_a536_511c1bcb274b.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/TVL4MOSPQY-2026-10-21_front_view_08499e53_1f01_4cf6_bd50_acb7a6a5d972.jpeg"
     }
    ],
    "variants": [],
@@ -579,13 +579,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7QNZP0LC7C-2026-10-21_61t77mhH48L__SY575__99a4bf5a_06d7_45a4_b52b_d64094291970.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/WE6J5N8SGA-2026-10-21_images__20__jfif_31bbc397_a658_4e1e_a68f_1f3c72e61eeb.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/W6JXZ6ZX00-2026-10-21_images__21__jfif_7d377f23_13c4_4172_93e9_4e67e881947b.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7QNZP0LC7C-2026-10-21_61t77mhH48L__SY575__99a4bf5a_06d7_45a4_b52b_d64094291970.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PZZJ9DAAGD-2026-10-21_51gvAMfCzDL__SY575__81b7fd93_6e77_4566_aa17_67ce83a7e15f.jpg"
@@ -635,6 +635,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/S15HWBW9WL-2026-10-21_61fZo5AvJYL__AC_UY1100__523cd045_fc10_4862_a679_fd2c84fb59be.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/I0HKAQZ6JP-2026-10-21_pbxt1Rann6DmAJT__SL1920_QL80_FMwebp__eef58d0d_2fbd_4026_9a7b_e77917352f4e.jpg"
     },
     {
@@ -642,9 +645,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VPOI8DESC9-2026-10-21_6bxt1BRlfEYHDRR__SL1920_QL80_FMwebp__5ac06cce_5498_4607_b9e5_6690fa4d33b8.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/S15HWBW9WL-2026-10-21_61fZo5AvJYL__AC_UY1100__523cd045_fc10_4862_a679_fd2c84fb59be.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YXUYHUNN3Z-2026-10-21_61BDnZBJ5oL__AC_UY1100__9485ff2c_3c1b_4eb7_9ad2_e4d4fb11f1e9.jpg"
@@ -741,6 +741,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/75O677WYNF-2026-10-21_model_shot_1_69fbf51b_8e43_4be8_8bca_6bed0bf4b021.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/G1FMRQDMRV-2026-10-21_front_view_2_3752f00c_2131_4f3c_ac0b_28f692592cd4.jpeg"
     },
     {
@@ -748,9 +751,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/MDHD1ORHH5-2026-10-21_content_d8852c47_04db_46a6_81a1_cdc1d0f5dcaa.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/75O677WYNF-2026-10-21_model_shot_1_69fbf51b_8e43_4be8_8bca_6bed0bf4b021.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/J2OD4U93CM-2026-10-21_product_packaging_1_0c0ce996_a21f_42ea_8806_f9bfc521f630.jpeg"
@@ -802,6 +802,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OAILE9YCHM-2026-10-21_model_shot_1_a102e74d_6e64_49f2_946a_cf84b84844bb.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/8RK3CX11NN-2026-10-21_extra_iamges_8e0a03b3_bbb1_40f0_8f7a_e9549df15eec.jpg"
     },
     {
@@ -809,9 +812,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/B942NPWTU6-2026-10-21_front_view_8fb156ef_fe48_435f_a678_1ed921a4394d.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OAILE9YCHM-2026-10-21_model_shot_1_a102e74d_6e64_49f2_946a_cf84b84844bb.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DDHAHUL5VW-2026-10-21_model_shot_e46dede5_b277_4561_9b38_e757965e2f6e.jpeg"
@@ -891,10 +891,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CLQAHTPKK4-2026-10-21_d643555a07f4ea3f7109fdbbbbb92aeb_5e43e8cf_6ef2_44d6_9daf_9b4c6daae541.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HI9B7BEAVY-2026-10-21_93e08dc662dcbc342c32583a04b7749c_a4694669_3b24_47d6_a00c_ef1bd342ec0f.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HI9B7BEAVY-2026-10-21_93e08dc662dcbc342c32583a04b7749c_a4694669_3b24_47d6_a00c_ef1bd342ec0f.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CLQAHTPKK4-2026-10-21_d643555a07f4ea3f7109fdbbbbb92aeb_5e43e8cf_6ef2_44d6_9daf_9b4c6daae541.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/D0ZER69MGS-2026-10-21_front_view_36615407_93b9_41af_a197_a748ba54b736.jpeg"
@@ -1003,13 +1003,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6OZX9IUBCS-2026-10-21_model_shot_1_4e214fa7_db89_4232_80ef_b9b24ea03f44.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/540B9ZQ5MH-2026-10-21_combo_imge_002e9d5f_fba9_4f3d_b3e0_8ce9d4f66c74.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/RR4Q7UOIKI-2026-10-21_content_1e35786a_2e61_4cff_817d_321f8c3d8fcd.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6OZX9IUBCS-2026-10-21_model_shot_1_4e214fa7_db89_4232_80ef_b9b24ea03f44.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7HDQTGWP51-2026-10-21_front_view_2e74ffd4_b50c_462f_980b_3d62ac39a150.jpeg"
@@ -1110,6 +1110,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZTHYFW60C0-2026-10-21_81vwrwbasCL__SY575__33656396_af3e_4169_b8a6_99cef5d403e4.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/K8B8JPSVXO-2026-10-21_af56654c_6258_400d_a2c2_10eefeffc9fd_jfif_33e678f9_b0dc_4560_9037_4f2e6ac14c87.jpg"
     },
     {
@@ -1120,9 +1123,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/TJXUX85F4H-2026-10-21_81bE7NmoFIL__SY575__0ae6e845_b56d_422b_9506_86b4d77cf3ae.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZTHYFW60C0-2026-10-21_81vwrwbasCL__SY575__33656396_af3e_4169_b8a6_99cef5d403e4.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/WUO4WDP9AE-2026-10-21_51ujBBhC_sL__SY575__47560c80_3a65_4a36_bc8d_d48c0722569b.jpg"
@@ -1166,13 +1166,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/QW18382H4K-2026-10-21_model_hand_1_359e86b1_2f55_469a_a706_4a7cfd844892.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/70E7FBY06I-2026-10-21_Nail_Ring_front_view_0a2c5ecf_0958_4395_a6c9_77e7f8234ef8.png"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/O3BRDOSHA2-2026-10-21_model_shot_1_007cb623_8d02_47fd_bb84_2668cf74c766.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/QW18382H4K-2026-10-21_model_hand_1_359e86b1_2f55_469a_a706_4a7cfd844892.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/B6RN4DMN1N-2026-10-21_model_shot_a64da93c_d8ad_4803_a4e2_58705153ac11.jpeg"
@@ -1236,13 +1236,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/GGQKLPSV7A-2026-10-21_model_shot_d9265ceb_f3d6_4288_8bb5_5df15c914ee5.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BR2O4K8179-2026-10-21_front_view_1_6712fed8_16b5_425f_8dcf_fab6dfcfc763.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IW2HENN8DI-2026-10-21_front_view_62c0ea22_3860_4ddc_92ec_aed45434fa95.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/GGQKLPSV7A-2026-10-21_model_shot_d9265ceb_f3d6_4288_8bb5_5df15c914ee5.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/G4FZU2NPLS-2026-10-21_content_449c0cd4_74bf_4be9_87dc_639ff35d098b.jpeg"
@@ -1288,10 +1288,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0I3E72R2XL-2026-10-21_WhatsApp_Image_2026_10_13_at_4_06_49_PM__4__ae613f45_a2b1_4ff9_b94f_5a065e725da4.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0O73DW3K67-2026-10-21_WhatsApp_Image_2026_10_13_at_4_06_49_PM__3__6f62676b_6f19_4ad9_a7d4_1c8193d3122d.jpeg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0O73DW3K67-2026-10-21_WhatsApp_Image_2026_10_13_at_4_06_49_PM__3__6f62676b_6f19_4ad9_a7d4_1c8193d3122d.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0I3E72R2XL-2026-10-21_WhatsApp_Image_2026_10_13_at_4_06_49_PM__4__ae613f45_a2b1_4ff9_b94f_5a065e725da4.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/4U38O94TNK-2026-10-21_WhatsApp_Image_2026_10_13_at_4_06_49_PM__2__eae68841_ca2f_4027_ae9c_dda81ee60fa7.jpeg"
@@ -1490,6 +1490,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FK4N9S11GY-2026-10-21_product_packaging_1_28356918_f892_4446_af81_87b91d064065.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LPA1K2YX84-2026-10-21_close_up_1_e6eb092b_0b00_467e_b9af_dff7bef3db27.jpeg"
     },
     {
@@ -1497,9 +1500,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0252ZOVKU5-2026-10-21_model_hand_963b4a4f_8021_4a8a_a2e9_cad37dd5da54.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FK4N9S11GY-2026-10-21_product_packaging_1_28356918_f892_4446_af81_87b91d064065.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/WXC1LAPHZE-2026-10-21_product_packaging_40cc8283_b732_44c3_a374_1c3d6414c2b0.jpeg"
@@ -1643,6 +1643,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C5XT8WXVED-2026-10-21_model_shot_9910f455_56e5_406c_8563_9ed2e0c63f50.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DZC0K95KWE-2026-10-21_front_view_aa9fd9e8_162c_4a11_b16d_9ae1c6ea4827.jpeg"
     },
     {
@@ -1650,9 +1653,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/U30ORKHIXG-2026-10-21_table_shot_ba0e75bc_d45d_4c74_b0f5_830fb74bafb3.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C5XT8WXVED-2026-10-21_model_shot_9910f455_56e5_406c_8563_9ed2e0c63f50.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FQ0F7IHM63-2026-10-21_content_eba5fec2_30d6_41a6_a0fd_fd979a966076.jpeg"
@@ -1665,6 +1665,9 @@
      "stock": 5,
      "images": [
       {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C5XT8WXVED-2026-10-21_model_shot_9910f455_56e5_406c_8563_9ed2e0c63f50.jpeg"
+      },
+      {
        "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DZC0K95KWE-2026-10-21_front_view_aa9fd9e8_162c_4a11_b16d_9ae1c6ea4827.jpeg"
       },
       {
@@ -1672,9 +1675,6 @@
       },
       {
        "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/U30ORKHIXG-2026-10-21_table_shot_ba0e75bc_d45d_4c74_b0f5_830fb74bafb3.jpeg"
-      },
-      {
-       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C5XT8WXVED-2026-10-21_model_shot_9910f455_56e5_406c_8563_9ed2e0c63f50.jpeg"
       },
       {
        "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FQ0F7IHM63-2026-10-21_content_eba5fec2_30d6_41a6_a0fd_fd979a966076.jpeg"
@@ -1834,10 +1834,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7W5SCXHFNO-2026-10-21_content_78a4420d_d808_4f30_ad12_ac5a18130bf9.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CEV915PTP0-2026-10-21_model_ear_1_785c1464_af48_45ff_ac94_0ddbf472b09f.jpeg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CEV915PTP0-2026-10-21_model_ear_1_785c1464_af48_45ff_ac94_0ddbf472b09f.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7W5SCXHFNO-2026-10-21_content_78a4420d_d808_4f30_ad12_ac5a18130bf9.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/X86NUS65KM-2026-10-21_model_ear_1a9bcfd7_0646_4ec6_9374_ca3ac2312116.jpeg"
@@ -1881,6 +1881,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VUOQKY7Y01-2026-10-21_71NWlPevZAL__SX575__ada53e00_a9a0_4a22_9f82_0d3519bb5ceb.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OV53MT3PWB-2026-10-21_27584945cffda0655c4f9e455c216c60_bbbe0ad1_d2bc_49ad_9ed5_56ff3711096d.jpg"
     },
     {
@@ -1894,9 +1897,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0SSSRHWOU3-2026-10-21_71GSpo8NY_L__SY695__f7d917c4_6641_4697_85ec_3fd8cc0a3ea1.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VUOQKY7Y01-2026-10-21_71NWlPevZAL__SX575__ada53e00_a9a0_4a22_9f82_0d3519bb5ceb.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/WO8FLSJXGO-2026-10-21_81uZ9lR0CXL__SX575__485c6be3_40f1_4cf9_ba9a_974b0355db2c.jpg"
@@ -1938,13 +1938,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZHOAYYVU17-2026-10-21_model_shot_6f9da14f_6300_413d_8cfe_686e39857f04.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/B7LCBBOWCE-2026-10-21_front_view_55be3a21_d2c4_41a6_ac6d_cb28794abe78.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IN384Z565K-2026-10-21_mirror_shot_b216a52b_4f2e_44c8_bb92_921e2db0ceed.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZHOAYYVU17-2026-10-21_model_shot_6f9da14f_6300_413d_8cfe_686e39857f04.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KF5007A4WV-2026-10-21_content_989eb447_0bd8_47a8_a4f6_e1de5df6819c.jpeg"
@@ -1985,10 +1985,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6BRNMHO15H-2026-10-21_image_4_7f98f7c7_df06_41d2_a27b_660fb83a2b56.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HC1QIQ3CIE-2026-10-21_image_3_be358455_d632_41ef_9c6d_452e0e257720.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HC1QIQ3CIE-2026-10-21_image_3_be358455_d632_41ef_9c6d_452e0e257720.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6BRNMHO15H-2026-10-21_image_4_7f98f7c7_df06_41d2_a27b_660fb83a2b56.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/GZLA7DR3XX-2026-10-21_image_2_37c9f313_e1d2_4d56_8c0f_234d808f1a7f.jpg"
@@ -2036,13 +2036,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/G1V4X7Y300-2026-10-21_model_shot_2128ab4b_45f7_4925_8b8d_cbc0248d2f87.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UL5NFCV541-2026-10-21_content_1_0fc9a43b_8b1c_4246_9398_60b7cfccde2e.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YPA23NVN1S-2026-10-21_content_2ef67f5b_6799_4cad_a5c9_3dc8b85e93a1.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/G1V4X7Y300-2026-10-21_model_shot_2128ab4b_45f7_4925_8b8d_cbc0248d2f87.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6EWI0JW3FZ-2026-10-21_front_view_d22d44d4_267a_411e_9565_03fa147ddc36.jpeg"
@@ -2297,13 +2297,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OJ5BLMM7WX-2026-10-21_model_shot_998f66ca_d4d7_4deb_a280_528dd189e2e4.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LW9UXEQLMV-2026-10-21_ESH_001_afbfc2b0_f0d4_4053_9aac_b37ef1ea4406.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IA3P48W8K2-2026-10-21_content_5f5aaac5_d7c1_4f3f_afc6_b128e16398bb.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OJ5BLMM7WX-2026-10-21_model_shot_998f66ca_d4d7_4deb_a280_528dd189e2e4.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/P5SXFREEPD-2026-10-21_front_view_847b9fd0_4f36_4d96_9253_d0ead56c42a5.jpeg"
@@ -2419,10 +2419,10 @@
      "stock": 5,
      "images": [
       {
-       "url": "/uploads/catalog/esh-00110/esh-00110-1.jpg"
+       "url": "/uploads/catalog/esh-00110/esh-00110-2.jpg"
       },
       {
-       "url": "/uploads/catalog/esh-00110/esh-00110-2.jpg"
+       "url": "/uploads/catalog/esh-00110/esh-00110-1.jpg"
       },
       {
        "url": "/uploads/catalog/esh-00110/esh-00110-3.jpg"
@@ -2472,13 +2472,13 @@
      "stock": 5,
      "images": [
       {
+       "url": "/uploads/catalog/esh-00118/esh-00118-3.jpg"
+      },
+      {
        "url": "/uploads/catalog/esh-00118/esh-00118-1.jpg"
       },
       {
        "url": "/uploads/catalog/esh-00118/esh-00118-2.jpg"
-      },
-      {
-       "url": "/uploads/catalog/esh-00118/esh-00118-3.jpg"
       },
       {
        "url": "/uploads/catalog/esh-00118/esh-00118-4.jpg"
@@ -2500,6 +2500,9 @@
      "stock": 5,
      "images": [
       {
+       "url": "/uploads/catalog/esh-00119/esh-00119-5.jpg"
+      },
+      {
        "url": "/uploads/catalog/esh-00119/esh-00119-1.jpg"
       },
       {
@@ -2512,9 +2515,6 @@
        "url": "/uploads/catalog/esh-00119/esh-00119-4.jpg"
       },
       {
-       "url": "/uploads/catalog/esh-00119/esh-00119-5.jpg"
-      },
-      {
        "url": "/uploads/catalog/esh-00119/esh-00119-6.jpg"
       }
      ]
@@ -2524,6 +2524,9 @@
      "sku": "ESHTYLE_135",
      "stock": 5,
      "images": [
+      {
+       "url": "/uploads/catalog/esh-00120/esh-00120-7.jpg"
+      },
       {
        "url": "/uploads/catalog/esh-00120/esh-00120-1.jpg"
       },
@@ -2541,9 +2544,6 @@
       },
       {
        "url": "/uploads/catalog/esh-00120/esh-00120-6.jpg"
-      },
-      {
-       "url": "/uploads/catalog/esh-00120/esh-00120-7.jpg"
       }
      ]
     }
@@ -2581,10 +2581,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/5EWMO1KXY9-2026-10-21_d42b512afaccdcde4d12f411813b8d5a_fbb58f97_455a_4982_bade_896d88e25eb4.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/NR2ABOO4GY-2026-10-21_61BfvAnmaOL__SY575__2967a1c3_84b5_4fb6_bac3_39426e9b9eba.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/NR2ABOO4GY-2026-10-21_61BfvAnmaOL__SY575__2967a1c3_84b5_4fb6_bac3_39426e9b9eba.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/5EWMO1KXY9-2026-10-21_d42b512afaccdcde4d12f411813b8d5a_fbb58f97_455a_4982_bade_896d88e25eb4.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/NBKYYNB6FT-2026-10-21_51uaHgwfdzL__SY575__22dc93cc_7b07_419e_9889_18add30e538f.jpg"
@@ -2644,13 +2644,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UAZKZQQG41-2026-10-21_61PynIL_pgL__SX575__edb02d0d_60d1_4808_8619_419fe8262e63.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KHO2E0TE8T-2026-10-21_41XKpUD_AoL_3b210c88_9357_4736_a82b_0e7ddb7661e1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SVDLE9AX4O-2026-10-21_61xIZHSzQbL__SY575__92007182_6869_45ab_b1e8_d9a5a35b87c9.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UAZKZQQG41-2026-10-21_61PynIL_pgL__SX575__edb02d0d_60d1_4808_8619_419fe8262e63.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/8RS30LM0W3-2026-10-21_ChatGPTImageApr20_2026_04_11_25PM_fbe45b8a_9035_4c5c_a8d4_ba5134dc5c4a.jpg"
@@ -2695,10 +2695,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/4KKFNKOY4X-2026-10-21_white_background_eb497670_51f6_4a4e_9e4a_b1f4639c4f68.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/O4MAIERUS2-2026-10-21_model_shot_1_6d573b5e_1982_4274_9632_4ebbdd48f29f.jpeg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/O4MAIERUS2-2026-10-21_model_shot_1_6d573b5e_1982_4274_9632_4ebbdd48f29f.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/4KKFNKOY4X-2026-10-21_white_background_eb497670_51f6_4a4e_9e4a_b1f4639c4f68.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SWFD75BILI-2026-10-21_model_shot_16e3bd87_5825_4a7b_95ec_010485fb14f6.jpeg"
@@ -2744,13 +2744,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KDHDP6RM1L-2026-10-21_model_shot_6d5e28d1_40aa_4591_b518_e7c8cd6b9404.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0VY00YVS4A-2026-10-21_download__7__9f775f56_dfff_4210_a541_38c3929908b5.png"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/4SJ0YZO856-2026-10-21_size_view_c8be01f5_2ce0_4bce_834b_5e09a4e14019.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KDHDP6RM1L-2026-10-21_model_shot_6d5e28d1_40aa_4591_b518_e7c8cd6b9404.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/XSAZ4GEQ9P-2026-10-21_content_a80373bf_b954_45a3_8184_047361f8d13c.jpeg"
@@ -2787,15 +2787,15 @@
    ],
    "styleName": "Golden Bow Pearl Drop Earrings",
    "antiTarnish": false,
-   "price": 398,
+   "price": 299,
    "stock": 10,
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YLB8JJYH6M-2026-10-21_model_hand_df508837_31ef_4eb3_8f3f_d2f82d083d9c.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YM32QJH50G-2026-10-21_model_shot_afcca66a_f0de_4e69_a06b_dee6dc7a5b25.png"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YM32QJH50G-2026-10-21_model_shot_afcca66a_f0de_4e69_a06b_dee6dc7a5b25.png"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YLB8JJYH6M-2026-10-21_model_hand_df508837_31ef_4eb3_8f3f_d2f82d083d9c.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BLKTEHX05D-2026-10-21_content_2f28c518_5f54_4fe5_a74e_fc1a1579b41b.jpeg"
@@ -2809,7 +2809,7 @@
    "priceKnown": true,
    "description": "Material & Construction: These drop earrings feature a gold-tone hoop design with a sculpted bow and round white pearl-style accents.\n\nStylish Design: The earrings combine sparkling stone-style details, delicate bow elements and elegant pearl drops for a graceful finish.\n\nUser Experience: The lightweight-looking drop silhouette is designed to add a refined touch to a variety of outfits.\n\nVersatile Occasion: Their polished design makes them suitable for festive occasions, celebrations and evening styling.\n\nIdeal For: These earrings are a stylish accessory choice for women who enjoy feminine and elegant jewellery.\n\nVariety & Options: The pair features a coordinated matching design for a balanced and statement-making look.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "ESHTYLE-Catalogue-ESH-0033-Cream-Earring"
   },
   {
@@ -2840,6 +2840,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VQ2T8NIAEH-2026-10-21_model_hand_703983f4_c7a0_433e_96e0_b7304e4a4e14.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LXPSVP4EU5-2026-10-21_front_view_d719eda6_8339_4c19_9691_e2c58d88a095.jpeg"
     },
     {
@@ -2850,9 +2853,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KZZ6SQVKSK-2026-10-21_model_hand_1_784a5683_d7da_484f_8c7b_98399395d5fb.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VQ2T8NIAEH-2026-10-21_model_hand_703983f4_c7a0_433e_96e0_b7304e4a4e14.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/5CBPWBRPBR-2026-10-21_product_packaging_d3feb900_5938_4c01_8d1e_03cd9769ff9f.jpeg"
@@ -2946,13 +2946,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/EW3JY5AGJ8-2026-10-21_model_shot_b2afc52a_b593_4cf2_b091_b5a78f2b1bac.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/S4KKTQE7D1-2026-10-21_content_30d2832d_4cb7_4a72_bf96_e4e8df231923.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/MU0PJAI5VF-2026-10-21_close_up_3bf20795_43fc_4069_be25_ff74e198d9f8.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/EW3JY5AGJ8-2026-10-21_model_shot_b2afc52a_b593_4cf2_b091_b5a78f2b1bac.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/S1QDOP6JVT-2026-10-21_front_view_7bab8965_fbd0_4235_b64f_06aa9f6ba697.jpeg"
@@ -3042,6 +3042,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0NFO6QOBYT-2026-10-21_model_shot_dcfe5e89_1ad0_4471_bd58_e4aebec8ed18.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/8AGTPCHMBQ-2026-10-21_front_view_db8a8fea_4a82_4f25_aa80_188f376dbba6.jpeg"
     },
     {
@@ -3049,9 +3052,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OOVP3L2X80-2026-10-21_model_hand_bbf63a63_4fc3_4808_98fc_4944b54928f8.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0NFO6QOBYT-2026-10-21_model_shot_dcfe5e89_1ad0_4471_bd58_e4aebec8ed18.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/8H8Y6N4LM0-2026-10-21_product_packaging_2859849a_28ad_4549_a32f_2a1de08ab352.jpeg"
@@ -3092,6 +3092,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/2BQCKIRUX1-2026-10-21_model_shot_475934c9_cbf2_4075_869d_f5b81f17d5b4.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DVXUVLTQ17-2026-10-21_product_packaging_1_d211860a_56ed_4885_8d61_a90fb07ae6a5.jpeg"
     },
     {
@@ -3105,9 +3108,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/MIFSSVF1YR-2026-10-21_content_26fd5615_54b3_41f2_a346_4a0cbf19fc54.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/2BQCKIRUX1-2026-10-21_model_shot_475934c9_cbf2_4075_869d_f5b81f17d5b4.jpeg"
     }
    ],
    "variants": [],
@@ -3146,6 +3146,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7Z511CB27V-2026-10-21_model_hand_7bc7388c_5452_4260_8816_48d9434124f4.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FNLHMJ6AW7-2026-10-21_front_view_1_ac7567a8_d2b5_42c7_a182_0bed9a834c1e.jpeg"
     },
     {
@@ -3162,9 +3165,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/V5FWIN7ZGA-2026-10-21_model_hand_1_62e543d9_a743_4c96_a56a_d2cb9e269f25.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7Z511CB27V-2026-10-21_model_hand_7bc7388c_5452_4260_8816_48d9434124f4.jpeg"
     }
    ],
    "variants": [],
@@ -3205,13 +3205,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/K9150AIV0A-2026-10-21_model_shot_610eb189_27b4_4bd3_9974_f686aeb28b68.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/RYVQ0I7NWM-2026-10-21_model_ear_4888bc74_fc55_4dfe_94b1_66f696001e24.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/5M8AVBOMNP-2026-10-21_ear_shot_f4311fd2_d60f_4e14_abd8_e224a32dbcfd.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/K9150AIV0A-2026-10-21_model_shot_610eb189_27b4_4bd3_9974_f686aeb28b68.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/N8H5EL86QK-2026-10-21_front_view_be5b34ef_f8ce_4bfe_a364_9b9f47e747d8.jpeg"
@@ -3361,10 +3361,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZXOVFLQ1X7-2026-10-21_product_packaging_8d6d0bd1_9fa8_40ae_bb99_cf9487bef5a3.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C4VK440AI4-2026-10-21_model_hand_caddb2a1_1a2e_40e1_b92e_02d264fbb05d.jpeg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C4VK440AI4-2026-10-21_model_hand_caddb2a1_1a2e_40e1_b92e_02d264fbb05d.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZXOVFLQ1X7-2026-10-21_product_packaging_8d6d0bd1_9fa8_40ae_bb99_cf9487bef5a3.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/WKBBW1HEJY-2026-10-21_background_4a905d39_2321_492f_a82c_71d14921b8d7.jpeg"
@@ -3410,6 +3410,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IX6XON6OWW-2026-10-21_model_shot_e42953f0_7512_49e3_8267_f967a0538de5.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/63HBTFZHXZ-2026-10-21_front_view_clover_neckset_37d04e20_e7ba_4250_a21f_623bb2673d90.png"
     },
     {
@@ -3417,9 +3420,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BNPIIC52KF-2026-10-21_model_shot_1_25666d79_fc4a_4b62_a969_062d93606f10.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IX6XON6OWW-2026-10-21_model_shot_e42953f0_7512_49e3_8267_f967a0538de5.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CREKTO2NWC-2026-10-21_content_255a6c78_298e_41e0_9f6f_eec57365a158.jpeg"
@@ -3464,10 +3464,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OB2I3EI6SU-2026-10-21_cd5eb65f_03d8_45e9_951c_da6e2fcb652e_jfif_df47fd97_285e_46a7_a61e_8cd5bb01ba13.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/26ACVN0HEC-2026-10-21_1_style_kraft_elegant_pink_sapphire_crystal_leaf_shaped_pendant_original_imahnjh9s8qp4pzj_6cba7162_7c6e_495d_965c_c6a00f0c62d0.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/26ACVN0HEC-2026-10-21_1_style_kraft_elegant_pink_sapphire_crystal_leaf_shaped_pendant_original_imahnjh9s8qp4pzj_6cba7162_7c6e_495d_965c_c6a00f0c62d0.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OB2I3EI6SU-2026-10-21_cd5eb65f_03d8_45e9_951c_da6e2fcb652e_jfif_df47fd97_285e_46a7_a61e_8cd5bb01ba13.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6HO4V48UJO-2026-10-21_d2egc_512_dc8194e3_8f33_4851_8d15_7d0f93925198.jpg"
@@ -3503,7 +3503,7 @@
    "sku": "ESHTYLE_70",
    "name": "Stud Earrings Gift Box Set",
    "slug": "stud-earrings-gift-box-set",
-   "category": "jewellery-box-sets",
+   "category": "earring-combos",
    "subcategory": null,
    "line": "A foldable gift box filled with assorted dainty stud earrings — a ready-made present.",
    "colour": "Gold",
@@ -3572,13 +3572,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BE50K5WLS5-2026-10-21_model_shot_306810a2_41fc_4f67_b189_7871e52c111f.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FXAKF839SV-2026-10-21_content_b93bcbfd_fce9_4658_8e4b_91ee4567892c.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/RCZV6MTBXN-2026-10-21_front_view_1b420f21_e81e_426c_ad0c_dcdd79c93dc1.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BE50K5WLS5-2026-10-21_model_shot_306810a2_41fc_4f67_b189_7871e52c111f.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SEEZ2ZJXCZ-2026-10-21_model_hand_1_81ac16c2_4bcd_44df_bb55_8cf5066210aa.jpeg"
@@ -3602,7 +3602,7 @@
    "sku": "ESHTYLE_72",
    "name": "Golden Floral Link Necklace",
    "slug": "golden-floral-link-necklace",
-   "category": "chains",
+   "category": "necklaces",
    "subcategory": null,
    "line": "Five flower-inspired motifs add a graceful and feminine touch to the long necklace design.",
    "colour": "Gold",
@@ -3702,13 +3702,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YYIH43VYMX-2026-10-21_model_shot_5c182fcc_a716_4c7d_8438_d004fe33c43a.jpeg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/XUSFJYJU6D-2026-10-21_product_packaging_4bf96179_6c92_4430_a994_53847298c0d7.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PHRJSBQMRH-2026-10-21_content_4698572c_4e42_4c09_8605_5c0c7ea2d8ee.jpeg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YYIH43VYMX-2026-10-21_model_shot_5c182fcc_a716_4c7d_8438_d004fe33c43a.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/I4KTC9H6Q4-2026-10-21_close_up_028c1fca_835f_4550_8032_f8649b75afbf.jpeg"
@@ -3727,13 +3727,13 @@
      "stock": 6,
      "images": [
       {
+       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YYIH43VYMX-2026-10-21_model_shot_5c182fcc_a716_4c7d_8438_d004fe33c43a.jpeg"
+      },
+      {
        "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/XUSFJYJU6D-2026-10-21_product_packaging_4bf96179_6c92_4430_a994_53847298c0d7.jpeg"
       },
       {
        "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PHRJSBQMRH-2026-10-21_content_4698572c_4e42_4c09_8605_5c0c7ea2d8ee.jpeg"
-      },
-      {
-       "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YYIH43VYMX-2026-10-21_model_shot_5c182fcc_a716_4c7d_8438_d004fe33c43a.jpeg"
       },
       {
        "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/I4KTC9H6Q4-2026-10-21_close_up_028c1fca_835f_4550_8032_f8649b75afbf.jpeg"
@@ -3780,10 +3780,10 @@
      "stock": 5,
      "images": [
       {
-       "url": "/uploads/catalog/esh-0097/esh-0097-1.jpg"
+       "url": "/uploads/catalog/esh-0097/esh-0097-2.jpg"
       },
       {
-       "url": "/uploads/catalog/esh-0097/esh-0097-2.jpg"
+       "url": "/uploads/catalog/esh-0097/esh-0097-1.jpg"
       },
       {
        "url": "/uploads/catalog/esh-0097/esh-0097-3.jpg"
@@ -3802,13 +3802,13 @@
      "stock": 5,
      "images": [
       {
+       "url": "/uploads/catalog/esh-0098/esh-0098-3.jpg"
+      },
+      {
        "url": "/uploads/catalog/esh-0098/esh-0098-1.jpg"
       },
       {
        "url": "/uploads/catalog/esh-0098/esh-0098-2.jpg"
-      },
-      {
-       "url": "/uploads/catalog/esh-0098/esh-0098-3.jpg"
       },
       {
        "url": "/uploads/catalog/esh-0098/esh-0098-4.jpg"
@@ -3830,13 +3830,13 @@
      "stock": 5,
      "images": [
       {
+       "url": "/uploads/catalog/esh-0099/esh-0099-3.jpg"
+      },
+      {
        "url": "/uploads/catalog/esh-0099/esh-0099-1.jpg"
       },
       {
        "url": "/uploads/catalog/esh-0099/esh-0099-2.jpg"
-      },
-      {
-       "url": "/uploads/catalog/esh-0099/esh-0099-3.jpg"
       },
       {
        "url": "/uploads/catalog/esh-0099/esh-0099-4.jpg"
@@ -3861,7 +3861,7 @@
    "sku": "ESHTYLE_75",
    "name": "Golden Floral Stud Earrings",
    "slug": "golden-floral-stud-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The floral design features layered petal details for a delicate and elegant look.",
    "colour": "Gold",
@@ -3872,10 +3872,13 @@
    "keywords": [],
    "styleName": "Golden Floral Stud Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
    "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KZ887U1CEK-2026-10-22_6ab8e0e6_2b22_4be1_940c_aabfe7b44157_jfif_de6eed73_e692_4517_b47f_2c93655dd574.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/GJ4INMNFLE-2026-10-22_download__59__jfif_831e07e2_76c1_49a8_b931_92206a337e5d.jpg"
     },
@@ -3886,9 +3889,6 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IKF1ALHXJL-2026-10-22_images__43__jfif_c0d23204_bde7_4d91_b6eb_6677c6ee9984.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KZ887U1CEK-2026-10-22_6ab8e0e6_2b22_4be1_940c_aabfe7b44157_jfif_de6eed73_e692_4517_b47f_2c93655dd574.jpg"
-    },
-    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/W6LFG3XWCB-2026-10-22_e4a8b602_8a9f_4ad4_95e6_fd4a8cc06331_jfif_e515f8b4_8b72_4114_8ac8_788517bf44ad.jpg"
     }
    ],
@@ -3897,14 +3897,14 @@
    "priceKnown": true,
    "description": "Material And Construction: These earrings feature a stainless steel construction with a polished gold-tone finish.\n\nStylish Design: The floral design features layered petal details for a delicate and elegant look.\n\nUser Experience: The compact stud style offers a neat and comfortable-looking fit for everyday accessorising.\n\nVersatile Occasion: These floral studs complement casual outfits, festive looks, and special occasions.\n\nIdeal For: They are suitable for women who prefer graceful floral jewellery with a gold-tone appearance.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0080"
   },
   {
    "sku": "ESHTYLE_76",
    "name": "Golden Leaf Stud Earrings",
    "slug": "golden-leaf-stud-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The three elongated leaf elements create an elegant floral silhouette.",
    "colour": "Gold",
@@ -3915,15 +3915,15 @@
    "keywords": [],
    "styleName": "Golden Leaf Stud Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7MP2P60T8C-2026-10-22_download__76__jfif_5c722784_97d7_408e_b786_ab4a38684265.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CPILN92798-2026-10-22_golden_petal_korean_earrings_1779647148_1_jfif_6a44b9fa_33f0_43b1_9a22_5a70e9f876ec.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CPILN92798-2026-10-22_golden_petal_korean_earrings_1779647148_1_jfif_6a44b9fa_33f0_43b1_9a22_5a70e9f876ec.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7MP2P60T8C-2026-10-22_download__76__jfif_5c722784_97d7_408e_b786_ab4a38684265.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DI8CG4M26H-2026-10-22_images__44__jfif_0b4d4451_e5cd_41be_93f2_b414f04499eb.jpg"
@@ -3955,14 +3955,14 @@
    "priceKnown": true,
    "description": "Material & Construction: These earrings feature a polished gold-tone finish with a sculpted leaf-inspired design.\n\nStylish Design: The three elongated leaf elements create an elegant floral silhouette.\n\nUser Experience: The stud-style design sits neatly against the earlobe for a refined appearance.\n\nVersatile Occasion: These earrings complement everyday outfits as well as festive and occasion wear.\n\nIdeal For: They are suited for women who prefer elegant nature-inspired jewellery.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0081"
   },
   {
    "sku": "ESHTYLE_77",
    "name": "Golden Floral Stud Earrings",
    "slug": "golden-floral-stud-earrings-77",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The floral daisy-inspired design adds a graceful and elegant touch to the look.",
    "colour": "Gold",
@@ -3973,7 +3973,7 @@
    "keywords": [],
    "styleName": "Golden Floral Stud Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
    "pick": 0,
    "images": [
@@ -4004,7 +4004,7 @@
    "priceKnown": true,
    "description": "Material & Construction: The earrings feature a polished gold-tone finish with a compact stud construction.\n\nStylish Design: The floral daisy-inspired design adds a graceful and elegant touch to the look.\n\nUser Experience: The lightweight-looking stud style is designed for a neat and comfortable appearance on the ears.\n\nVersatile Occasion: These earrings complement both professional outfits and dressed-up evening looks.\n\nIdeal For: The floral earrings are suited for women who prefer refined and feminine everyday accessories.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0084"
   },
   {
@@ -4027,10 +4027,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HC1U4TXH1Q-2026-10-22_4bxt1BoKS3MxMZj_8ac33024_5881_43b2_863f_c6eaf9827d31.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/S5Y8EPN1IQ-2026-10-22_71svTf9jQPL__SY575__e1cddd2b_80eb_4273_8d71_00095498527b.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/S5Y8EPN1IQ-2026-10-22_71svTf9jQPL__SY575__e1cddd2b_80eb_4273_8d71_00095498527b.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HC1U4TXH1Q-2026-10-22_4bxt1BoKS3MxMZj_8ac33024_5881_43b2_863f_c6eaf9827d31.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DUXR3Y20T3-2026-10-22_images__37__jfif_184f7d25_2eec_4934_898b_ecacafe4c8ff.jpg"
@@ -4057,7 +4057,7 @@
    "sku": "ESHTYLE_79",
    "name": "Golden Starfish Stud Earrings",
    "slug": "golden-starfish-stud-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The five-arm starfish shape is detailed with textured lines and a central cluster of white stones.",
    "colour": "Gold",
@@ -4068,7 +4068,7 @@
    "keywords": [],
    "styleName": "Golden Starfish Stud Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
    "pick": 0,
    "images": [
@@ -4099,7 +4099,7 @@
    "priceKnown": true,
    "description": "Material & Construction: These earrings feature a structured starfish silhouette with a polished gold-tone finish.\n\nStylish Design: The five-arm starfish shape is detailed with textured lines and a central cluster of white stones.\n\nUser Experience: The stud-style design sits neatly on the earlobe for a refined jewellery look.\n\nVersatile Occasion: These statement earrings complement casual outfits, holiday looks and special occasions.\n\nIdeal For: They are designed for women who enjoy distinctive ocean-inspired jewellery.\n\nLifestyle Essential: The eye-catching design adds a stylish finishing touch to everyday and occasion wear.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0087"
   },
   {
@@ -4122,6 +4122,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/J77VEXB0CQ-2026-10-22_download__23__jfif_925674fa_a44e_47dc_811c_adfb5706980f.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6NM7GT7IMB-2026-10-22_download__19__jfif_28b62bca_f352_4810_802b_4d2697f9f030.jpg"
     },
     {
@@ -4132,9 +4135,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/E86RTLP2Z9-2026-10-22_download__22__jfif_5c232076_316d_4029_abbb_4c6ccd373388.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/J77VEXB0CQ-2026-10-22_download__23__jfif_925674fa_a44e_47dc_811c_adfb5706980f.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/EMW5NRY9DH-2026-10-22_download__24__jfif_a162195a_ef67_4d03_a775_5e12ad5ae8ee.jpg"
@@ -4226,10 +4226,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/U0JK0H388Y-2026-10-22_black_clover_anti_tarnish_bracelet_korean_style_20366819_4da7_4936_b017_043024f2709f.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UICGMJY9R6-2026-10-22_images__35__jfif_6a0b3d62_7e9c_44c3_becf_b04dbeebd567.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UICGMJY9R6-2026-10-22_images__35__jfif_6a0b3d62_7e9c_44c3_becf_b04dbeebd567.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/U0JK0H388Y-2026-10-22_black_clover_anti_tarnish_bracelet_korean_style_20366819_4da7_4936_b017_043024f2709f.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZC7KN28HC1-2026-10-22_trendy_korean_aesthetic_bracelet_gold_plated___Copy_de239fc6_eb76_4fba_934e_36d8c1bfd35e.jpg"
@@ -4294,24 +4294,26 @@
   },
   {
    "sku": "ESHTYLE_84",
-   "name": "Golden Round Stud Earrings — Pick Any 2",
+   "name": "Golden Round Stud Earrings",
    "slug": "golden-round-stud-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The earrings showcase an abstract geometric pattern with reflective textured detailing.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Round Stud Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BWLSMEM4P7-2026-10-22_images__42__jfif_bd14e420_3d9a_4277_b723_b264eda8c4dd.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/YI68XZGYKN-2026-10-22_download__52__jfif_68f19d0b_7caf_47cb_b061_4390092078a3.jpg"
     },
@@ -4320,39 +4322,38 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/R97KSMN4YI-2026-10-22_images__41__jfif_c6aafe41_b770_457d_b79b_a313e107940d.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BWLSMEM4P7-2026-10-22_images__42__jfif_bd14e420_3d9a_4277_b723_b264eda8c4dd.jpg"
     }
    ],
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial And Construction: These round stud earrings feature a polished gold-tone finish with a compact spherical design.\n\nStylish Design: The earrings showcase an abstract geometric pattern with reflective textured detailing.\n\nUser Experience: Their stud style sits close to the earlobe for a neat and comfortable-looking finish.\n\nVersatile Occasion: The statement design complements both everyday outfits and special occasion looks.\n\nIdeal For: These earrings are suited for women who prefer bold, contemporary ear accessories.",
+   "description": "Material And Construction: These round stud earrings feature a polished gold-tone finish with a compact spherical design.\n\nStylish Design: The earrings showcase an abstract geometric pattern with reflective textured detailing.\n\nUser Experience: Their stud style sits close to the earlobe for a neat and comfortable-looking finish.\n\nVersatile Occasion: The statement design complements both everyday outfits and special occasion looks.\n\nIdeal For: These earrings are suited for women who prefer bold, contemporary ear accessories.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0078"
   },
   {
    "sku": "ESHTYLE_85",
-   "name": "Golden Pearl Hoop Earrings — Pick Any 2",
+   "name": "Golden Pearl Hoop Earrings",
    "slug": "golden-pearl-hoop-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "Textured curved detailing creates a distinctive statement hoop silhouette.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Pearl Hoop Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UP4L99D6FZ-2026-10-22_download__95__jfif_70352e67_8b59_45e3_8ffb_09151f99058a.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/P9DEI5CCYA-2026-10-22_download__90__jfif_f3a18c11_ed79_4f84_87e5_c1c510362293.jpg"
     },
@@ -4367,39 +4368,38 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/N938JSR8VV-2026-10-22_download__94__jfif_9c633ed6_8ea0_4268_a68f_b740a0af5273.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UP4L99D6FZ-2026-10-22_download__95__jfif_70352e67_8b59_45e3_8ffb_09151f99058a.jpg"
     }
    ],
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial And Construction: The earrings feature a stainless steel construction with a gold-tone finish.\n\nStylish Design: Textured curved detailing creates a distinctive statement hoop silhouette.\n\nDesign Detail: Each earring features a pearl-style bead accent at the centre.\n\nUser Experience: The compact hoop design offers a noticeable yet easy-to-style accessory for everyday looks.\n\nVersatile Occasion: These earrings complement casual outfits, festive styling and evening ensembles.\n\nIdeal For: A suitable accessory choice for women who enjoy textured gold-tone jewellery.",
+   "description": "Material And Construction: The earrings feature a stainless steel construction with a gold-tone finish.\n\nStylish Design: Textured curved detailing creates a distinctive statement hoop silhouette.\n\nDesign Detail: Each earring features a pearl-style bead accent at the centre.\n\nUser Experience: The compact hoop design offers a noticeable yet easy-to-style accessory for everyday looks.\n\nVersatile Occasion: These earrings complement casual outfits, festive styling and evening ensembles.\n\nIdeal For: A suitable accessory choice for women who enjoy textured gold-tone jewellery.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0086"
   },
   {
    "sku": "ESHTYLE_86",
-   "name": "Golden Stainless Steel Textured Drop Earrings — Pick Any 2",
+   "name": "Golden Stainless Steel Textured Drop Earrings",
    "slug": "golden-stainless-steel-textured-drop-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The pair showcases a layered, concentric textured pattern with a rounded drop silhouette.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Stainless Steel Textured Drop Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LWQSKUVET9-2026-10-22_61MNZMAg8bL__SY695__d23245fc_9f96_4957_978c_61cdc684732e.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FEFCPLO0C9-2026-10-22_download__73__jfif_8bde764f_3f45_467b_8409_82af50271e8a.jpg"
     },
@@ -4410,40 +4410,39 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6RKTD2GOM9-2026-10-22_71VSzl5CSZL__SX695__3b9dac54_7117_462e_a124_edd23f73393c.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LWQSKUVET9-2026-10-22_61MNZMAg8bL__SY695__d23245fc_9f96_4957_978c_61cdc684732e.jpg"
-    },
-    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/50RDH626SB-2026-10-22_download__75__jfif_d96259f4_8150_4881_86cf_7537dc26ab79.jpg"
     }
    ],
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial & Construction: These earrings feature a stainless steel construction with a polished gold-tone finish.\n\nStylish Design: The pair showcases a layered, concentric textured pattern with a rounded drop silhouette.\n\nUser Experience: The compact drop design adds a refined statement to the overall look.\n\nVersatile Occasion: These earrings complement everyday outfits as well as occasion-ready styling.\n\nIdeal For: Designed for women who enjoy elegant gold-tone jewellery with contemporary detailing.",
+   "description": "Material & Construction: These earrings feature a stainless steel construction with a polished gold-tone finish.\n\nStylish Design: The pair showcases a layered, concentric textured pattern with a rounded drop silhouette.\n\nUser Experience: The compact drop design adds a refined statement to the overall look.\n\nVersatile Occasion: These earrings complement everyday outfits as well as occasion-ready styling.\n\nIdeal For: Designed for women who enjoy elegant gold-tone jewellery with contemporary detailing.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0082"
   },
   {
    "sku": "ESHTYLE_87",
-   "name": "Golden Textured Spiral Earrings — Pick Any 2",
+   "name": "Golden Textured Spiral Earrings",
    "slug": "golden-textured-spiral-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The abstract spiral silhouette is enhanced with fine ridged texture for a distinctive look.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Textured Spiral Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PH6T9SHDQ2-2026-10-22_images__50__jfif_655c890a_e4c7_4e1c_8594_c2f2e1feb73e.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/AST5U7YEB7-2026-10-22_images__46__jfif_58149875_5525_40b2_a3d1_a35c2f19db0e.jpg"
     },
@@ -4460,9 +4459,6 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/R9NH7XPD3X-2026-10-22_images__49__jfif_a596d587_9849_475b_83fa_bbead9fcea04.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PH6T9SHDQ2-2026-10-22_images__50__jfif_655c890a_e4c7_4e1c_8594_c2f2e1feb73e.jpg"
-    },
-    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/VER5P4H9NA-2026-10-22_images__51__jfif_eaf1cf1e_724d_4771_88af_d393fbd1acde.jpg"
     },
     {
@@ -4475,9 +4471,9 @@
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial And Construction: These earrings feature a gold-tone finish with a sculptural curved form.\n\nStylish Design: The abstract spiral silhouette is enhanced with fine ridged texture for a distinctive look.\n\nUser Experience: The compact statement design offers an eye-catching addition to an earring collection.\n\nVersatile Occasion: These earrings complement a variety of everyday and occasion-ready looks.\n\nVariety And Options: The pair showcases a coordinated matching design for a balanced appearance.\n\nLifestyle Essential: These textured gold-tone earrings add a polished accent to contemporary styling.",
+   "description": "Material And Construction: These earrings feature a gold-tone finish with a sculptural curved form.\n\nStylish Design: The abstract spiral silhouette is enhanced with fine ridged texture for a distinctive look.\n\nUser Experience: The compact statement design offers an eye-catching addition to an earring collection.\n\nVersatile Occasion: These earrings complement a variety of everyday and occasion-ready looks.\n\nVariety And Options: The pair showcases a coordinated matching design for a balanced appearance.\n\nLifestyle Essential: These textured gold-tone earrings add a polished accent to contemporary styling.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0088"
   },
   {
@@ -4500,6 +4496,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6IPDUTWL3W-2026-10-22_download__33__jfif_09a23756_496b_425a_96ab_52fab04ee85b.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7NRDOFCYKZ-2026-10-22_0cb8fe27_d64c_4eb6_b862_bd32f0bcdc67_jfif_8dc8d9b1_9804_449c_a35b_b12624b34442.jpg"
     },
     {
@@ -4507,9 +4506,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/B8K1NWQJRQ-2026-10-22_download__32__jfif_5ea92578_c529_4194_989a_9029c80a8db8.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6IPDUTWL3W-2026-10-22_download__33__jfif_09a23756_496b_425a_96ab_52fab04ee85b.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/QKNVU78749-2026-10-22_21ab48c2_4c20_4c06_ab2e_7a48d66d53b7_jfif_cf64c782_aa83_434f_9e19_0857520f90d3.jpg"
@@ -4577,24 +4573,26 @@
   },
   {
    "sku": "ESHTYLE_90",
-   "name": "Golden Crystal Stud Earrings — Pick Any 2",
+   "name": "Golden Crystal Stud Earrings",
    "slug": "golden-crystal-stud-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The pair showcases a distinctive intertwined motif decorated with sparkling crystal-style stones.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Crystal Stud Earrings",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/8DNT343U94-2026-10-22_na_nx_006_nexvora_original_imahpbsvaczjx46k_475f6443_11d0_4843_a0c8_98bf256fce7f.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/5PVNYDR3HH-2026-10-22_download__46__jfif_b1be76be_5cd9_4031_ad01_6a1d7cfa421f.jpg"
     },
@@ -4609,17 +4607,14 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PVROWD8H5B-2026-10-22_download__50__jfif_bd3ca129_a567_47b8_8811_12f1ac9b3572.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/8DNT343U94-2026-10-22_na_nx_006_nexvora_original_imahpbsvaczjx46k_475f6443_11d0_4843_a0c8_98bf256fce7f.jpg"
     }
    ],
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial And Construction: These earrings feature a gold-tone finish with a structured stud design and secure post backs.\n\nStylish Design: The pair showcases a distinctive intertwined motif decorated with sparkling crystal-style stones.\n\nUser Experience: The compact stud silhouette is designed for a neat and comfortable fit on the ears.\n\nVersatile Occasion: These statement earrings complement festive outfits, party looks and everyday styling.\n\nIdeal For: Suitable for women seeking eye-catching fashion jewellery for personal wear or gifting.",
+   "description": "Material And Construction: These earrings feature a gold-tone finish with a structured stud design and secure post backs.\n\nStylish Design: The pair showcases a distinctive intertwined motif decorated with sparkling crystal-style stones.\n\nUser Experience: The compact stud silhouette is designed for a neat and comfortable fit on the ears.\n\nVersatile Occasion: These statement earrings complement festive outfits, party looks and everyday styling.\n\nIdeal For: Suitable for women seeking eye-catching fashion jewellery for personal wear or gifting.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0076"
   },
   {
@@ -4642,10 +4637,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OXBZUYT929-2026-10-22_front_view_99ab8ad0_485c_49f4_a885_b8587d15a049.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CH8RTU20XX-2026-10-22_hand_shot_a5f594f3_b587_40a4_91d9_ce33edd31600.jpeg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CH8RTU20XX-2026-10-22_hand_shot_a5f594f3_b587_40a4_91d9_ce33edd31600.jpeg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OXBZUYT929-2026-10-22_front_view_99ab8ad0_485c_49f4_a885_b8587d15a049.jpeg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/T6SKE3P87D-2026-10-22_product_packaging_6bd72154_7751_4f4c_806c_3458cfae280c.jpeg"
@@ -4670,23 +4665,22 @@
   },
   {
    "sku": "ESHTYLE_92",
-   "name": "Golden Pearl & Rhinestone Hoop Earrings — Pick Any 2",
+   "name": "Golden Pearl & Rhinestone Hoop Earrings",
    "slug": "golden-pearl-rhinestone-hoop-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "A mix of sleek hoops, sparkling stone accents and a pearl element creates a layered statement look.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Pearl & Rhinestone Hoop Earrings",
    "antiTarnish": false,
    "price": 299,
    "stock": 10,
-   "pick": 2,
+   "pick": 0,
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IPB0HJYY2U-2026-10-22_download__6__f3634880_d6b6_4760_a619_7dd3c6b9eac6.png"
@@ -4707,30 +4701,29 @@
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial & Construction: The earrings feature a gold-tone finish with hoop silhouettes and decorative pearl and rhinestone details.\n\nStylish Design: A mix of sleek hoops, sparkling stone accents and a pearl element creates a layered statement look.\n\nUser Experience: The compact earring designs sit neatly along the ear for a polished and fashionable appearance.\n\nVersatile Occasion: These earrings complement everyday outfits as well as festive and evening looks.\n\nIdeal For: The set is suited for women who enjoy contemporary jewellery with a delicate layered effect.",
+   "description": "Material & Construction: The earrings feature a gold-tone finish with hoop silhouettes and decorative pearl and rhinestone details.\n\nStylish Design: A mix of sleek hoops, sparkling stone accents and a pearl element creates a layered statement look.\n\nUser Experience: The compact earring designs sit neatly along the ear for a polished and fashionable appearance.\n\nVersatile Occasion: These earrings complement everyday outfits as well as festive and evening looks.\n\nIdeal For: The set is suited for women who enjoy contemporary jewellery with a delicate layered effect.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "0vHa954G"
   },
   {
    "sku": "ESHTYLE_93",
-   "name": "Golden Floral Pearl Drop Earrings — Pick Any 2",
+   "name": "Golden Floral Pearl Drop Earrings",
    "slug": "golden-floral-pearl-drop-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The five-petal flower design adds a graceful and feminine touch to the overall look.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Floral Pearl Drop Earrings",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/EDAWVFZCK8-2026-10-22_front_view_0457a9d3_fb27_4a87_ad0f_02ec3c01eddf.jpeg"
@@ -4748,31 +4741,33 @@
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial & Construction: These earrings feature a gold-tone floral setting with polished pearl-like drops and sparkling stone accents.\n\nStylish Design: The five-petal flower design adds a graceful and feminine touch to the overall look.\n\nUser Experience: The dangling pearl detail creates an elegant movement when worn.\n\nVersatile Occasion: These earrings complement festive outfits, celebrations and evening ensembles.\n\nIdeal For: They are suitable for women who enjoy delicate floral jewellery with a statement finish.",
+   "description": "Material & Construction: These earrings feature a gold-tone floral setting with polished pearl-like drops and sparkling stone accents.\n\nStylish Design: The five-petal flower design adds a graceful and feminine touch to the overall look.\n\nUser Experience: The dangling pearl detail creates an elegant movement when worn.\n\nVersatile Occasion: These earrings complement festive outfits, celebrations and evening ensembles.\n\nIdeal For: They are suitable for women who enjoy delicate floral jewellery with a statement finish.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "mreqi1NI"
   },
   {
    "sku": "ESHTYLE_94",
-   "name": "Golden Textured Statement Hoop Earrings — Pick Any 2",
+   "name": "Golden Textured Statement Hoop Earrings",
    "slug": "golden-textured-statement-hoop-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The irregular rounded hoop silhouette and open centre create a distinctive statement look.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Textured Statement Hoop Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IOCM5GYM6Y-2026-10-22_Copyof1_0b78b30a_d77f_445f_94e5_090dc543ece4_11f87ccc_18e9_4468_b2e7_58261ffe7a37.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/2VYEF8DZD6-2026-10-22_download__77__jfif_05088f99_eadd_4116_8d3b_6a5eb4f7fa47.jpg"
     },
@@ -4787,17 +4782,14 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HJ1OJNRRDY-2026-10-22_download__81__jfif_8e1da29b_d73a_4987_afc8_fb7a30e1f119.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IOCM5GYM6Y-2026-10-22_Copyof1_0b78b30a_d77f_445f_94e5_090dc543ece4_11f87ccc_18e9_4468_b2e7_58261ffe7a37.jpg"
     }
    ],
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial & Construction: These earrings feature a substantial sculpted design with a textured gold-tone finish.\n\nStylish Design: The irregular rounded hoop silhouette and open centre create a distinctive statement look.\n\nUser Experience: The pair is designed with a compact hoop shape that sits close to the ear.\n\nVersatile Occasion: Their bold textured appearance adds a stylish accent to a variety of looks.\n\nVariety & Options: The set includes two matching gold-tone earrings for a coordinated appearance.",
+   "description": "Material & Construction: These earrings feature a substantial sculpted design with a textured gold-tone finish.\n\nStylish Design: The irregular rounded hoop silhouette and open centre create a distinctive statement look.\n\nUser Experience: The pair is designed with a compact hoop shape that sits close to the ear.\n\nVersatile Occasion: Their bold textured appearance adds a stylish accent to a variety of looks.\n\nVariety & Options: The set includes two matching gold-tone earrings for a coordinated appearance.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0083"
   },
   {
@@ -4909,6 +4901,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BKSSRSZXG5-2026-10-22_2_6_2_8_na_1_luxury_gold_plated_bracelet_for_women_anti_tarnish_original_imahntpzyqcvmzxc_aab159ee_a071_4fa8_889d_43143a5e2149.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LVS3STEEQZ-2026-10-22_download__37__jfif_c896b365_a264_468a_b3f7_e28918665bca.jpg"
     },
     {
@@ -4916,9 +4911,6 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/K0HSP62ZZ3-2026-10-22_download__39__jfif_5c11e9ad_6bb2_4111_9281_34b4002b48a0.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BKSSRSZXG5-2026-10-22_2_6_2_8_na_1_luxury_gold_plated_bracelet_for_women_anti_tarnish_original_imahntpzyqcvmzxc_aab159ee_a071_4fa8_889d_43143a5e2149.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SSS9EHG0XE-2026-10-22_2_6_2_8_na_1_luxury_gold_plated_bracelet_for_women_anti_tarnish_original_imahntpznzm52u9t_35e7ec68_0b18_40c9_bac4_df71de06e54d.jpg"
@@ -4940,23 +4932,22 @@
   },
   {
    "sku": "ESHTYLE_98",
-   "name": "Golden Floral Stud Earrings — Pick Any 2",
+   "name": "Golden Floral Stud Earrings",
    "slug": "golden-floral-stud-earrings-98",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The flower-shaped silhouette is detailed with textured petal patterns and a central pearl-like accent.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Floral Stud Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/27OLZKO2U0-2026-10-22_325d17eb_2795_4bd1_90a9_67ec6bc4d1c8_jfif_1455a037_7cd3_488e_8c05_902ff6cd18ed.jpg"
@@ -4980,31 +4971,33 @@
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial & Construction: These earrings feature a gold-tone floral design with a compact stud-style construction.\n\nStylish Design: The flower-shaped silhouette is detailed with textured petal patterns and a central pearl-like accent.\n\nUser Experience: The stud format offers a neat, close-to-ear look for comfortable everyday styling.\n\nVersatile Occasion: These earrings complement ethnic wear, festive outfits and elegant evening looks.\n\nIdeal For: They are suitable for women who prefer delicate floral jewellery with a graceful traditional appeal.\n\nLifestyle Essential: The statement floral design adds a refined finishing touch to both simple and dressy ensembles.",
+   "description": "Material & Construction: These earrings feature a gold-tone floral design with a compact stud-style construction.\n\nStylish Design: The flower-shaped silhouette is detailed with textured petal patterns and a central pearl-like accent.\n\nUser Experience: The stud format offers a neat, close-to-ear look for comfortable everyday styling.\n\nVersatile Occasion: These earrings complement ethnic wear, festive outfits and elegant evening looks.\n\nIdeal For: They are suitable for women who prefer delicate floral jewellery with a graceful traditional appeal.\n\nLifestyle Essential: The statement floral design adds a refined finishing touch to both simple and dressy ensembles.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0079"
   },
   {
    "sku": "ESHTYLE_99",
-   "name": "Golden Floral Pearl Ring — Pick Any 2",
+   "name": "Golden Floral Pearl Ring",
    "slug": "golden-floral-pearl-ring",
-   "category": "ring-combos",
+   "category": "rings",
    "subcategory": null,
    "line": "White flower-shaped detailing is complemented by a central faceted stone and a pearl-like accent.",
    "colour": "White",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Floral Pearl Ring",
    "antiTarnish": false,
-   "price": 398,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SXVK199A1U-2026-10-22_81EqXzCmzKL__SY675__349f706e_b9e7_4a01_b4f1_dad0e0f09984.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/3ZOB3EITF1-2026-10-22_51eiUrO7s1L__AC_UY1100__f5443919_2999_438b_977c_83c3c60fc716.jpg"
     },
@@ -5027,9 +5020,6 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DB40C8G1ES-2026-10-22_71qLQbj6gjL__SY675__c2ee887d_6db6_47ae_bf35_74e85bf8c5e4.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SXVK199A1U-2026-10-22_81EqXzCmzKL__SY675__349f706e_b9e7_4a01_b4f1_dad0e0f09984.jpg"
-    },
-    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/H351KZPBTX-2026-10-22_download___2026_10_22T014624_234_jfif_dd4957a2_021b_4e3f_a3b1_6f88381942ae.jpg"
     },
     {
@@ -5039,30 +5029,29 @@
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial & Construction: The ring features a gold-tone finish with a decorative floral design.\n\nStylish Design: White flower-shaped detailing is complemented by a central faceted stone and a pearl-like accent.\n\nUser Experience: Its delicate statement design adds an elegant touch to everyday and occasion-ready looks.\n\nVersatile Occasion: This floral ring pairs well with ethnic, festive, and casual outfits.\n\nIdeal For: Designed as a stylish accessory for women who enjoy delicate floral jewellery.",
+   "description": "Material & Construction: The ring features a gold-tone finish with a decorative floral design.\n\nStylish Design: White flower-shaped detailing is complemented by a central faceted stone and a pearl-like accent.\n\nUser Experience: Its delicate statement design adds an elegant touch to everyday and occasion-ready looks.\n\nVersatile Occasion: This floral ring pairs well with ethnic, festive, and casual outfits.\n\nIdeal For: Designed as a stylish accessory for women who enjoy delicate floral jewellery.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0092"
   },
   {
    "sku": "ESHTYLE_100",
-   "name": "Golden Textured Rectangular Drop Earrings — Pick Any 2",
+   "name": "Golden Textured Rectangular Drop Earrings",
    "slug": "golden-textured-rectangular-drop-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The surface showcases layered horizontal texture for a distinctive statement look.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Textured Rectangular Drop Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IM3FE24A5U-2026-10-22_ee13cf80_1b5d_4cd3_9f8b_8cea009f7aa3_jfif_efe11d16_f1af_4850_969e_8137521136af.jpg"
@@ -5086,9 +5075,9 @@
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial And Construction: These earrings feature a gold-tone finish with a structured rectangular form.\n\nStylish Design: The surface showcases layered horizontal texture for a distinctive statement look.\n\nUser Experience: The drop-style silhouette adds visible length and definition around the face.\n\nVersatile Occasion: They complement festive outfits, evening wear and elevated everyday styling.\n\nIdeal For: These statement earrings are suited for women who prefer bold geometric accessories.",
+   "description": "Material And Construction: These earrings feature a gold-tone finish with a structured rectangular form.\n\nStylish Design: The surface showcases layered horizontal texture for a distinctive statement look.\n\nUser Experience: The drop-style silhouette adds visible length and definition around the face.\n\nVersatile Occasion: They complement festive outfits, evening wear and elevated everyday styling.\n\nIdeal For: These statement earrings are suited for women who prefer bold geometric accessories.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0077"
   },
   {
@@ -5154,10 +5143,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UW3LQR9N6V-2026-10-22_shopping__9__1d2c7960_1fe8_4d45_84f9_9df7152ae653.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7WHF61T1IP-2026-10-22_71ONz2Y7S0L__SY575__e2ff93d6_0d5c_4a02_99e1_15e38ed6147e.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7WHF61T1IP-2026-10-22_71ONz2Y7S0L__SY575__e2ff93d6_0d5c_4a02_99e1_15e38ed6147e.jpg"
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UW3LQR9N6V-2026-10-22_shopping__9__1d2c7960_1fe8_4d45_84f9_9df7152ae653.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UUPP4XTWMA-2026-10-22_415NhZqudTL__SS40__944a556c_03b6_4e4d_b53b_c8769a711db7.jpg"
@@ -5182,24 +5171,26 @@
   },
   {
    "sku": "ESHTYLE_103",
-   "name": "Golden Floral Stud Earrings — Pick Any 2",
+   "name": "Golden Floral Stud Earrings",
    "slug": "golden-floral-stud-earrings-103",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "Each earring showcases a floral silhouette formed by multiple polished petal-shaped elements.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Floral Stud Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 5,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/RRYTJ7JEQZ-2026-10-22_b7b478ac3e4d3379f854a953d33e433801197a88be47a746df2c5b62bac77ce8_71e0a148_6f6a_48d7_9148_d6f7bd585115.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0QQ3OQ3J7D-2026-10-22_download__87__jfif_caa758aa_8a82_4fe1_b88d_a7a959a5edf6.jpg"
     },
@@ -5210,18 +5201,15 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ER4GZXFR0U-2026-10-22_download__89__jfif_9e9cc218_cc95_48c5_b7e8_5265866e4189.jpg"
     },
     {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/RRYTJ7JEQZ-2026-10-22_b7b478ac3e4d3379f854a953d33e433801197a88be47a746df2c5b62bac77ce8_71e0a148_6f6a_48d7_9148_d6f7bd585115.jpg"
-    },
-    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/Q0Y0CEYEX2-2026-10-22_5f08a2e8811e5184c7f8d2622a07cfe8cccf0e9ba01a7e53fa0eab36192bef17_604fd531_fd51_450e_9f47_5daa19114669.jpg"
     }
    ],
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial & Construction: The earrings feature a gold-tone metal design with a central pearl-like accent on each piece.\n\nStylish Design: Each earring showcases a floral silhouette formed by multiple polished petal-shaped elements.\n\nUser Experience: The compact stud-style design offers a neat and elegant look for everyday accessorising.\n\nVersatile Occasion: These floral earrings complement casual outfits, festive looks and special occasions.\n\nIdeal For: The earrings are suited for women who prefer graceful floral jewellery with a refined gold-tone finish.",
+   "description": "Material & Construction: The earrings feature a gold-tone metal design with a central pearl-like accent on each piece.\n\nStylish Design: Each earring showcases a floral silhouette formed by multiple polished petal-shaped elements.\n\nUser Experience: The compact stud-style design offers a neat and elegant look for everyday accessorising.\n\nVersatile Occasion: These floral earrings complement casual outfits, festive looks and special occasions.\n\nIdeal For: The earrings are suited for women who prefer graceful floral jewellery with a refined gold-tone finish.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0085"
   },
   {
@@ -5281,24 +5269,26 @@
   },
   {
    "sku": "ESHTYLE_105",
-   "name": "Golden Dripping Heart Earrings — Pick Any 2",
+   "name": "Golden Dripping Heart Earrings",
    "slug": "golden-dripping-heart-earrings",
-   "category": "earring-combos",
+   "category": "earrings",
    "subcategory": null,
    "line": "The heart-shaped silhouette is enhanced with artistic dripping details for a distinctive look.",
    "colour": "Gold",
    "finish": "Gold-tone",
    "tags": [
-    "new",
-    "pick-your-designs"
+    "new"
    ],
    "keywords": [],
    "styleName": "Golden Dripping Heart Earrings",
    "antiTarnish": false,
-   "price": 350,
+   "price": 299,
    "stock": 12,
-   "pick": 2,
+   "pick": 0,
    "images": [
+    {
+     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LK9GE8SH0P-2026-10-22_shopping__17__648e7036_8673_4406_a90d_7b9d4adbfc03.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/K8OGA6403R-2026-10-22_shopping__11__97795e87_f40f_44a6_add0_a944d9fd162c.jpg"
     },
@@ -5316,17 +5306,14 @@
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SXPLBUE4WY-2026-10-22_shopping__16__cfcb98c7_fdc7_488a_b0e5_caee50ae3c8e.jpg"
-    },
-    {
-     "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LK9GE8SH0P-2026-10-22_shopping__17__648e7036_8673_4406_a90d_7b9d4adbfc03.jpg"
     }
    ],
    "variants": [],
    "video": null,
    "priceKnown": true,
-   "description": "Choose your 2 favourite designs: each photo is one design. Pick them on this page before adding to bag.\n\nMaterial And Construction: These earrings feature a polished gold-tone finish with a smooth, sculpted appearance.\n\nStylish Design: The heart-shaped silhouette is enhanced with artistic dripping details for a distinctive look.\n\nUser Experience: The compact pair offers a statement-inspired design that complements everyday styling.\n\nVersatile Occasion: These earrings can be paired with casual outfits or dressed-up looks.\n\nIdeal For: Designed for women who enjoy playful and contemporary jewellery designs.",
+   "description": "Material And Construction: These earrings feature a polished gold-tone finish with a smooth, sculpted appearance.\n\nStylish Design: The heart-shaped silhouette is enhanced with artistic dripping details for a distinctive look.\n\nUser Experience: The compact pair offers a statement-inspired design that complements everyday styling.\n\nVersatile Occasion: These earrings can be paired with casual outfits or dressed-up looks.\n\nIdeal For: Designed for women who enjoy playful and contemporary jewellery designs.",
    "material": "Stainless steel",
-   "packOf": 2,
+   "packOf": 1,
    "sheetCode": "new-stock-ESH-0093"
   },
   {
@@ -5380,6 +5367,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-0015/esh-0015-5.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-0015/esh-0015-1.jpg"
     },
     {
@@ -5390,9 +5380,6 @@
     },
     {
      "url": "/uploads/catalog/esh-0015/esh-0015-4.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-0015/esh-0015-5.jpg"
     },
     {
      "url": "/uploads/catalog/esh-0015/esh-0015-6.jpg"
@@ -5410,7 +5397,7 @@
    "sku": "ESHTYLE_108",
    "name": "Golden Clover Necklace",
    "slug": "golden-clover-necklace",
-   "category": "chains",
+   "category": "necklaces",
    "subcategory": null,
    "line": "Four-leaf clover stations create a refined, classic look.",
    "colour": "Gold",
@@ -5426,10 +5413,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "/uploads/catalog/esh-0094/esh-0094-1.jpg"
+     "url": "/uploads/catalog/esh-0094/esh-0094-2.jpg"
     },
     {
-     "url": "/uploads/catalog/esh-0094/esh-0094-2.jpg"
+     "url": "/uploads/catalog/esh-0094/esh-0094-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-0094/esh-0094-3.jpg"
@@ -5463,10 +5450,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-1.jpg"
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-2.jpg"
     },
     {
-     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-2.jpg"
+     "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-0094-golden-snake-chain/esh-0094-golden-snake-chain-3.jpg"
@@ -5493,7 +5480,7 @@
    "sku": "ESHTYLE_110",
    "name": "Golden Stone Studded Bracelet Watch",
    "slug": "golden-stone-studded-bracelet-watch-110",
-   "category": "bracelets",
+   "category": "watches",
    "subcategory": null,
    "line": "A gold-tone bracelet-style analog watch with a stone-studded case and links.",
    "colour": "Gold",
@@ -5555,6 +5542,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-00101/esh-00101-9.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00101/esh-00101-1.jpg"
     },
     {
@@ -5577,9 +5567,6 @@
     },
     {
      "url": "/uploads/catalog/esh-00101/esh-00101-8.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-00101/esh-00101-9.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00101/esh-00101-10.jpg"
@@ -5613,10 +5600,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "/uploads/catalog/esh-00102/esh-00102-1.jpg"
+     "url": "/uploads/catalog/esh-00102/esh-00102-2.jpg"
     },
     {
-     "url": "/uploads/catalog/esh-00102/esh-00102-2.jpg"
+     "url": "/uploads/catalog/esh-00102/esh-00102-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00102/esh-00102-3.jpg"
@@ -5711,6 +5698,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-00104/esh-00104-4.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00104/esh-00104-1.jpg"
     },
     {
@@ -5718,9 +5708,6 @@
     },
     {
      "url": "/uploads/catalog/esh-00104/esh-00104-3.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-00104/esh-00104-4.jpg"
     }
    ],
    "variants": [],
@@ -5733,9 +5720,9 @@
   },
   {
    "sku": "ESHTYLE_120",
-   "name": "Golden Mini Clover Chain",
-   "slug": "golden-mini-clover-chain",
-   "category": "chains",
+   "name": "Golden Mini Clover Bracelet",
+   "slug": "golden-mini-clover-bracelet",
+   "category": "bracelets",
    "subcategory": null,
    "line": "Four-leaf clover stations create a refined, classic look.",
    "colour": "Gold & Black",
@@ -5744,12 +5731,15 @@
     "new"
    ],
    "keywords": [],
-   "styleName": "Golden Mini Clover Chain",
+   "styleName": "Golden Mini Clover Bracelet",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
    "pick": 0,
    "images": [
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-4.jpg"
+    },
     {
      "url": "/uploads/catalog/esh-00105/esh-00105-1.jpg"
     },
@@ -5758,9 +5748,6 @@
     },
     {
      "url": "/uploads/catalog/esh-00105/esh-00105-3.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-00105/esh-00105-4.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00105/esh-00105-5.jpg"
@@ -5809,6 +5796,9 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-00106/esh-00106-7.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00106/esh-00106-1.jpg"
     },
     {
@@ -5825,9 +5815,6 @@
     },
     {
      "url": "/uploads/catalog/esh-00106/esh-00106-6.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-00106/esh-00106-7.jpg"
     }
    ],
    "variants": [],
@@ -5910,10 +5897,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "/uploads/catalog/esh-00108/esh-00108-1.jpg"
+     "url": "/uploads/catalog/esh-00108/esh-00108-2.jpg"
     },
     {
-     "url": "/uploads/catalog/esh-00108/esh-00108-2.jpg"
+     "url": "/uploads/catalog/esh-00108/esh-00108-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00108/esh-00108-3.jpg"
@@ -5962,13 +5949,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-00109/esh-00109-3.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00109/esh-00109-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00109/esh-00109-2.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-00109/esh-00109-3.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00109/esh-00109-4.jpg"
@@ -6002,10 +5989,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "/uploads/catalog/esh-00111/esh-00111-1.jpg"
+     "url": "/uploads/catalog/esh-00111/esh-00111-2.jpg"
     },
     {
-     "url": "/uploads/catalog/esh-00111/esh-00111-2.jpg"
+     "url": "/uploads/catalog/esh-00111/esh-00111-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00111/esh-00111-3.jpg"
@@ -6125,13 +6112,13 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-00115/esh-00115-3.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00115/esh-00115-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00115/esh-00115-2.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-00115/esh-00115-3.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00115/esh-00115-4.jpg"
@@ -6147,8 +6134,8 @@
   },
   {
    "sku": "ESHTYLE_131",
-   "name": "Golden Mini Stud Earrings",
-   "slug": "golden-mini-stud-earrings",
+   "name": "Golden Mini Starfish Stud Earrings",
+   "slug": "golden-mini-starfish-stud-earrings",
    "category": "earrings",
    "subcategory": null,
    "line": "A modern sculpted design that catches the light.",
@@ -6158,12 +6145,15 @@
     "new"
    ],
    "keywords": [],
-   "styleName": "Golden Mini Stud Earrings",
+   "styleName": "Golden Mini Starfish Stud Earrings",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
    "pick": 0,
    "images": [
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-5.jpg"
+    },
     {
      "url": "/uploads/catalog/esh-00116/esh-00116-1.jpg"
     },
@@ -6175,9 +6165,6 @@
     },
     {
      "url": "/uploads/catalog/esh-00116/esh-00116-4.jpg"
-    },
-    {
-     "url": "/uploads/catalog/esh-00116/esh-00116-5.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00116/esh-00116-6.jpg"
@@ -6211,10 +6198,10 @@
    "pick": 0,
    "images": [
     {
-     "url": "/uploads/catalog/esh-00117/esh-00117-1.jpg"
+     "url": "/uploads/catalog/esh-00117/esh-00117-2.jpg"
     },
     {
-     "url": "/uploads/catalog/esh-00117/esh-00117-2.jpg"
+     "url": "/uploads/catalog/esh-00117/esh-00117-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00117/esh-00117-3.jpg"
