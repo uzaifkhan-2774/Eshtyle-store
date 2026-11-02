@@ -14,7 +14,7 @@ import { useSettings } from '../hooks/store';
 import { inr, shipsFree } from '../lib/format';
 
 type Banner = { _id: string; title?: string; subtitle?: string; ctaLabel?: string; ctaUrl?: string; image?: { url: string; alt?: string }; mobileImage?: { url: string; alt?: string }; theme?: string; hotspots?: { x: number; y: number; label?: string; productSlug: string; product: P }[] };
-type Section = { name: string; slug: string; description?: string; items: P[] };
+type Section = { name: string; slug: string; description?: string; link?: string; items: P[] };
 type Testimonial = { id: string; name: string; city?: string; quote: string; rating?: number; source: string; productSlug?: string };
 type HomeData = { pick?: P[]; testimonials?: Testimonial[]; banners: { hero: Banner[]; promo: Banner[]; editorial: Banner[]; look: Banner[] }; categories: { name: string; slug: string; image: { url: string; thumb?: string; alt?: string } }[]; sections: Record<string, Section>; reels?: Reel[]; reviews: { rating: number; title?: string; body?: string; authorName?: string; product?: { name: string; slug: string } }[] };
 
@@ -217,7 +217,7 @@ function SectionGrid({ s, title, intro, carousel, coverflow }: { s?: Section; ti
     <section className="container-x pt-24" aria-labelledby={`s-${s.slug}`}>
       <div className="flex items-end justify-between gap-6 mb-8">
         <div><p className="eyebrow mb-2">{EYEBROW[s.slug] || 'E-SHTYLE'}</p><h2 id={`s-${s.slug}`} className="text-3xl md:text-4xl">{title || s.name}</h2>{(intro || s.description) && <p className="text-muted mt-2 max-w-xl">{intro || s.description}</p>}</div>
-        <Link to={`/collections/${s.slug}`} className="link text-[15px] shrink-0">View all</Link>
+        <Link to={s.link || `/collections/${s.slug}`} className="link text-[15px] shrink-0">View all</Link>
       </div>
       {coverflow && s.items.length >= 5
         ? <Coverflow label={title || s.name} items={s.items.slice(0, 10).map((p, i) => <ProductCard key={p.id} p={p} eager={i < 3} />)} />
@@ -245,7 +245,7 @@ function Story({ image }: { image?: string }) {
 }
 
 const STORY_IMG = '/uploads/seed/banners/story-v3-portrait.webp?v=20261023';
-const EYEBROW: Record<string, string> = { bestsellers: 'Most loved', 'new-arrivals': 'Just landed', 'anti-tarnish': 'Made to last' };
+const EYEBROW: Record<string, string> = { 'value-sets': 'Best value', bestsellers: 'Most loved', 'new-arrivals': 'Just landed', 'anti-tarnish': 'Made to last' };
 
 /** "Pick any 2" combos: the customer chooses which designs they get. */
 function PickYourDesigns({ items }: { items: P[] }) {
@@ -358,6 +358,7 @@ export default function Home() {
     <>
       <Hero banners={data.banners.hero} />
       <ValueTicker />
+      <SectionGrid carousel s={sec['value-sets']} />
       <CategoryArches cats={data.categories} />
       <ShopByPrice />
       <SectionGrid coverflow s={sec['bestsellers']} title="The signature edit" intro="Our most-reached-for pieces — clover motifs, sculpted gold and everyday stackers." />

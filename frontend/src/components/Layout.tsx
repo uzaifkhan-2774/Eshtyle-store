@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { Link, NavLink, Outlet, ScrollRestoration, useLocation, useNavigate } from 'react-router';
 import { useQuery } from '@tanstack/react-query';
-import { Search, User, Heart, ShoppingBag, Menu, X, Mail, Phone, Globe } from 'lucide-react';
+import { Search, User, Heart, ShoppingBag, Menu, X, Mail, Phone } from 'lucide-react';
 import { api } from '../lib/api';
 import { useAuth, useCart, useSettings, useUI, useWishlist } from '../hooks/store';
 import { DesignChips, Logo, Img, Price, Qty, Spinner } from './ui';
@@ -208,7 +208,6 @@ function Footer() {
           <li><Link to="/about" className="hover:text-ivory">Our story</Link></li>
           {b?.email && <li><a href={`mailto:${b.email}`} className="hover:text-ivory inline-flex gap-2 items-center"><Mail size={15} />{b.email}</a></li>}
           {b?.phone && <li><a href={`tel:${b.phone}`} className="hover:text-ivory inline-flex gap-2 items-center"><Phone size={15} />{b.phone}</a></li>}
-          <li><a href="https://e-shtyle.in" className="hover:text-ivory inline-flex gap-2 items-center"><Globe size={15} />e-shtyle.in</a></li>
         </ul>
           <div className="flex gap-3 mt-6" aria-label="Follow E-SHTYLE">
             {[

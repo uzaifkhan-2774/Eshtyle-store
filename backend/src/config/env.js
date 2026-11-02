@@ -21,13 +21,17 @@ const schema = z.object({
   LOG_LEVEL: z.string().default('info'),
 
   // Storage
-  STORAGE_DRIVER: z.enum(['local', 'cloudinary', 's3']).default('local'),
-S3_BUCKET: z.string().optional(),
-S3_REGION: z.string().default('ap-southeast-2'),
+  STORAGE_DRIVER: z.enum(['local', 'cloudinary']).default('local'),
+  CLOUDINARY_CLOUD_NAME: z.string().optional(),
+  CLOUDINARY_API_KEY: z.string().optional(),
+  CLOUDINARY_API_SECRET: z.string().optional(),
 
   // Email
   EMAIL_PROVIDER: z.enum(['console', 'smtp', 'resend']).default('console'),
   EMAIL_FROM: z.string().default('E-SHTYLE <no-reply@example.com>'),
+  // Other domains you own that should send visitors to APP_URL with a permanent (301) redirect, comma-separated,
+  // e.g. e-shtyle.in,www.e-shtyle.in,www.e-shtyle.com — so ads, links and Google all end up on one site.
+  REDIRECT_HOSTS: z.string().default(''),
   EMAIL_REPLY_TO: z.string().optional(), // where customer replies go, e.g. care@e-shtyle.in
   SMTP_HOST: z.string().optional(),
   SMTP_PORT: z.coerce.number().optional(),

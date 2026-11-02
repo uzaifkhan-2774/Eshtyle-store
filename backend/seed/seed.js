@@ -78,6 +78,11 @@ async function runMigrations() {
     if (!(await Coupon.exists({ code: 'WELCOME100' }))) await Coupon.create({ code: 'WELCOME100', description: '₹100 off your first order of ₹599 or more', type: 'flat', value: 10000, minOrderValue: 59900, firstOrderOnly: true, perUserLimit: 1, campaign: 'welcome', isActive: true });
     await mark('welcome100'); console.log('Created first-order coupon WELCOME100 (₹100 off ₹599+).');
   }
+  if (!done.has('support-email-fix')) {
+    // The first seed had a typo (care@eshtyle.in, no hyphen). Fix it only if the owner never changed it.
+    await StoreSettings.updateOne({ key: 'store', 'business.email': { $in: ['care@eshtyle.in', '', null] } }, { $set: { 'business.email': 'care@e-shtyle.in' } });
+    await mark('support-email-fix');
+  }
   // ₹1 product for testing online payments. Hidden from the shop; open it by its link. Archive it in Admin when done.
   if (!(await Product.exists({ sku: 'ESH-TEST-001' }))) {
     const cat = await Category.findOne({ slug: 'gift-sets' }) || await Category.findOne({});
@@ -145,6 +150,7 @@ async function main() {
       specifications: [...(item.styleName !== item.name ? [{ label: 'Style', value: item.styleName }] : []), { label: 'Finish', value: item.finish }, ...(item.material ? [{ label: 'Material', value: item.material }] : []), { label: 'Colour', value: item.colour }, ...(item.packOf > 1 ? [{ label: 'Pack of', value: String(item.packOf) }] : []), { label: 'SKU', value: item.sku }],
       careInstructions: CARE, packageContents: item.pick ? `${item.pick} designs of your choice, in E-SHTYLE packaging` : item.category.includes('combo') || item.category === 'gift-sets' ? 'Complete set as pictured, in E-SHTYLE packaging' : 'One piece (or pair, for earrings) in E-SHTYLE packaging',
       designPick: { count: item.pick || 0 },
+      ...(item.listed === false ? { isListed: false } : item.listed === true ? { isListed: true } : {}),
       hsnCode: item.hsn || undefined,
       isFeatured: item.tags.includes('bestseller'), sortOrder: idx, isSampleData: true, priceReviewRequired: !item.priceKnown, price: item.price * 100, createdAt,
     };

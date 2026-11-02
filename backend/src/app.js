@@ -32,6 +32,12 @@ export function createApp() {
   const app = express();
   app.disable('x-powered-by');
   if (env.TRUST_PROXY) app.set('trust proxy', env.TRUST_PROXY);
+  // One site only: visitors who arrive on another domain we own (e.g. e-shtyle.in) are sent to the same page on APP_URL.
+  const redirectHosts = new Set(env.REDIRECT_HOSTS.split(',').map((h) => h.trim().toLowerCase()).filter(Boolean));
+  if (redirectHosts.size) {
+    const target = env.APP_URL.replace(/\/$/, '');
+    app.use((req, res, next) => (redirectHosts.has((req.hostname || '').toLowerCase()) && !req.path.startsWith('/api/') ? res.redirect(301, target + req.originalUrl) : next()));
+  }
 
   app.use(pinoHttp({ logger, genReqId: (req) => req.headers['x-request-id'] || crypto.randomUUID(), autoLogging: { ignore: (req) => req.url.startsWith('/uploads') || req.url === '/health' }, customProps: () => ({}) }));
   app.use(helmet({

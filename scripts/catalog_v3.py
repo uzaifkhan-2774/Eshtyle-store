@@ -14,7 +14,7 @@ import csv, html, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "2026-11-01"
+VERSION = "2026-11-02"
 ADD = 0  # rupees added to every sheet price
 
 # Combos where the customer chooses which designs they get (each photo = one design). sheet SKU -> how many to pick
@@ -130,6 +130,39 @@ def description(raw):
     return out
 
 
+def apply_extra(products):
+    """backend/seed/catalog-extra.json: photos, products and colour options that are not in the sheet."""
+    f = ROOT / "backend/seed/catalog-extra.json"
+    if not f.exists():
+        return
+    x = json.loads(f.read_text())
+    by = {p["sku"]: p for p in products}
+    for p in products:
+        for v in p["variants"]:
+            by.setdefault(v["sku"], v)
+    for sku, im in x.get("images", {}).items():
+        t = by.get(sku)
+        if not t:
+            continue
+        cur = [i["url"] for i in t["images"]]
+        front = [u for u in im.get("front", []) if u not in cur]
+        second = [u for u in im.get("second", []) if u not in cur]
+        cur = front + cur[:1] + second + cur[1:]
+        t["images"] = [{"url": u} for u in cur]
+    for v in x.get("variants", []):
+        p = by.get(v["parent"])
+        if p and not any(o["sku"] == v["sku"] for o in p["variants"]):
+            p["variants"].append({"label": v["label"], "sku": v["sku"], "stock": v["stock"], "images": v["images"]})
+            p["stock"] = sum(o["stock"] for o in p["variants"])
+            p["colour"] = ", ".join(o["label"] for o in p["variants"])
+    for n in x.get("products", []):
+        if n["sku"] not in by:
+            products.append(n)
+    for sku, name in x.get("rename", {}).items():
+        if sku in by and "name" in by[sku]:
+            by[sku]["name"] = by[sku]["styleName"] = name
+
+
 def main(sheet_path):
     rows = list(csv.reader(open(sheet_path, encoding="utf-8"), delimiter="\t"))
     h = rows[0]; col = {k.strip(): i for i, k in enumerate(h) if k.strip()}
@@ -221,6 +254,7 @@ def main(sheet_path):
             "description": "\n\n".join(desc) if desc else None, "material": material,
             "packOf": pack, "sheetCode": code,
         })
+    apply_extra(products)
     out = {"version": VERSION, "products": products}
     (ROOT / "backend/seed/catalog.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     print(f"{len(products)} products ({sum(len(p['variants']) or 1 for p in products)} SKUs) written; "

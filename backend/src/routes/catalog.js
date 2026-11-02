@@ -192,6 +192,11 @@ r.get('/home', ah(async (_req, res) => {
   ]);
   const sections = {};
   for (const c of cols.filter((c2) => ['bestsellers', 'new-arrivals', 'anti-tarnish', 'earring-combos-edit', 'gift-ready'].includes(c2.slug))) sections[c.slug] = { name: c.name, slug: c.slug, description: c.description, items: await withQuickAdd(await collectionProducts(c, 8)) };
+  // Best-value sets & combos (₹399–₹799): shown near the top of the home page, they give ads a bigger order value.
+  const setCats = (await Category.find({ slug: { $in: ['earring-combos', 'necksets', 'gift-sets', 'ring-combos', 'jewellery-box-sets', 'bracelet-combos'] } }).select('_id').lean()).map((c) => c._id);
+  const valueSets = await Product.find({ status: 'published', isListed: { $ne: false }, inStock: true, price: { $gte: 39900, $lte: 79900 },
+    $or: [{ category: { $in: setCats } }, { subcategory: { $in: setCats } }, { tags: { $in: ['combo', 'gift'] } }] }).select(PUBLIC_FIELDS).sort({ price: -1, salesCount: -1 }).limit(12).lean();
+  if (valueSets.length) sections['value-sets'] = { name: 'Best-value sets & combos', slug: 'value-sets', description: 'More looks in one box, from ₹399 to ₹799. Free shipping on every order.', link: '/shop?minPrice=399&maxPrice=799&sort=price_desc', items: await withQuickAdd(valueSets.map(card)) };
   const reelDocs = await Reel.find({ isActive: true }).sort({ sortOrder: 1, createdAt: -1 }).limit(12).lean();
   const reelSlugs = [...new Set(reelDocs.flatMap((x) => x.productSlugs || []))];
   const reelProducts = reelSlugs.length ? new Map((await Product.find({ slug: { $in: reelSlugs }, status: 'published' }).select(PUBLIC_FIELDS).lean()).map((p) => [p.slug, card(p)])) : new Map();

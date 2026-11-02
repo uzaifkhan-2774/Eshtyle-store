@@ -1,0 +1,645 @@
+{
+ "_help": "Extra products/photos that are not in the Nushop sheet. Read by scripts/catalog_v3.py. 'listed': false keeps a product hidden until its price is confirmed.",
+ "images": {
+  "ESHTYLE_130": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00115/esh-00115-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_116": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00101/esh-00101-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_126": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00111/esh-00111-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_119": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00104/esh-00104-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_131": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00116/esh-00116-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_127": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00112/esh-00112-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_122": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00107/esh-00107-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_129": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00114/esh-00114-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_120": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00105/esh-00105-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_132": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00117/esh-00117-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_123": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00108/esh-00108-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_124": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00109/esh-00109-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_117": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00102/esh-00102-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_121": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00106/esh-00106-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_118": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-00103/esh-00103-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_87": {
+   "front": [
+    "/uploads/catalog/esh-0088/esh-0088-new-1.jpg",
+    "/uploads/catalog/esh-0088/esh-0088-new-2.jpg",
+    "/uploads/catalog/esh-0088/esh-0088-new-3.jpg",
+    "/uploads/catalog/esh-0088/esh-0088-new-4.jpg",
+    "/uploads/catalog/esh-0088/esh-0088-new-5.jpg",
+    "/uploads/catalog/esh-0088/esh-0088-new-6.jpg",
+    "/uploads/catalog/esh-0088/esh-0088-new-7.jpg"
+   ],
+   "second": []
+  },
+  "ESHTYLE_105": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0093/esh-0093-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_75": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0080/esh-0080-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_111": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0096/esh-0096-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_76": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0081/esh-0081-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_97": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-074/esh-074-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_77": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0084/esh-0084-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_100": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0077/esh-0077-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_79": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0087/esh-0087-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_86": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0082/esh-0082-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_84": {
+   "front": [
+    "/uploads/catalog/esh-0078/esh-0078-new-2.jpg",
+    "/uploads/catalog/esh-0078/esh-0078-new-1.jpg",
+    "/uploads/catalog/esh-0078/esh-0078-new-3.jpg",
+    "/uploads/catalog/esh-0078/esh-0078-new-4.jpg"
+   ],
+   "second": []
+  },
+  "ESHTYLE_95": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0070/esh-0070-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_89": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0069/esh-0069-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_15": {
+   "front": [
+    "/uploads/catalog/esh-0059/esh-0059-new-2.jpg",
+    "/uploads/catalog/esh-0059/esh-0059-new-1.jpg",
+    "/uploads/catalog/esh-0059/esh-0059-new-3.jpg",
+    "/uploads/catalog/esh-0059/esh-0059-new-4.jpg",
+    "/uploads/catalog/esh-0059/esh-0059-new-5.jpg",
+    "/uploads/catalog/esh-0059/esh-0059-new-6.jpg"
+   ],
+   "second": []
+  },
+  "ESHTYLE_20": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0044/esh-0044-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_42": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0046/esh-0046-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_32": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0028-3p-combo-8/esh-0028-3p-combo-8-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_55": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0020-2p-combo-1/esh-0020-2p-combo-1-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_54": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0023-2p-combo-13/esh-0023-2p-combo-13-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_22": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0058/esh-0058-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_67": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0013-pink-green-golden-tulip-bracelet/esh-0013-pink-green-golden-tulip-bracelet-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_17": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0024-3p-combo-3/esh-0024-3p-combo-3-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_66": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0029-3p-combo-9/esh-0029-3p-combo-9-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_35": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0030-3p-combo-10/esh-0030-3p-combo-10-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_43": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-0022-2p-combo-4/esh-0022-2p-combo-4-new-1.jpg"
+   ]
+  },
+  "ESHTYLE_30": {
+   "front": [],
+   "second": [
+    "/uploads/catalog/esh-002-single-cartier-bracelet/esh-002-single-cartier-bracelet-new-1.jpg"
+   ]
+  }
+ },
+ "variants": [
+  {
+   "parent": "ESHTYLE_51",
+   "label": "Purple",
+   "sku": "ESHTYLE_137",
+   "stock": 5,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00122/esh-00122-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00122/esh-00122-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00122/esh-00122-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00122/esh-00122-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00122/esh-00122-new-5.jpg"
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "sku": "ESHTYLE_138",
+   "name": "White Crystal Blossom Ring",
+   "slug": "white-crystal-blossom-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "White enamel petals with a cluster of sparkling crystals at the centre.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Crystal Blossom Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: White enamel petals with a cluster of sparkling crystals at the centre.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00123",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_139",
+   "name": "White Camellia Ring with Golden Centre",
+   "slug": "white-camellia-ring-with-golden-centre",
+   "category": "rings",
+   "subcategory": null,
+   "line": "Soft rounded white petals around a golden, crystal-studded centre.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Camellia Ring with Golden Centre",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-4.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: Soft rounded white petals around a golden, crystal-studded centre.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00124",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_140",
+   "name": "White Daisy Pearl Ring",
+   "slug": "white-daisy-pearl-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "Slim white daisy petals with tiny pearls and crystals in the middle.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Daisy Pearl Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: Slim white daisy petals with tiny pearls and crystals in the middle.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00125",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_141",
+   "name": "White Petal & Pearl Open Ring",
+   "slug": "white-petal-pearl-open-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "A small white flower and a pearl on an open gold-tone band.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Petal & Pearl Open Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: A small white flower and a pearl on an open gold-tone band.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00126",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_142",
+   "name": "White Butterfly Ring",
+   "slug": "white-butterfly-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "A delicate white-and-gold butterfly with crystal details.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Butterfly Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: A delicate white-and-gold butterfly with crystal details.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00127",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_143",
+   "name": "White Pearl Bloom Ring",
+   "slug": "white-pearl-bloom-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "Large white enamel bloom with a single pearl at its heart.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Pearl Bloom Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: Large white enamel bloom with a single pearl at its heart.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00128",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_144",
+   "name": "White Flower Crystal & Pearl Ring",
+   "slug": "white-flower-crystal-pearl-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "White petals holding a square-cut crystal, topped with a pearl.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Flower Crystal & Pearl Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: White petals holding a square-cut crystal, topped with a pearl.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00129",
+   "listed": false
+  }
+ ],
+ "rename": {
+  "ESHTYLE_75": "Golden Petal Bloom Studs",
+  "ESHTYLE_77": "Golden Four-Petal Flower Studs",
+  "ESHTYLE_98": "Golden Sculpted Flower Studs",
+  "ESHTYLE_103": "Golden Pearl-Centre Daisy Studs",
+  "ESHTYLE_109": "Golden Flat Herringbone Chain Necklace"
+ }
+}

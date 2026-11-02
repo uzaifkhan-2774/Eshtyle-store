@@ -1,5 +1,5 @@
 {
- "version": "2026-11-01",
+ "version": "2026-11-02",
  "products": [
   {
    "sku": "ESHTYLE_01",
@@ -691,6 +691,24 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-0059/esh-0059-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0059/esh-0059-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0059/esh-0059-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0059/esh-0059-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0059/esh-0059-new-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0059/esh-0059-new-6.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/B3UBRVZAJV-2026-10-21_download__11__jfif_644b40d0_d63d_4df3_8563_0dbeff23199f.jpg"
     },
     {
@@ -803,6 +821,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/OAILE9YCHM-2026-10-21_model_shot_1_a102e74d_6e64_49f2_946a_cf84b84844bb.jpeg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0024-3p-combo-3/esh-0024-3p-combo-3-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/8RK3CX11NN-2026-10-21_extra_iamges_8e0a03b3_bbb1_40f0_8f7a_e9549df15eec.jpg"
@@ -949,6 +970,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/DXV35CVES2-2026-10-21_image_11_d68b2d51_7658_4cf8_aebf_04be3b7c264e.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-0044/esh-0044-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ABAZ2FVSN6-2026-10-21_image_10_7096227a_27ed_4f60_9b60_437ebb6f9709.jpg"
     },
     {
@@ -1053,6 +1077,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UBTE9TO8SH-2026-10-21_0f21a65bc5a60435b43cca21288fa227_aea49eaf_d21c_4ad2_99e6_b60c3a409a2f.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0058/esh-0058-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/MQPGYETMSA-2026-10-21_3506d0d49343cdbd217d6c62faec37b9_a718626f_e6e2_4416_8d1b_c5ccd5fbebb4.jpg"
@@ -1340,6 +1367,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UGGJGPEQJI-2026-10-21_ESH_002_2dacec45_825b_47b5_a758_e08e8eb6c858.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-002-single-cartier-bracelet/esh-002-single-cartier-bracelet-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7259AEA1HH-2026-10-21_model_hand_2_578769ff_c3cd_4e43_aa1a_36856a0adf01.jpeg"
     },
     {
@@ -1442,6 +1472,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/U7AC5D9K3F-2026-10-21_model_shot_1_17047b5e_6afc_4ef1_b272_819a93ce3595.jpeg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0028-3p-combo-8/esh-0028-3p-combo-8-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/2HCYVXR9FM-2026-10-21_model_hand_b157638d_349d_4489_82a8_1e3175533b78.jpeg"
@@ -1596,6 +1629,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/Q8Q4XQE5T8-2026-10-21_ring_single_7e888c8b_0ac9_4a0e_b801_51a95eb49edc.jpeg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0030-3p-combo-10/esh-0030-3p-combo-10-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/V8227UDUMB-2026-10-21_rose_single_19a81525_3f9f_4c2d_a0d3_2c9b36c62b54.jpeg"
@@ -1988,6 +2024,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/HC1QIQ3CIE-2026-10-21_image_3_be358455_d632_41ef_9c6d_452e0e257720.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-0046/esh-0046-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/6BRNMHO15H-2026-10-21_image_4_7f98f7c7_df06_41d2_a27b_660fb83a2b56.jpg"
     },
     {
@@ -2037,6 +2076,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/G1V4X7Y300-2026-10-21_model_shot_2128ab4b_45f7_4925_8b8d_cbc0248d2f87.jpeg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0022-2p-combo-4/esh-0022-2p-combo-4-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/UL5NFCV541-2026-10-21_content_1_0fc9a43b_8b1c_4246_9398_60b7cfccde2e.jpeg"
@@ -2324,7 +2366,7 @@
    "category": "bracelets",
    "subcategory": "bracelet-combos",
    "line": "Three signature shapes in one set: a clover chain, a screw motif bangle and a nail cuff.",
-   "colour": "Black, Gold, White, Red, Blue, Pink",
+   "colour": "Black, Gold, White, Red, Blue, Pink, Purple",
    "finish": "Gold-tone",
    "tags": [
     "bestseller",
@@ -2341,7 +2383,7 @@
    "styleName": "Clover, Screw & Nail Bracelet Set of 3",
    "antiTarnish": false,
    "price": 599,
-   "stock": 31,
+   "stock": 36,
    "pick": 0,
    "images": [
     {
@@ -2546,6 +2588,28 @@
        "url": "/uploads/catalog/esh-00120/esh-00120-6.jpg"
       }
      ]
+    },
+    {
+     "label": "Purple",
+     "sku": "ESHTYLE_137",
+     "stock": 5,
+     "images": [
+      {
+       "url": "/uploads/catalog/esh-00122/esh-00122-new-1.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00122/esh-00122-new-2.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00122/esh-00122-new-3.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00122/esh-00122-new-4.jpg"
+      },
+      {
+       "url": "/uploads/catalog/esh-00122/esh-00122-new-5.jpg"
+      }
+     ]
     }
    ],
    "video": null,
@@ -2698,6 +2762,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/O4MAIERUS2-2026-10-21_model_shot_1_6d573b5e_1982_4274_9632_4ebbdd48f29f.jpeg"
     },
     {
+     "url": "/uploads/catalog/esh-0023-2p-combo-13/esh-0023-2p-combo-13-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/4KKFNKOY4X-2026-10-21_white_background_eb497670_51f6_4a4e_9e4a_b1f4639c4f68.jpeg"
     },
     {
@@ -2745,6 +2812,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KDHDP6RM1L-2026-10-21_model_shot_6d5e28d1_40aa_4591_b518_e7c8cd6b9404.jpeg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0020-2p-combo-1/esh-0020-2p-combo-1-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0VY00YVS4A-2026-10-21_download__7__9f775f56_dfff_4210_a541_38c3929908b5.png"
@@ -3317,6 +3387,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0IRWYS40FT-2026-10-21_model_shot_2_3a42c3a8_0275_42c6_8adf_bc72c2dae277.jpeg"
     },
     {
+     "url": "/uploads/catalog/esh-0029-3p-combo-9/esh-0029-3p-combo-9-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/3DI7T9OCRK-2026-10-21_model_shot_1_004f11ce_3671_4371_b044_52239d7da3d0.jpeg"
     },
     {
@@ -3362,6 +3435,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/C4VK440AI4-2026-10-21_model_hand_caddb2a1_1a2e_40e1_b92e_02d264fbb05d.jpeg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0013-pink-green-golden-tulip-bracelet/esh-0013-pink-green-golden-tulip-bracelet-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/ZXOVFLQ1X7-2026-10-21_product_packaging_8d6d0bd1_9fa8_40ae_bb99_cf9487bef5a3.jpeg"
@@ -3755,6 +3831,9 @@
        "url": "/uploads/catalog/esh-0096/esh-0096-1.jpg"
       },
       {
+       "url": "/uploads/catalog/esh-0096/esh-0096-new-1.jpg"
+      },
+      {
        "url": "/uploads/catalog/esh-0096/esh-0096-2.jpg"
       },
       {
@@ -3859,7 +3938,7 @@
   },
   {
    "sku": "ESHTYLE_75",
-   "name": "Golden Floral Stud Earrings",
+   "name": "Golden Petal Bloom Studs",
    "slug": "golden-floral-stud-earrings",
    "category": "earrings",
    "subcategory": null,
@@ -3870,7 +3949,7 @@
     "new"
    ],
    "keywords": [],
-   "styleName": "Golden Floral Stud Earrings",
+   "styleName": "Golden Petal Bloom Studs",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
@@ -3878,6 +3957,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/KZ887U1CEK-2026-10-22_6ab8e0e6_2b22_4be1_940c_aabfe7b44157_jfif_de6eed73_e692_4517_b47f_2c93655dd574.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0080/esh-0080-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/GJ4INMNFLE-2026-10-22_download__59__jfif_831e07e2_76c1_49a8_b931_92206a337e5d.jpg"
@@ -3923,6 +4005,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/CPILN92798-2026-10-22_golden_petal_korean_earrings_1779647148_1_jfif_6a44b9fa_33f0_43b1_9a22_5a70e9f876ec.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-0081/esh-0081-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/7MP2P60T8C-2026-10-22_download__76__jfif_5c722784_97d7_408e_b786_ab4a38684265.jpg"
     },
     {
@@ -3960,7 +4045,7 @@
   },
   {
    "sku": "ESHTYLE_77",
-   "name": "Golden Floral Stud Earrings",
+   "name": "Golden Four-Petal Flower Studs",
    "slug": "golden-floral-stud-earrings-77",
    "category": "earrings",
    "subcategory": null,
@@ -3971,7 +4056,7 @@
     "new"
    ],
    "keywords": [],
-   "styleName": "Golden Floral Stud Earrings",
+   "styleName": "Golden Four-Petal Flower Studs",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
@@ -3979,6 +4064,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/TJH649IXSD-2026-10-22_d403d17c_f5a8_49e0_9a2e_7234523e0155_jfif_7754183a_02e7_4647_a6d9_0d07ec4260b4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0084/esh-0084-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LH5OZWUUZ3-2026-10-22_f43964a0_6a70_4beb_9262_deab6ed07856_jfif_3fd7dc0c_f0fd_4b9d_b202_8187daa57dc6.jpg"
@@ -4074,6 +4162,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/0J5N0AN2J2-2026-10-22_download__97__jfif_ab516636_d66b_408d_84f7_67e4ccd9c73f.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0087/esh-0087-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/MD1Q7X5BON-2026-10-22_download__98__jfif_01f9d7a7_66fb_431b_b043_b815459fca74.jpg"
@@ -4312,6 +4403,18 @@
    "pick": 0,
    "images": [
     {
+     "url": "/uploads/catalog/esh-0078/esh-0078-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0078/esh-0078-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0078/esh-0078-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0078/esh-0078-new-4.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BWLSMEM4P7-2026-10-22_images__42__jfif_bd14e420_3d9a_4277_b723_b264eda8c4dd.jpg"
     },
     {
@@ -4401,6 +4504,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LWQSKUVET9-2026-10-22_61MNZMAg8bL__SY695__d23245fc_9f96_4957_978c_61cdc684732e.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-0082/esh-0082-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/FEFCPLO0C9-2026-10-22_download__73__jfif_8bde764f_3f45_467b_8409_82af50271e8a.jpg"
     },
     {
@@ -4440,6 +4546,27 @@
    "stock": 5,
    "pick": 0,
    "images": [
+    {
+     "url": "/uploads/catalog/esh-0088/esh-0088-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0088/esh-0088-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0088/esh-0088-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0088/esh-0088-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0088/esh-0088-new-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0088/esh-0088-new-6.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0088/esh-0088-new-7.jpg"
+    },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PH6T9SHDQ2-2026-10-22_images__50__jfif_655c890a_e4c7_4e1c_8594_c2f2e1feb73e.jpg"
     },
@@ -4543,6 +4670,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BK9N7SG542-2026-10-22_8564a293_649b_49ec_bed1_2defa8afe6a2_jfif_4dde0151_ee09_4ae0_a6ed_84734f4d37e4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0069/esh-0069-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/MKR18UO0RI-2026-10-22_da2add2c_a906_42ad_aa17_32daa11dabf0_jfif_2c6e1c7b_e7ac_4733_9cf7_4ae1a0dd0191.jpg"
@@ -4815,6 +4945,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/SW1W1DFY1C-2026-10-22_08f1fd7d_70fa_457d_96ca_c1e7b1bfb9f7_jfif_fef8b5c5_1351_4828_b96d_add1856767e7.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-0070/esh-0070-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/PP0U0TRX1I-2026-10-22_d474ff07_e020_48c5_b605_afe42e3ec279_jfif_c07b433e_38e2_45e8_82fb_375e2e81189d.jpg"
     },
     {
@@ -4904,6 +5037,9 @@
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/BKSSRSZXG5-2026-10-22_2_6_2_8_na_1_luxury_gold_plated_bracelet_for_women_anti_tarnish_original_imahntpzyqcvmzxc_aab159ee_a071_4fa8_889d_43143a5e2149.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-074/esh-074-new-1.jpg"
+    },
+    {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LVS3STEEQZ-2026-10-22_download__37__jfif_c896b365_a264_468a_b3f7_e28918665bca.jpg"
     },
     {
@@ -4932,7 +5068,7 @@
   },
   {
    "sku": "ESHTYLE_98",
-   "name": "Golden Floral Stud Earrings",
+   "name": "Golden Sculpted Flower Studs",
    "slug": "golden-floral-stud-earrings-98",
    "category": "earrings",
    "subcategory": null,
@@ -4943,7 +5079,7 @@
     "new"
    ],
    "keywords": [],
-   "styleName": "Golden Floral Stud Earrings",
+   "styleName": "Golden Sculpted Flower Studs",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
@@ -5055,6 +5191,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/IM3FE24A5U-2026-10-22_ee13cf80_1b5d_4cd3_9f8b_8cea009f7aa3_jfif_efe11d16_f1af_4850_969e_8137521136af.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0077/esh-0077-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/1Q3URRT7O4-2026-10-22_download__54__jfif_3aa5370d_f24a_4995_a771_7a4fa292b73c.jpg"
@@ -5171,7 +5310,7 @@
   },
   {
    "sku": "ESHTYLE_103",
-   "name": "Golden Floral Stud Earrings",
+   "name": "Golden Pearl-Centre Daisy Studs",
    "slug": "golden-floral-stud-earrings-103",
    "category": "earrings",
    "subcategory": null,
@@ -5182,7 +5321,7 @@
     "new"
    ],
    "keywords": [],
-   "styleName": "Golden Floral Stud Earrings",
+   "styleName": "Golden Pearl-Centre Daisy Studs",
    "antiTarnish": false,
    "price": 299,
    "stock": 5,
@@ -5288,6 +5427,9 @@
    "images": [
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/LK9GE8SH0P-2026-10-22_shopping__17__648e7036_8673_4406_a90d_7b9d4adbfc03.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-0093/esh-0093-new-1.jpg"
     },
     {
      "url": "https://s3.ap-south-1.amazonaws.com/nushop-catalogue/6ad70e8d4e69bacf6939783c/cat_img/K8OGA6403R-2026-10-22_shopping__11__97795e87_f40f_44a6_add0_a944d9fd162c.jpg"
@@ -5432,7 +5574,7 @@
   },
   {
    "sku": "ESHTYLE_109",
-   "name": "Golden Snake Chain Necklace",
+   "name": "Golden Flat Herringbone Chain Necklace",
    "slug": "golden-snake-chain-necklace-109",
    "category": "chains",
    "subcategory": null,
@@ -5443,7 +5585,7 @@
     "new"
    ],
    "keywords": [],
-   "styleName": "Golden Snake Chain Necklace",
+   "styleName": "Golden Flat Herringbone Chain Necklace",
    "antiTarnish": false,
    "price": 398,
    "stock": 5,
@@ -5545,6 +5687,9 @@
      "url": "/uploads/catalog/esh-00101/esh-00101-9.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00101/esh-00101-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00101/esh-00101-1.jpg"
     },
     {
@@ -5603,6 +5748,9 @@
      "url": "/uploads/catalog/esh-00102/esh-00102-2.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00102/esh-00102-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00102/esh-00102-1.jpg"
     },
     {
@@ -5650,6 +5798,9 @@
    "images": [
     {
      "url": "/uploads/catalog/esh-00103/esh-00103-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00103/esh-00103-new-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00103/esh-00103-2.jpg"
@@ -5701,6 +5852,9 @@
      "url": "/uploads/catalog/esh-00104/esh-00104-4.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00104/esh-00104-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00104/esh-00104-1.jpg"
     },
     {
@@ -5739,6 +5893,9 @@
    "images": [
     {
      "url": "/uploads/catalog/esh-00105/esh-00105-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00105/esh-00105-new-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00105/esh-00105-1.jpg"
@@ -5799,6 +5956,9 @@
      "url": "/uploads/catalog/esh-00106/esh-00106-7.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00106/esh-00106-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00106/esh-00106-1.jpg"
     },
     {
@@ -5846,6 +6006,9 @@
    "images": [
     {
      "url": "/uploads/catalog/esh-00107/esh-00107-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00107/esh-00107-new-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00107/esh-00107-2.jpg"
@@ -5900,6 +6063,9 @@
      "url": "/uploads/catalog/esh-00108/esh-00108-2.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00108/esh-00108-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00108/esh-00108-1.jpg"
     },
     {
@@ -5952,6 +6118,9 @@
      "url": "/uploads/catalog/esh-00109/esh-00109-3.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00109/esh-00109-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00109/esh-00109-1.jpg"
     },
     {
@@ -5992,6 +6161,9 @@
      "url": "/uploads/catalog/esh-00111/esh-00111-2.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00111/esh-00111-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00111/esh-00111-1.jpg"
     },
     {
@@ -6030,6 +6202,9 @@
    "images": [
     {
      "url": "/uploads/catalog/esh-00112/esh-00112-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00112/esh-00112-new-1.jpg"
     }
    ],
    "variants": [],
@@ -6061,6 +6236,9 @@
    "images": [
     {
      "url": "/uploads/catalog/esh-00114/esh-00114-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00114/esh-00114-new-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00114/esh-00114-2.jpg"
@@ -6115,6 +6293,9 @@
      "url": "/uploads/catalog/esh-00115/esh-00115-3.jpg"
     },
     {
+     "url": "/uploads/catalog/esh-00115/esh-00115-new-1.jpg"
+    },
+    {
      "url": "/uploads/catalog/esh-00115/esh-00115-1.jpg"
     },
     {
@@ -6153,6 +6334,9 @@
    "images": [
     {
      "url": "/uploads/catalog/esh-00116/esh-00116-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00116/esh-00116-new-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00116/esh-00116-1.jpg"
@@ -6199,6 +6383,9 @@
    "images": [
     {
      "url": "/uploads/catalog/esh-00117/esh-00117-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00117/esh-00117-new-1.jpg"
     },
     {
      "url": "/uploads/catalog/esh-00117/esh-00117-1.jpg"
@@ -6269,6 +6456,352 @@
    "material": "Stainless steel",
    "packOf": 1,
    "sheetCode": "ESHTYLE-Catalogue-ESH-00121"
+  },
+  {
+   "sku": "ESHTYLE_138",
+   "name": "White Crystal Blossom Ring",
+   "slug": "white-crystal-blossom-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "White enamel petals with a cluster of sparkling crystals at the centre.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Crystal Blossom Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00123/esh-00123-new-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: White enamel petals with a cluster of sparkling crystals at the centre.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00123",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_139",
+   "name": "White Camellia Ring with Golden Centre",
+   "slug": "white-camellia-ring-with-golden-centre",
+   "category": "rings",
+   "subcategory": null,
+   "line": "Soft rounded white petals around a golden, crystal-studded centre.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Camellia Ring with Golden Centre",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00124/esh-00124-new-4.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: Soft rounded white petals around a golden, crystal-studded centre.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00124",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_140",
+   "name": "White Daisy Pearl Ring",
+   "slug": "white-daisy-pearl-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "Slim white daisy petals with tiny pearls and crystals in the middle.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Daisy Pearl Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00125/esh-00125-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: Slim white daisy petals with tiny pearls and crystals in the middle.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00125",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_141",
+   "name": "White Petal & Pearl Open Ring",
+   "slug": "white-petal-pearl-open-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "A small white flower and a pearl on an open gold-tone band.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Petal & Pearl Open Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00126/esh-00126-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: A small white flower and a pearl on an open gold-tone band.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00126",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_142",
+   "name": "White Butterfly Ring",
+   "slug": "white-butterfly-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "A delicate white-and-gold butterfly with crystal details.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Butterfly Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00127/esh-00127-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: A delicate white-and-gold butterfly with crystal details.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00127",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_143",
+   "name": "White Pearl Bloom Ring",
+   "slug": "white-pearl-bloom-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "Large white enamel bloom with a single pearl at its heart.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Pearl Bloom Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-5.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00128/esh-00128-new-6.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: Large white enamel bloom with a single pearl at its heart.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00128",
+   "listed": false
+  },
+  {
+   "sku": "ESHTYLE_144",
+   "name": "White Flower Crystal & Pearl Ring",
+   "slug": "white-flower-crystal-pearl-ring",
+   "category": "rings",
+   "subcategory": null,
+   "line": "White petals holding a square-cut crystal, topped with a pearl.",
+   "colour": "White & Gold",
+   "finish": "Gold-tone",
+   "tags": [
+    "new",
+    "white-bloom"
+   ],
+   "keywords": [
+    "flower ring",
+    "white ring",
+    "statement ring"
+   ],
+   "styleName": "White Flower Crystal & Pearl Ring",
+   "antiTarnish": false,
+   "price": 399,
+   "stock": 5,
+   "pick": 0,
+   "images": [
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-2.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-1.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-3.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-4.jpg"
+    },
+    {
+     "url": "/uploads/catalog/esh-00129/esh-00129-new-5.jpg"
+    }
+   ],
+   "variants": [],
+   "video": null,
+   "priceKnown": false,
+   "description": "Stylish Design: White petals holding a square-cut crystal, topped with a pearl.\n\nMaterial & Construction: Gold-tone ring with white enamel petals.\n\nVersatile Occasion: Pairs with festive, party and everyday outfits.\n\nIdeal For: Women who love a statement flower ring.",
+   "material": "",
+   "packOf": 1,
+   "sheetCode": "ESH-00129",
+   "listed": false
   }
  ]
 }

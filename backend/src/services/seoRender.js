@@ -69,7 +69,22 @@ async function homeMeta() {
     { '@context': 'https://schema.org', '@type': 'Organization', name: 'E-SHTYLE', url: env.APP_URL, logo: `${env.APP_URL}/brand/logo.png`, sameAs: [s.business.instagram, s.business.facebook, s.business.youtube].filter(Boolean), ...(s.business.email ? { email: s.business.email } : {}) },
     { '@context': 'https://schema.org', '@type': 'WebSite', name: 'E-SHTYLE', url: env.APP_URL, potentialAction: { '@type': 'SearchAction', target: `${env.APP_URL}/search?q={search_term_string}`, 'query-input': 'required name=search_term_string' } },
   ];
-  const body = `<main><h1>E-SHTYLE — Everyday Elegance. Made to Shine.</h1><p>${esc(s.seo.defaultDescription)}</p><ul>${cats.map((c) => `<li><a href="/category/${esc(c.slug)}">${esc(c.name)}</a></li>`).join('')}</ul></main>`;
+  // Plain-HTML version of the home page for crawlers and link checkers that do not run JavaScript:
+  // offer, best-value sets, bestsellers, how to order and how to reach us.
+  const listed = { status: 'published', isListed: { $ne: false }, inStock: true };
+  const [sets, best] = await Promise.all([
+    Product.find({ ...listed, price: { $gte: 39900, $lte: 79900 }, tags: { $in: ['combo', 'gift'] } }).sort({ price: -1 }).limit(8).select('name slug price').lean(),
+    Product.find(listed).sort({ salesCount: -1, isFeatured: -1, sortOrder: 1 }).limit(8).select('name slug price').lean(),
+  ]);
+  const li = (ps) => ps.map((p) => `<li><a href="/product/${esc(p.slug)}">${esc(p.name)}</a> — ₹${Math.round(p.price / 100)}</li>`).join('');
+  const b = s.business || {};
+  const offer = s.announcement?.isActive && s.announcement.text ? `<p><strong>${esc(s.announcement.text)}</strong></p>` : '';
+  const codLine = s.cod?.enabled ? `Cash on Delivery available${s.cod.fee ? ` (+₹${Math.round(s.cod.fee / 100)})` : ''}.` : '';
+  const body = `<main><h1>E-SHTYLE — Everyday Elegance. Made to Shine.</h1>${offer}<p>${esc(s.seo.defaultDescription)}</p>`
+    + (sets.length ? `<h2>Best-value sets &amp; combos</h2><ul>${li(sets)}</ul>` : '')
+    + (best.length ? `<h2>Bestsellers</h2><ul>${li(best)}</ul>` : '')
+    + `<h2>Shop by category</h2><ul>${cats.map((c) => `<li><a href="/category/${esc(c.slug)}">${esc(c.name)}</a></li>`).join('')}</ul>`
+    + `<h2>Shopping with us</h2><ul><li>Free shipping on every order. ${esc(codLine)}</li><li><a href="/returns-policy">Returns &amp; refunds</a> · <a href="/shipping-policy">Shipping</a> · <a href="/faqs">FAQs</a></li><li><a href="/about">About E-SHTYLE</a> · <a href="/contact">Contact us</a>${b.phone ? ` · Phone/WhatsApp: ${esc(b.phone)}` : ''}${b.email ? ` · Email: ${esc(b.email)}` : ''}</li></ul></main>`;
   return { title: s.seo.defaultTitle, description: s.seo.defaultDescription, image: `${env.APP_URL}/og-default.jpg`, url: env.APP_URL, type: 'website', ld, body };
 }
 
